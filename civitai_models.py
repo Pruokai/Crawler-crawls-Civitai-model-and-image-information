@@ -1,5 +1,6 @@
 import requests
-
+import time
+import os
 
 url = 'https://civitai.com/api/v1/models'
 
@@ -11,7 +12,7 @@ params = {
 
 all_models_data = []  # 存储所有模型数据的列表
 
-total_pages = 2  # 想要爬取的页数
+total_pages = 1  # 想要爬取的页数
 
 for page in range(1, total_pages + 1):
     params['page'] = page  # 更新参数中的页面数
@@ -181,56 +182,16 @@ for page in range(1, total_pages + 1):
             }
             all_modelVersiones_info.append(modelVersiones_info)
 
+        folder_name = 'models'
+        if not os.path.exists(folder_name):
+            os.makedirs(folder_name)
 
+        model_id = model.get('id')
 
+        # 创建以model_id命名的文件
+        file_path = os.path.join(folder_name, f'{model_name}.txt')
 
-        print("Model ID:", model_id)
-        print("Model Name:", model_name)
-        print("Model Description:", model_description)
-        print("Model Type:", model_type)
-        print("NSFW:", nsfw)
-        print("Allow No Credit:", allow_no_credit)
-        print("Allow Commercial Use:", allow_commercial_use)
-        print("Allow Derivatives:", allow_derivatives)
-        print("Creator Username:", creator_username)
-        print("Download Count:", download_count)
-        print("Favorite Count:", favorite_count)
-        print("Comment Count:", comment_count)
-        print("Rating Count:", rating_count)
-        print("Rating:", rating)
-        print("Tags:", tags)
-
-        for model_version_info in all_modelVersiones_info:
-            print("Model Version Data:")
-            # 这是在打印model_version_info时进行修改
-            for key, value in model_version_info.items():
-                if key == 'images':
-                    print(f"{key}:")
-                    for image_info in value:
-                        for k, v in image_info.items():
-                            print(f"\t{k}: {v}")
-                elif key == 'stats':
-                    print(f"{key}:")
-                    for stat_key, stat_value in value.items():
-                        print(f"\t{stat_key}: {stat_value}")
-                elif key == 'files':
-                    print(f"{key}:")
-                    for file_info in value:
-                        for file_key, file_value in file_info.items():
-                            if file_key == 'metadata':
-                                print("\tMetadata:")
-                                for meta_key, meta_value in file_value.items():
-                                    print(f"\t\t{meta_key}: {meta_value}")
-                            elif file_key == 'hashes':
-                                print("\tHashes:")
-                                for hash_key, hash_value in file_value.items():
-                                    print(f"\t\t{hash_key}: {hash_value}")
-                            else:
-                                print(f"\t{file_key}: {file_value}")
-                else:
-                    print(f"{key}: {value}")
-
-        with open('model_data.txt', 'a', encoding='utf-8') as file:
+        with open(file_path, 'w', encoding='utf-8') as file:
             file.write("Model ID: " + str(model_id) + "\n")
             file.write("Model Name: " + str(model_name) + "\n")
             file.write("Model Description: " + str(model_description) + "\n")
@@ -275,3 +236,50 @@ for page in range(1, total_pages + 1):
                                     file.write(f"\t{file_key}: {file_value}\n")
                     else:
                         file.write(f"{key}: {value}\n")
+            time.sleep(5)  # 休息5秒
+
+        # print("Model ID:", model_id)
+        # print("Model Name:", model_name)
+        # print("Model Description:", model_description)
+        # print("Model Type:", model_type)
+        # print("NSFW:", nsfw)
+        # print("Allow No Credit:", allow_no_credit)
+        # print("Allow Commercial Use:", allow_commercial_use)
+        # print("Allow Derivatives:", allow_derivatives)
+        # print("Creator Username:", creator_username)
+        # print("Download Count:", download_count)
+        # print("Favorite Count:", favorite_count)
+        # print("Comment Count:", comment_count)
+        # print("Rating Count:", rating_count)
+        # print("Rating:", rating)
+        # print("Tags:", tags)
+        #
+        # for model_version_info in all_modelVersiones_info:
+        #     print("Model Version Data:")
+        #     # 这是在打印model_version_info时进行修改
+        #     for key, value in model_version_info.items():
+        #         if key == 'images':
+        #             print(f"{key}:")
+        #             for image_info in value:
+        #                 for k, v in image_info.items():
+        #                     print(f"\t{k}: {v}")
+        #         elif key == 'stats':
+        #             print(f"{key}:")
+        #             for stat_key, stat_value in value.items():
+        #                 print(f"\t{stat_key}: {stat_value}")
+        #         elif key == 'files':
+        #             print(f"{key}:")
+        #             for file_info in value:
+        #                 for file_key, file_value in file_info.items():
+        #                     if file_key == 'metadata':
+        #                         print("\tMetadata:")
+        #                         for meta_key, meta_value in file_value.items():
+        #                             print(f"\t\t{meta_key}: {meta_value}")
+        #                     elif file_key == 'hashes':
+        #                         print("\tHashes:")
+        #                         for hash_key, hash_value in file_value.items():
+        #                             print(f"\t\t{hash_key}: {hash_value}")
+        #                     else:
+        #                         print(f"\t{file_key}: {file_value}")
+        #         else:
+        #             print(f"{key}: {value}")
