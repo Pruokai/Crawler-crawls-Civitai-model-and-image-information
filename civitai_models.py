@@ -189,7 +189,7 @@ for page in range(1, total_pages + 1):
         model_id = model.get('id')
 
         # 创建以model_id命名的文件
-        file_path = os.path.join(folder_name, f'{model_name}.txt')
+        file_path = os.path.join(folder_name, f'{model_id}.txt')
 
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write("Model ID: " + str(model_id) + "\n")
