@@ -1,0 +1,241 @@
+Model ID: 58390
+Model Name: Detail Tweaker LoRA (细节调整LoRA)
+Model Description: <p>HF: <a target="_blank" rel="ugc" href="https://huggingface.co/OedoSoldier/detail-tweaker-lora">https://huggingface.co/OedoSoldier/detail-tweaker-lora</a></p><p>This is a LoRA for enhancing/diminishing detail while keeping the overall style/character; it works well with all kinds of base models (incl anime &amp; realistic models)/style LoRA/character LoRA, etc.</p><p>Apply your own weight; this LoRA can be utilized for any weight up/down to 2/-2!</p><p><strong>Note: use a negative weight to reduce details!</strong></p>
+Model Type: LORA
+NSFW: Soft
+Allow No Credit: True
+Allow Commercial Use: None
+Allow Derivatives: True
+Creator Username: CyberAIchemist
+Download Count: 346455
+Favorite Count: 21306
+Comment Count: 106
+Rating Count: 644
+Rating: 4.96
+Tags: ['anime', 'photorealistic', 'concept', 'detailed', 'lora', 'undetailed']
+Model Version Data:
+id: 62833
+modelId: 58390
+name: v1.0
+createdAt: None
+updatedAt: 2023-05-05T07:28:19.115Z
+trainedWords: []
+baseModel: SD 1.5
+earlyAccessTimeFrame: 0
+description: None
+stats:
+	downloadCount: 346455
+	ratingCount: 644
+	rating: 4.96
+files:
+	name: add_detail.safetensors
+	id: 44319
+	sizeKB: 36973.8046875
+	type: Model
+	Metadata:
+		fp: None
+		size: None
+		format: SafeTensor
+	pickleScanResult: Success
+	pickleScanMessage: No Pickle imports
+	virusScanResult: Success
+	scannedAt: 2023-05-05T06:50:46.007Z
+	Hashes:
+		AutoV2: 47AAAF0D29
+		SHA256: 47AAAF0D2945CA937151D61304946DD229B3F072140B85484BC93E38F2A6E2F7
+		CRC32: F1D60397
+		BLAKE3: 5664139789418CE9328FB4E71FF9380FFDBBA2268747A40C428ED9D35501C047
+	downloadUrl: https://civitai.com/api/download/models/62833
+	primary: True
+images:
+	id: 692411
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/8db45d23-7bcf-4979-8b35-0e7779c5a8f8/width=450/692411.jpeg
+	nsfw: None
+	width: 1920
+	height: 3840
+	hash: UHHfVC~pI8M{XqkDact3RpRlocofXWkDjEob
+	Size: 768x512
+	seed: 3857540070
+	Model: None
+	steps: 20
+	prompt: masterpiece, best quality, 1girl, solo, long hair, skirt, outdoors, cloud, black hair, blue eyes, shirt, long sleeves, shoes, sky, tree, black skirt, full body, blue sky, bangs, blush, blue shirt, sneakers, standing, grass, white footwear, cloudy sky, day, print shirt, looking at viewer, walking, from side, <lora:add_detail:1>
+	sampler: DPM++ 2M Karras
+	cfgScale: 7
+	resources: [{'name': 'add_detail', 'type': 'lora', 'weight': 1}]
+	Clip skip: 2
+	Hires upscale: 2.5
+	Hires upscaler: 4x-UltraSharp
+	negativePrompt: EasyNegative, badhandv4
+	Denoising strength: 0.5
+	id: 692487
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/5db97082-a909-4c3e-b6d1-2a46318f29a0/width=450/692487.jpeg
+	nsfw: None
+	width: 3840
+	height: 2154
+	hash: UlI}YIaej@ae_4WBWVjZ?voffkj?%Nj]a}of
+	Size: 512x768
+	seed: 3884339508
+	Model: None
+	steps: 20
+	prompt: raw closeup of a stunningly beautiful woman, by the canals of holland, shops selling gouda cheese, RAW, 8K, UHD, natural lighting, perfect day, amateur, candid, extreme close up, <lora:add_detail:1>
+	sampler: DPM++ 2M Karras
+	cfgScale: 7
+	resources: [{'name': 'add_detail', 'type': 'lora', 'weight': 1}]
+	Clip skip: 2
+	Hires upscale: 2.5
+	Hires upscaler: 4x-UltraSharp
+	negativePrompt: EasyNegative, badhandv4
+	Denoising strength: 0.5
+	id: 692332
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/6e467dc7-45e9-435f-8aee-63fe9a098809/width=450/692332.jpeg
+	nsfw: None
+	width: 6400
+	height: 2154
+	hash: UXIOFTxFaet6Ipa}azWB~qbHfjof%Mj[ayof
+	Size: 512x768
+	seed: 3737180303
+	Model: None
+	steps: 20
+	prompt: masterpiece, best quality, 1girl, hatsune miku, cyan hair, cyan eyes, twintails, long hair, jacket, coat, from side, looking at viewer, looking up, looking away, winter, outdoors, snow, night, starry sky, winter clothes, winter coat, scarf, light smile, white thighhighs, standing, reaching out, thigh boots, hand in pocket, snowing, cityscape, skyscraper, cowboy shot, depth of field, from above, foreshortening, footprints, <lora:add_detail:2>
+	sampler: DPM++ 2M Karras
+	cfgScale: 7
+	resources: [{'name': 'add_detail', 'type': 'lora', 'weight': 2}]
+	Clip skip: 2
+	Hires upscale: 2.5
+	Hires upscaler: 4x-UltraSharp
+	negativePrompt: EasyNegative, badhandv4
+	Denoising strength: 0.5
+	id: 692354
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a59e953b-c84d-490d-9b85-18d2dc2d2588/width=450/692354.jpeg
+	nsfw: None
+	width: 6400
+	height: 2154
+	hash: UZI5MYxYjYt6NfofWVWV~qjbf6oM-;t7fkof
+	Size: 512x768
+	seed: 3737180303
+	Model: None
+	steps: 20
+	prompt: masterpiece, best quality, 1girl, hatsune miku, cyan hair, cyan eyes, twintails, long hair, jacket, coat, from side, looking at viewer, looking up, looking away, winter, outdoors, snow, night, starry sky, winter clothes, winter coat, scarf, light smile, white thighhighs, standing, reaching out, thigh boots, hand in pocket, snowing, cityscape, skyscraper, cowboy shot, depth of field, from above, foreshortening, footprints, <lora:add_detail:-2>
+	sampler: DPM++ 2M Karras
+	cfgScale: 7
+	resources: []
+	Clip skip: 2
+	Hires upscale: 2.5
+	Hires upscaler: 4x-UltraSharp
+	negativePrompt: EasyNegative, badhandv4
+	Denoising strength: 0.5
+	id: 692540
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/82175cf8-2a27-4173-9a8e-21108b885336/width=450/692540.jpeg
+	nsfw: None
+	width: 3072
+	height: 1723
+	hash: UTKA~WxajYof~qj]j[ay?vWBa|ay_2t7j[of
+	Size: 512x768
+	seed: 3422616374
+	Model: None
+	steps: 20
+	prompt: masterpiece, best quality, highres, 1girl, school uniform, <lora:add_detail:1>, kangel, <lora:kangelNeedyGirl_v10:1>
+	sampler: DPM++ 2M Karras
+	cfgScale: 7
+	resources: [{'name': 'add_detail', 'type': 'lora', 'weight': 1}, {'name': 'kangelNeedyGirl_v10', 'type': 'lora', 'weight': 1}]
+	Clip skip: 2
+	Hires upscale: None
+	Hires upscaler: None
+	negativePrompt: EasyNegative, badhandv4
+	Denoising strength: None
+	id: 692537
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/6473e0c8-693a-46d8-a747-a27b6d3b5e27/width=450/692537.jpeg
+	nsfw: None
+	width: 3072
+	height: 1723
+	hash: UVJ8t:aeWBt7~qj[a|jt-;kCayof_3ofj[fk
+	Size: 512x768
+	seed: 4121159844
+	Model: None
+	steps: 20
+	prompt: (((masterpiece))),(((bestquality))),((ultra-detailed)),(illustration), blue footwear, water background,expressionless,<lora:animetarotV51:1>, <lora:add_detail:1>
+	sampler: DPM++ 2M Karras
+	cfgScale: 7
+	resources: [{'name': 'animetarotV51', 'type': 'lora', 'weight': 1}, {'name': 'add_detail', 'type': 'lora', 'weight': 1}]
+	Clip skip: 2
+	Hires upscale: None
+	Hires upscaler: None
+	negativePrompt: EasyNegative, badhandv4
+	Denoising strength: None
+	id: 692538
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/60727991-d5b2-4aad-a7eb-628c8ad95653/width=450/692538.jpeg
+	nsfw: None
+	width: 3072
+	height: 1723
+	hash: USIh1_WXfkj[?woLjtj].9j@j[az_Nj@a{js
+	Size: 512x768
+	seed: 4261304940
+	Model: None
+	steps: 20
+	prompt: masterpiece, best quality, 1girl, solo, long_hair, looking_at_viewer, smile, bangs, skirt, shirt, black_hair, black_thighhighs, long_sleeves, ribbon, twintails, sitting, closed_mouth, purple_eyes, jacket, hair_ribbon, pleated_skirt, outdoors, miniskirt, blunt_bangs, zettai_ryouiki, black_shirt, night, white_ribbon, hair_over_shoulder, retro_artstyle, orange_skirt, orange_jacket, <lora:thickline_fp16:1>, <lora:add_detail:1>
+	sampler: DPM++ 2M Karras
+	cfgScale: 7
+	resources: [{'name': 'thickline_fp16', 'type': 'lora', 'weight': 1}, {'name': 'add_detail', 'type': 'lora', 'weight': 1}]
+	Clip skip: 2
+	Hires upscale: None
+	Hires upscaler: None
+	negativePrompt: EasyNegative, badhandv4
+	Denoising strength: None
+	id: 692539
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/306491ca-ec13-4876-a9d2-983268ecc478/width=450/692539.jpeg
+	nsfw: None
+	width: 3072
+	height: 1723
+	hash: UJPQ4~ITRjt7~qozayof?boft7ay-;oft7of
+	Size: 512x768
+	seed: 78848909
+	Model: None
+	steps: 20
+	prompt: masterpiece, best quality, 1girl, solo, long_hair, looking_at_viewer, smile, bangs, skirt, shirt, long_sleeves, hat, dress, bow, holding, closed_mouth, flower, frills, hair_flower, petals, bouquet, holding_flower, center_frills, bonnet, holding_bouquet, flower field, flower field, lineart, monochrome, <lora:animeoutlineV4_16:1>, <lora:add_detail:1>
+	sampler: DPM++ 2M Karras
+	cfgScale: 7
+	resources: [{'name': 'animeoutlineV4_16', 'type': 'lora', 'weight': 1}, {'name': 'add_detail', 'type': 'lora', 'weight': 1}]
+	Clip skip: 2
+	Hires upscale: None
+	Hires upscaler: None
+	negativePrompt: EasyNegative, badhandv4
+	Denoising strength: None
+	id: 692536
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2971a79a-2c19-4851-a2c7-5c436dfb8083/width=450/692536.jpeg
+	nsfw: None
+	width: 3072
+	height: 1723
+	hash: UUN,-Tt6WBai-@ockAt5x{a$oMWC_3kBj[of
+	Size: 512x768
+	seed: 3741395850
+	Model: None
+	steps: 20
+	prompt: masterpiece, best quality, 1girl, solo, looking_at_viewer, smile, open_mouth, skirt, simple_background, shirt, hair_ornament, blue_hair, jacket, pink_hair, :d, multicolored_hair, pleated_skirt, wings, choker, hairclip, hood, pink_eyes, hair_bun, chibi, black_shirt, double_bun, black_choker, blush_stickers, white_skirt, yellow_background, feathered_wings, angel_wings, white_wings,<lora:teradatera:1>, chibi, <lora:add_detail:1>
+	sampler: DPM++ 2M Karras
+	cfgScale: 7
+	resources: [{'name': 'teradatera', 'type': 'lora', 'weight': 1}, {'name': 'add_detail', 'type': 'lora', 'weight': 1}]
+	Clip skip: 2
+	Hires upscale: None
+	Hires upscaler: None
+	negativePrompt: EasyNegative, badhandv4
+	Denoising strength: None
+	id: 692547
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/b471fda3-28bb-4ce5-ab58-5b3ae9dbbc99/width=450/692547.jpeg
+	nsfw: Soft
+	width: 1920
+	height: 3933
+	hash: UlL;T^~q?b?bxabHayj[s;j@ayWVxuoLayay
+	Size: 512x768
+	seed: 3297915377
+	Model: None
+	steps: 20
+	prompt: masterpiece, best quality, highres, 1girl, school uniform, <lora:add_detail:1>
+	sampler: DPM++ 2M Karras
+	cfgScale: 7
+	resources: [{'name': 'add_detail', 'type': 'lora', 'weight': 1}]
+	Clip skip: 2
+	Hires upscale: None
+	Hires upscaler: None
+	negativePrompt: EasyNegative, badhandv4
+	Denoising strength: None
+downloadUrl: https://civitai.com/api/download/models/62833

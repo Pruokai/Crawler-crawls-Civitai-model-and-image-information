@@ -1,0 +1,2857 @@
+Model ID: 6174
+Model Name: DivineEleganceMix
+Model Description: <p>If you ran into any troubles with my mix, please read description below. There is plenty of useful information.</p><p>Если вы столкнулись с каким-либо проблемами при использовании моего микса, пожалуйста, прочитайте описание ниже. Там есть много полезной информации.</p><p><span style="color:rgb(193, 194, 197)">Also try: </span><a target="_blank" rel="ugc" href="https://civitai.com/models/95587/divineanimemix">DivineAnimeMix!</a></p><p></p><hr /><p></p><p><strong>Introduction:</strong></p><p></p><p>All models i've used before first release of DIvineElegance did not fit my requirements. I've decided to do something on my own to fix this issue. There was a lot of different mixes based on Anything v3 or v4 and i've taken it as a base as well.</p><p>At the beginning, it was a mix for my personal use, but it was warmly received by Unstable Diffusion discord community and some time later i've decided to share it here, on CivitAI.</p><p>Right now Divine series is my favorite models and quite unique thing for me. The main goal of DivineElegance - anime characters with as many details as it could have. Hair, clothes, backgrounds, all of this things should be beautiful, slightly more realistic and detailed.</p><p>I hope you also would like DivineElegace, so stay tuned for newer versions of mix!</p><p></p><hr /><p></p><p><strong>Recommendations:</strong></p><ul><li><p>Use danbooru tagging for prompts</p></li><li><p>Sampler: "Euler a" at / 30-50 steps</p></li><li><p>Cfg scale: 8</p></li><li><p>Clip Skip: 2 &lt;---- VERY IMPORTANT</p></li><li><p>ENSD (Eta noise seed delta) - leave blank</p></li><li><p><a target="_blank" rel="ugc" href="https://huggingface.co/hakurei/waifu-diffusion-v1-4/blob/main/vae/kl-f8-anime2.ckpt">kl-f8-anime2 VAE</a></p></li><li><p>Negative: <code>(EasyNegative:0.8), (worst quality, low quality:1.2), blurry, bokeh, dof, fog</code></p></li></ul><p></p><p><strong>Recommendations (Hires Fix)</strong>:</p><ul><li><p>Upscaler: <a target="_blank" rel="ugc" href="https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/resolve/main/4x_foolhardy_Remacri.pth">Remacri</a></p></li><li><p>Hires steps: 10-15</p></li><li><p>Denoising strength: 0.3</p></li><li><p>Upscale by: <em>any</em></p></li></ul><p></p><hr /><p></p><p><strong>Troubleshoot:</strong></p><p>My colored are bleached out. What should i do?</p><ul><li><p>You're missing a VAE file. For this mix i would recommend kl-f8-anime2 VAE. Just put it into SD folder -&gt; models -&gt; VAE folder. Then go to your WebUI, Settings -&gt; Stable Diffusion on the left list -&gt; SD VAE, choose your downloaded VAE.</p></li></ul><p></p><p>If you want to get mostly the same results, you definitely will need negative embedding:</p><ul><li><p><a target="_blank" rel="ugc" href="https://civitai.com/models/7808/easynegative">EasyNegative</a>, it's better to use it at 0.8 weight.</p></li></ul><p></p><p><strong>Don't use</strong> EasyNegative (or other embeddings) with Style LoRAs, it may ruin the style!</p><ul><li><p>Until you like the result, of course.</p></li></ul><p></p><p><strong>Don't use</strong> a lot negative embeddings at the same time. It definitely will ruin any possible output on all models! If you want to use negative embeddings - use one for quality, and one for hands (if you want a placebo for hands).</p><p></p><hr /><p></p><p><strong>Technical support:</strong></p><p><span style="color:rgb(134, 142, 150)">If you're ran into any problem with my mix, you can DM me on </span><strong><span style="color:rgb(134, 142, 150)">discord</span></strong><span style="color:rgb(134, 142, 150)">:</span></p><p><strong>troubledarkness</strong> - <span style="color:rgb(134, 142, 150)">discord nickname.</span></p><p></p><p>I'll be glad to help | Буду рад помочь.</p><p></p><hr /><p></p><p><strong>Credits:</strong></p><p></p><p><a target="_blank" rel="ugc" href="https://docs.google.com/document/d/1Mc3x-EKSrOFgIo6tBxQZZprFZWnAb9J0Jms_-CUZ1Oo/edit?usp=sharing">DivineEleganceMix Recipes</a></p><p></p><p>Really BIG thanks to:</p><ul><li><p>Nigurumi for<a target="_blank" rel="ugc" href="https://huggingface.co/nuigurumi/basil_mix"> BasilMix</a></p></li><li><p>WarriorMama777 for <a target="_blank" rel="ugc" href="https://huggingface.co/WarriorMama777/OrangeMixs">AbyssOrangeMixes</a> and recipes</p></li><li><p>andite for <a target="_blank" rel="ugc" href="https://huggingface.co/andite/anything-v4.0/blob/main/anything-v4.5.ckpt">Anything4.5</a>/<a target="_blank" rel="ugc" href="https://huggingface.co/andite/yohan-diffusion/blob/main/Cocoa.ckpt">Cocoa</a>/<a target="_blank" rel="ugc" href="https://huggingface.co/andite/pastel-mix">PastelMix</a></p></li><li><p>Ikena for <a target="_blank" rel="ugc" href="https://civitai.com/models/2583/grapefruit-hentai-model">Grapefruit</a></p></li><li><p>Cyria for <a target="_blank" rel="ugc" href="https://civitai.com/models/16161/zerotolerances">ZeroTolerances</a></p></li><li><p>devdevice545734 for <a target="_blank" rel="ugc" href="https://civitai.com/models/7152/facebombmix">FaceBombMix</a></p></li><li><p>You, for reading, downloading and reviewing this mix</p></li></ul>
+Model Type: Checkpoint
+NSFW: None
+Allow No Credit: True
+Allow Commercial Use: None
+Allow Derivatives: True
+Creator Username: TroubleDarkness
+Download Count: 65296
+Favorite Count: 7796
+Comment Count: 74
+Rating Count: 333
+Rating: 4.98
+Tags: ['anime', 'landscapes', 'interiors', 'base model', 'illustration', 'semi-realistic', 'аниме', 'модель', 'полу-реализм', 'иллюстрация', 'интерьеры', 'ландшафт']
+Model Version Data:
+id: 202455
+modelId: 6174
+name: DivineEleganceMix v8
+createdAt: None
+updatedAt: 2023-10-28T14:12:29.056Z
+trainedWords: []
+baseModel: SD 1.5
+earlyAccessTimeFrame: 0
+description: <p>New version has came out, so, lets find out what changed:</p><p><strong>Mix:</strong></p><p>- Removed Abyss Orange Mix 3 and Cocoa</p><p>- New merging techniques, block merge via supermerger</p><p>- Now there is a LoRA merged in instead of finetune for less time consumption, mostly the same result</p><p><strong>Visuals:</strong></p><p>- Less blurriness on foreground</p><p>- Sharper and cleaner textures</p><p>- More details in backgrounds</p><p>- Restored near-original saturation</p><p><strong>Characters:</strong></p><p>- Restored working concepts for some well-known characters</p><p>- Better reaction to unusual poses</p><p><strong>Lighting:</strong></p><p>- Restored original non-white color for lighting</p><p><strong>LoRA:</strong></p><p>- Better compatibility with "some" LoRAs</p><p><strong>Fixes:</strong></p><p>- Fixed "hands behind back" causing from behind view</p><p>- Fixed "backlighting" causing from behind view</p><p>There can be unexpected issues because of merging model through blocks, but i've not found anything.</p><p>Thanks for keeping an eye on Divine series models and thanks for reading this changes, i hope you'll like new version of DivineElengaceMix as well.</p>
+stats:
+	downloadCount: 3749
+	ratingCount: 31
+	rating: 4.94
+files:
+	name: MoistMix.vae.pt
+	id: 87230
+	sizeKB: 395177.9697265625
+	type: VAE
+	Metadata:
+		fp: None
+		size: None
+		format: Other
+	pickleScanResult: Danger
+	pickleScanMessage: **Detected Pickle imports (5)**
+*Dangerous import detected*
+```
+*pytorch_lightning.callbacks.model_checkpoint.ModelCheckpoint*
+torch._utils._rebuild_tensor_v2
+collections.OrderedDict
+pytorch_lightning.callbacks.model_checkpoint.ModelCheckpoint
+torch.FloatStorage
+```
+	virusScanResult: Success
+	scannedAt: 2022-12-31T04:23:28.295Z
+	Hashes:
+		AutoV2: DF3C506E51
+		SHA256: DF3C506E51B7EE1D7B5A6A2BB7142D47D488743C96AA778AFB0F53A2CDC2D38D
+		CRC32: CDC8E084
+		BLAKE3: 1C1C17EC74EB5758F1F85BADDA885C2A2B07B9F0A81B6420AC3ABF2BB06FD2C1
+	downloadUrl: https://civitai.com/api/download/models/202455?type=VAE&format=Other
+	primary: None
+images:
+	id: 3222144
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/1c7f7179-88ff-4a16-873e-1b6d3f13fa41/width=450/3222144.jpeg
+	nsfw: None
+	width: 2048
+	height: 3072
+	hash: UJE_geE256NG~pkCE1WA9t-pE2e.S4fkMyjZ
+	Size: 512x768
+	seed: 3842746991
+	Model: DivineEleganceMix8
+	steps: 30
+	prompt: (masterpiece, best quality:1.2), (face focus:1.4), back focus, from behind, blonde hair, long hair, high ponytail, long ponytail, red eyes, long eyelashes, thick eyelashes, looking at viewer, red dress, backless dress, gold trim dress, puffy sleeves, juliet sleeves, long sleeves, red sleeves, (black background:1.2), light particles, blurry, bloom, shiny hair, <lora:Add Detail:0.5>
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': '4dbe20030f', 'name': 'DivineEleganceMix8', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: None
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.2),
+(from below:1.2), (ass:1.2), collar, tight, skin tight, impossible clothes, bangs, off shoulder, frills, white sleeves, red background, yellow sleeves,
+	Denoising strength: 0.3
+	id: 3222146
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/94015c32-668e-4b64-817c-46aeb75c763d/width=450/3222146.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UQGt+.-;9uD*~W-;IoM{OXX9-VM{ofxtWCni
+	Size: 512x768
+	seed: 605412237
+	Model: DivineEleganceMix8
+	steps: 30
+	prompt: 1girl, solo, blonde hair, long hair, high ponytail, hair intakes, red eyes, long eyelashes, thick eyelashes, looking at viewer, red dress, juliet sleeves, long sleeves, collarbone, indoors, library, books, (renaissance, vintage:1.2), dark, night, candlelight, window,
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': '4dbe20030f', 'name': 'DivineEleganceMix8', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: 4x Remacri
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.2),
+	Denoising strength: 0.3
+	id: 3222147
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/6cec06f0-16ff-4713-93f7-c0c1f16bac6d/width=450/3222147.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: URH.E8=_?wo#.TngyDx]t9n#E1xuS6%1%2IV
+	Size: 512x768
+	seed: 682096862
+	Model: DivineEleganceMix8
+	steps: 30
+	prompt: 1girl, solo, brown hair, short hair, hair between eyes, bangs, orange eyes, long eyelashes, thick eyelashes, looking at viewer, smile, :D, black shirt, black skirt, pleated skirt, medium breasts, outdoors, city, upper teeth,
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': '4dbe20030f', 'name': 'DivineEleganceMix8', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: 4x Remacri
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.2),
+	Denoising strength: 0.3
+	id: 3222148
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/ec66121f-6ab8-4d66-aab0-273e70f3bc9c/width=450/3222148.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: UPJj_A~W%~OB~WxtpHxa~B-;OrogE2WDxan,
+	Size: 512x768
+	seed: 2056840523
+	Model: DivineEleganceMix8
+	steps: 30
+	prompt: 1girl, solo, facing viewer, smile, kusanagi_naoya, red_ribbon, formal, pink_hair ,misakura_rin ,1girl,school_uniform,multiple_boys,red_hair,suit,sakura_no_uta,ribbon,natsume_kei_(sakura_no_uta),white_hair,picture_frame,eina_(ao0708), shirt, highres
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': '4dbe20030f', 'name': 'DivineEleganceMix8', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: 4x Remacri
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.2),
+	Denoising strength: 0.3
+	id: 3222149
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2c59a034-d361-4be3-a415-d248a5c876ee/width=450/3222149.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UBEyY+WB00~q9F9FIU-;00xu^+ofxuxuD%M{
+	Size: 512x768
+	seed: 3410370932
+	Model: DivineEleganceMix8
+	steps: 30
+	prompt: (tsurime:1.2), tsurime, 1girl, solo, breasts, gyaru, downblouse, long hair, blush, looking at viewer, dark-skinned female, wavy hair, dark skin, monochrome, hands on own knees, cleavage, simple background, leaning forward, bent over, gradient hair, greyscale, collarbone, long sleeves, small breasts, medium breasts, smile, white blouse, white hair, <lora:Tsurime:1>
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'name': 'Tsurime', 'type': 'lora', 'weight': 1}, {'hash': '4dbe20030f', 'name': 'DivineEleganceMix8', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: 4x Remacri
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.2),
+	Denoising strength: 0.3
+	id: 3222150
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/e811fdb1-ae3c-487a-a7fe-7a8e5145c131/width=450/3222150.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: UHMtXG-;D%00%M~q%Mt7?b%MfP%Mxu%MRjRj
+	Size: 512x768
+	seed: 442325146
+	Model: DivineEleganceMix8
+	steps: 30
+	prompt: sketch, monochrome, traditional media, pencil drawing, 1girl, strapless dress, running in the garden, floral background,
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': '4dbe20030f', 'name': 'DivineEleganceMix8', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: 4x Remacri
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.2),
+	Denoising strength: 0.3
+	id: 3222151
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49ae68a1-ae4b-4f34-8faa-096af63a0c22/width=450/3222151.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: UEIh+_H?4T~q-+D*K8RjTIIaM|IVx-IUtSM|
+	Size: 512x768
+	seed: 1767872443
+	Model: DivineEleganceMix8
+	steps: 30
+	prompt: barbaradef, white dress, white pantyhose, book, masterpiece, best quality, barbara \(genshin impact\), 1girl, solo, full body, grabbing skirt, standing in water, sunlight, flowers, creek, stone, clean water, ripples, reflective water, reflection, shadow, <lora:barbara1:1>
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'name': 'barbara1', 'type': 'lora', 'weight': 1}, {'hash': '4dbe20030f', 'name': 'DivineEleganceMix8', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: 4x Remacri
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.2),
+	Denoising strength: 0.3
+	id: 3222153
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9e920d66-5b3c-41eb-9d59-7b5da2a2b95d/width=450/3222153.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UNHf0bI9.T-;h2sST0x]9GNxMxog9HxtIBRP
+	Size: 512x768
+	seed: 3629698099
+	Model: DivineEleganceMix8
+	steps: 30
+	prompt: ganyu \(genshin impact\), ganyudef, outdoors, mountains, purple eyes, <lora:ganyu2:1>
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'name': 'ganyu2', 'type': 'lora', 'weight': 1}, {'hash': '4dbe20030f', 'name': 'DivineEleganceMix8', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: 4x Remacri
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.2),
+	Denoising strength: 0.3
+	id: 3222155
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/06693297-0e3e-4010-975a-ab81a240664c/width=450/3222155.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UEJtxI9F00~p56oz9z-.XSVyN29u?tNrro%f
+	Size: 512x768
+	seed: 2147613909
+	Model: DivineEleganceMix8
+	steps: 30
+	prompt: 1girl, solo, mature female, mature, milf, blonde hair, very long hair, hair intakes, pointy ears, green eyes, long eyelashes, thick eyelashes, looking at viewer, blush, :o, white dress, fantasy dress, sleeveless, collarbone, medium breasts, outdoors, nature, forest, pines, grass, (plants:1.2), sitting on rock, flowers, skirt,
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': '4dbe20030f', 'name': 'DivineEleganceMix8', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: 4x Remacri
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.2), fog, mist, blurry, blurry background, bokeh, side slit,
+	Denoising strength: 0.3
+	id: 3222156
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3fce1f1f-1c34-492d-923c-16cc5c8d66af/width=450/3222156.jpeg
+	nsfw: X
+	width: 1024
+	height: 1536
+	hash: UQGv6BDi5j?^E0i_MeM|tRNGaLxaX.jEt7kX
+	Size: 512x768
+	seed: 4016212310
+	Model: DivineEleganceMix8
+	steps: 30
+	prompt: 1girl, solo, from behind, partially submerged, bathing, sitting, upper body, blonde hair, long hair, pointy ears, green eyes, long eyelashes, thick eyelashes, looking at viewer blush, :o, nude, medium breasts, outdoors, forest, nature, plants, trees, clouds, water, lake,
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': '4dbe20030f', 'name': 'DivineEleganceMix8', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: 4x Remacri
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.2), fog, mist, blurry, blurry background, bokeh, (bridge:1.2),
+	Denoising strength: 0.3
+downloadUrl: https://civitai.com/api/download/models/202455
+Model Version Data:
+id: 162557
+modelId: 6174
+name: DivineEleganceMix v7
+createdAt: None
+updatedAt: 2023-10-28T13:53:33.445Z
+trainedWords: []
+baseModel: SD 1.5
+earlyAccessTimeFrame: 0
+description: <p>It was a long time since v6 release again, and i'm pretty happy with results, i'm getting on new release of DivineEleganceMix. So, let's start.<br /><br />This version of DivineEleganceMix was tuned by 2000 different anime-styled images from danbooru, so, i guess, now we can count it as a finetune, and of course, i'll try to improve it later.<br /><br />Version changes:</p><ol><li><p><strong>Characters</strong></p></li></ol><ul><li><p>Better eyes at upper body shots and close-ups, it should have proper round shape with less rough edges. Also, reflections on eyes should appear more frequently to bring more live for eyes.</p></li><li><p>Move even reaction to bodyshape prompts. Curvy tag would make character more curvy than before, the same for skinny / petite / narrow waist.</p></li><li><p>Seems like model works better with mature female / mature tags as well, It could help you, if you want to make pretty milf character :)</p></li><li><p>Much softer skin, less ugly (in my opinion) shine and less oiled skin effect. Also, skin has less orange accents because of white lighting.</p></li><li><p>Hair has less shine effect as well</p></li></ul><ol><li><p><strong>Lighting.</strong></p></li></ol><ul><li><p>Seems like a controversial change, but lighting just works different way from previous version, it can do better or worse sometimes. Maybe just a random and nothing more, but it produces softer ambient shadows on character body, but mosty the same shadows for other things.</p></li><li><p>Now lighting has white accent by default.</p></li></ul><p><br />With this version of DivineElegance all your LoRAs should work as good as on previous version, so, there is no any problems with compatibility.<br /><br />There was an Automatic1111 update between testing different version, and seems like it changed an output completely, so, some generations from DivineEleganceMix v6 and earlier version can be inaccessible. And i needed to do new previews for 7th version of DivineEleganceMix after this update :C<br /><br />Thanks for keeping an eye on Divine series models and thanks for reading this changes, i hope you'll like new version of DivineElengaceMix as well.</p>
+stats:
+	downloadCount: 18485
+	ratingCount: 89
+	rating: 5
+files:
+	name: kl-f8-anime2.vae.pt
+	id: 87227
+	sizeKB: 163478.3720703125
+	type: VAE
+	Metadata:
+		fp: None
+		size: None
+		format: Other
+	pickleScanResult: Success
+	pickleScanMessage: No Pickle imports
+	virusScanResult: Success
+	scannedAt: 2023-05-06T12:45:55.283Z
+	Hashes:
+		AutoV2: D080A9911B
+		SHA256: D080A9911BA5F4270D9A2612135AE68BE88065B0B6915AE9C7971F9E63039A4E
+		CRC32: 2228C76E
+		BLAKE3: C714E1BEE1F8A49462B17ADF8105EC1B56437ECDD63E939CCE0CD9AA6DE500E0
+	downloadUrl: https://civitai.com/api/download/models/162557?type=VAE&format=Other
+	primary: None
+images:
+	id: 2515770
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d4b0c790-b3b2-4935-b4da-bc435b4faa2a/width=450/2515770.jpeg
+	nsfw: None
+	width: 1152
+	height: 1920
+	hash: UFCh{5^j0yIp~V-oIVNGI:X8NaRkNwNGM{sT
+	Size: None
+	seed: None
+	Model: None
+	steps: 50
+	prompt: (masterpiece, best quality:1.2), extremely detailed, detailed hair, soft skin,
+
+1girl, solo, standing, upper body, from behind,
+
+blonde hair, long hair, high ponytail, long ponytail,
+
+red eyes, long eyelashes, thick eyelashes, looking at viewer,
+
+red dress, backless dress, ornate dress, puffy skirt, long skirt, puffy sleeves, juliet sleeves, long sleeves,
+
+nude,
+
+black background,
+
+<lora:DivineElegance v2:1> <lora:Add Detail:0.3>
+	sampler: Euler a
+	cfgScale: 8
+	resources: []
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: None
+	negativePrompt: (EasyNegative:0.5), (worst quality, low quality:1.2),
+
+tight, skin tight, impossible clothes, bangs, off shoulder, 
+	Denoising strength: None
+	id: 2515852
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c8b33694-1f4c-4960-9e88-22bfa74e193f/width=450/2515852.jpeg
+	nsfw: Soft
+	width: 1152
+	height: 1920
+	hash: UIIXBQ000|rs_MIAo#9t5SWA%3M__3IUIBbu
+	Size: 512x768
+	seed: 3642368578
+	Model: DivineEleganceMix7
+	steps: 30
+	prompt: (masterpiece, best quality:1.2), extremely detailed, detailed hair, soft skin,
+1girl, solo, mature, mature female, milf, standing, upper body, facing viewer,
+blonde hair, long hair, high ponytail, long ponytail, bangs, hair between eyes,
+red eyes, long eyelashes, thick eyelashes, looking at viewer,
+red dress, puffy skirt, long skirt, puffy sleeves, juliet sleeves, long sleeves, red sleeves, cleavage, necklace,
+large breasts,
+indoors, renaissance, vintage, window, curtains, (black walls:1.2), ornate walls,
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': 'b7d82b6842', 'name': 'DivineEleganceMix7', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.2),
+tight, skin tight, impossible clothes, off shoulder, sideboob, frills, detached collar, black sleeves,
+	Denoising strength: 0.3
+	id: 2613158
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/64a519c6-2997-4eeb-9c5c-37cc14035426/width=450/2613158.jpeg
+	nsfw: None
+	width: 1152
+	height: 1920
+	hash: UgH.Qg~qozs9t-o}kWjsNdMxaKof-=s9s.oz
+	Size: 512x768
+	seed: 3638036113
+	Model: DivineEleganceMix7
+	steps: 30
+	prompt: (masterpiece, best quality),1girl, solo, flower, long hair, outdoors, letterboxed, school uniform, day, sky, looking up, short sleeves, parted lips, shirt, cloud, black hair, sunlight, white shirt, serafuku, upper body, from side, pink flower, blurry, brown hair, blue sky, depth of field
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': 'b7d82b6842', 'name': 'DivineEleganceMix7', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.2),
+tight, skin tight, impossible clothes,
+	Denoising strength: 0.3
+	id: 2515795
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/02be0ec5-f5c4-42d2-b839-4596af662d4f/width=450/2515795.jpeg
+	nsfw: Soft
+	width: 1152
+	height: 1920
+	hash: U8I4w^000$w[00x[4T?b*JtRrtn$0MMw_3Rj
+	Size: 512x768
+	seed: 4057676056
+	Model: DivineEleganceMix7
+	steps: 30
+	prompt: (masterpiece, best quality:1.2), extremely detailed, volumetric lighting, ambient soft lighting, 4K,
+(1boy, tomboy:1.2), solo, upper body, face focus, (close-up face:1.2), close-up,
+(black hair:1.1), very short hair, (sidecut:1.2),
+red eyes, tsurime, (slit pupils:1.2), long eyelashes, thick eyelashes, looking at viewer,
+puffy lips, parted lips, (freckles:1.2),
+black shirt, unbuttoned, cleavage, collared shirt,  short sleeves,
+medium breasts,
+<lora:Tomboy-3000-12repeats:1> <lora:Tsurime:1.2>
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'name': 'Tsurime', 'type': 'lora', 'weight': 1.2}, {'hash': 'b7d82b6842', 'name': 'DivineEleganceMix7', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.5), (worst quality, low quality:1.2),
+tight, skin tight, impossible clothes, (ribs:1.2),
+	Denoising strength: 0.3
+	id: 2515797
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/ce63d29e-0a59-4302-9eb1-cc22e5237ec0/width=450/2515797.jpeg
+	nsfw: Soft
+	width: 1152
+	height: 1920
+	hash: UKGH#k?G57MykDo1%1jZ57X9smf+~pozE2IV
+	Size: 512x768
+	seed: 2857117848
+	Model: DivineEleganceMix7
+	steps: 30
+	prompt: (masterpiece, best quality:1.2), extremely detailed,
+1girl, solo, face focus, close-up face,
+black hair, short hair, maid headdress,
+black eyes, black irises, long eyelashes, thick eyelashes, looking at viewer, half-closed eyes,
+smile, closed mouth,
+maid dress, black dress, puffy sleeves, juliet sleeves, long sleeves, cleavage, red curtains,
+large breasts,
+indoors, renaissance, vintage, window, curtains, black walls, ornate walls,
+<lora:half-closed eyes:1>
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': 'b7d82b6842', 'name': 'DivineEleganceMix7', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.5), (worst quality, low quality:1.2),
+tight, skin tight, impossible clothes, off shoulder, frills, wide sleeves, side slit, sideboob, apron,
+	Denoising strength: 0.3
+	id: 2515799
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/fa7f5ef1-9e61-462f-930b-3990142fd4d0/width=450/2515799.jpeg
+	nsfw: None
+	width: 1152
+	height: 1920
+	hash: UHECqH00_MRQRj9FogM{9G?aWCWBt6RkM{t7
+	Size: 512x768
+	seed: 4069818297
+	Model: DivineEleganceMix7
+	steps: 30
+	prompt: (masterpiece, best quality:1.2),
+kitchen, modern, black walls, ornate walls, furniture, potted plant, white curtain,
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': 'b7d82b6842', 'name': 'DivineEleganceMix7', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.2),
+	Denoising strength: 0.2
+	id: 2515801
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/53989200-3cf8-4ae9-8c09-cc011694d200/width=450/2515801.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: UWHVF|t8?cIU_NWYofV@%N%LoLj[RjjsM{s:
+	Size: 512x768
+	seed: 1684404360
+	Model: DivineEleganceMix7
+	steps: 30
+	prompt: (masterpiece, best quality:1.2), 1girl, solo, standing, upper body, ganyu \(genshin impact\), blue hair, long hair, mullet, black horns, purple eyes, small breasts, white sleeves, looking at viewer,
+outdoors, mountains, snowing, mountain peek, pines,
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': 'b7d82b6842', 'name': 'DivineEleganceMix7', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.2),
+tight, skin tight, impossible clothes, arm support,
+	Denoising strength: 0.3
+	id: 2515793
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c9359006-bc5e-40f4-9b0b-df0e98596dcb/width=450/2515793.jpeg
+	nsfw: None
+	width: 1152
+	height: 1920
+	hash: U9D]Ym0100?bE7_2Ws-p00^+~pD%~W?aM{IU
+	Size: 512x768
+	seed: 3471551146
+	Model: DivineEleganceMix7
+	steps: 30
+	prompt: (masterpiece, best quality:1.2), extremely detailed, detailed hair, soft skin,
+1girl, solo,
+(space:1.2), stars, galaxy, space suit, nasa space suit, space helmet, space station, indoors, illuminator, sitting, pants,
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': 'b7d82b6842', 'name': 'DivineEleganceMix7', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.2),
+tight, skin tight, impossible clothes, (american flag, flag:1.2), thighs,
+	Denoising strength: 0.3
+	id: 2515789
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9221938e-487e-40ff-bdff-1cd8614af827/width=450/2515789.jpeg
+	nsfw: None
+	width: 1152
+	height: 1920
+	hash: UBBpqQRj01xt%#9FIU-=_NROIU%M?voMM|M{
+	Size: 512x768
+	seed: 2711716363
+	Model: DivineEleganceMix7
+	steps: 30
+	prompt: (masterpiece, best quality:1.2), extremely detailed, volumetric lighting, ambient soft lighting, 4K,
+outdoors, nature, forest, trees, grass, plants, flowers, river, caustics, water flow, ripples, (waterfall:1.2), pond, jungle, lush leaves, fern,
+<lora:NoiseOffset:1.5>
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'name': 'NoiseOffset', 'type': 'lora', 'weight': 1.5}, {'hash': 'b7d82b6842', 'name': 'DivineEleganceMix7', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.2),
+tight, skin tight, impossible clothes, (ribs:1.2),
+	Denoising strength: 0.3
+	id: 2515796
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3f6b1bb6-deb7-4e88-94b2-f102bc9f6e4b/width=450/2515796.jpeg
+	nsfw: X
+	width: 1152
+	height: 1920
+	hash: UEIqu$~p0000yXE4Djr=G@-;m,sl?w-qngIU
+	Size: 512x768
+	seed: 3984644903
+	Model: DivineEleganceMix7
+	steps: 30
+	prompt: (masterpiece, best quality:1.2), extremely detailed,
+1girl, solo, face focus, from behind, (partially submerged, bathing:1.1),
+blonde hair, long hair, pointy ears,
+green eyes, long eyelashes, thick eyelashes, looking at viewer,
+topless, large breasts,
+nature, forest, pond, water, caustics, rocks, grass, (plants:1.2), flowers,
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': 'b7d82b6842', 'name': 'DivineEleganceMix7', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.5), (worst quality, low quality:1.2),
+tight, skin tight, impossible clothes, swamp, lily \(flower\), (fog, mist:1.2), underwater, ass, crossed arms,
+	Denoising strength: 0.3
+downloadUrl: https://civitai.com/api/download/models/162557
+Model Version Data:
+id: 122702
+modelId: 6174
+name: DIvineEleganceMix v6
+createdAt: None
+updatedAt: 2023-10-28T13:53:33.445Z
+trainedWords: []
+baseModel: SD 1.5
+earlyAccessTimeFrame: 0
+description: <p>Previous version of DIvineEleganceMix had some needless models mixed in, so DivineElegance had some isuses with characters skin, clothes folds and LoRA compatibility. I've tried to neutralize this effect on this version.</p><p>New version of DivineElegance meant to be global fixes version, to patch up some its problems.</p><p>Version changes:</p><ul><li><p>Removed Grapefruit and Facebomb mix from recipe</p></li><li><p>Now DIvineElegance uses full version of Anything v5 instead of pruned</p></li><li><p>Removed NAI add difference step from the mix</p></li><li><p>Less oily skin, less distracting cloth folds</p></li><li><p>Better LoRA compatibility</p></li></ul><p>Even after removing some parts from the mix, DIvineElegance keeps the same level of details and quality on every generation. I hope you'll use new version of DIvineElegance instead.</p><p>Thanks for all your support, i hope you'll look forward to my new stuff in future.</p>
+stats:
+	downloadCount: 15613
+	ratingCount: 75
+	rating: 4.99
+files:
+	name: kl-f8-anime2.safetensors
+	id: 87189
+	sizeKB: 197564.93359375
+	type: VAE
+	Metadata:
+		fp: None
+		size: None
+		format: Other
+	pickleScanResult: Success
+	pickleScanMessage: No Pickle imports
+	virusScanResult: Success
+	scannedAt: 2023-04-09T19:36:33.818Z
+	Hashes:
+		AutoV2: 39E81E4E37
+		SHA256: 39E81E4E378EEE1860E3A2F4213FE9981C2D5416C4C216FCCBCCDD6A73AF1BF0
+		CRC32: F3493380
+		BLAKE3: 64C44FB5374465AABB36BCAB457352FB2DC8A5BD197776B5DA396D5E66443991
+	downloadUrl: https://civitai.com/api/download/models/122702?type=VAE&format=Other
+	primary: None
+images:
+	id: 1659086
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/28d49cb1-c4bd-489b-a18a-8a28cb483f56/width=450/1659086.jpeg
+	nsfw: Soft
+	width: 1152
+	height: 1920
+	hash: UGG@up57EM~UJQ$jw}Se00t79ZM|E*oJV?R-
+	Size: 512x768
+	seed: 1676589100
+	Model: DivineEleganceMix6
+	steps: 50
+	prompt: (masterpice, best quality, high quality, highres:1.4), extremely detailed, detailed skin, ambient soft lighting, 4K,
+1girl, solo, standing, upper body, mature female, milf, a
+blonde hair, long hair, high ponytail, hair intakes, long sidelocks, tiara,
+red eyes, glaring, contempt, disgust, looking at viewer,
+closed mouth,
+red dress, cleavage, red corset, long skirt, puffy skirt, long sleeves, puffy sleeves, juliet sleeves, ornate dress, jewelry, red gemstone, gem, necklace, dd
+large breasts,
+indoors, (renaissance:1.2), vintage, window, furniture, flower pot, red curtains, black walls, 
+<lora:Milf:0.5> <lora:hamichichiB:0.5>
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'name': 'Milf', 'type': 'lora', 'weight': 0.5}, {'name': 'hamichichiB', 'type': 'lora', 'weight': 0.5}, {'hash': '0d5db2f3ed', 'name': 'DivineEleganceMix6', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.8), (wost quality, low quality:1.4), blurry, blur, bokeh, fog, mist, bloom, (latex, shiny clothes:1.2), 
+black corset, tight, skin tight, impossible clothes, halterneck,
+	Denoising strength: 0.3
+	id: 1659096
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/56da5425-8971-4d1a-ac05-719f81be5c3c/width=450/1659096.jpeg
+	nsfw: Soft
+	width: 1152
+	height: 1920
+	hash: UKHA-901-;iw~p9GT0nOE1NZxbs:9aofRjRj
+	Size: 512x768
+	seed: 3850629653
+	Model: DivineEleganceMix6
+	steps: 50
+	prompt: (masterpice, best quality, high quality, highres:1.4), extremely detailed, detailed skin, ambient soft lighting, 4K,
+1girl, solo, standing, upper body, mature female, milf,
+blonde hair, long hair, high ponytail, hair intakes, long sidelocks, tiara,
+red eyes, glaring, contempt, disgust, looking at viewer,
+closed mouth,
+red dress, cleavage, red corset, long skirt, puffy skirt, long sleeves, puffy sleeves, juliet sleeves, ornate dress, jewelry, red gemstone, gem, necklace, dd
+large breasts,
+indoors, (renaissance:1.2), vintage, window, furniture, flower pot, red curtains, black walls, 
+<lora:Milf:0.5> <lora:hamichichiB:0.5>
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'name': 'Milf', 'type': 'lora', 'weight': 0.5}, {'name': 'hamichichiB', 'type': 'lora', 'weight': 0.5}, {'hash': '0d5db2f3ed', 'name': 'DivineEleganceMix6', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.8), (wost quality, low quality:1.4), blurry, blur, bokeh, fog, mist, bloom, (latex, shiny clothes:1.2), 
+black corset, tight, skin tight, impossible clothes, halterneck,
+	Denoising strength: 0.3
+	id: 1659099
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3a7d6f2d-f919-4fc0-90f5-b510265fb90c/width=450/1659099.jpeg
+	nsfw: Soft
+	width: 1152
+	height: 1920
+	hash: UOHn80~U4:IB^js:a$V[NwELt7t7yDNbSfxZ
+	Size: 512x768
+	seed: 4267218121
+	Model: DivineEleganceMix6
+	steps: 50
+	prompt: (masterpice, best quality, high quality, highres:1.4), extremely detailed, detailed skin, ambient soft lighting, 4K,
+1girl, solo, mature female, milf, sitting on throne, (face focus, face close-up, close-up face:1.4), close-up,
+blonde hair, long hair, high ponytail, hair intakes, long sidelocks, tiara,
+red eyes, glaring, contempt, disgust, looking at viewer,
+closed mouth,
+black dress, cleavage, long sleeves, puffy sleeves, juliet sleeves, ornate dress, jewelry, red gemstone, gem, necklace,
+small breasts, bursting breasts,
+indoors, (renaissance:1.2), vintage, window, massive throne, gold throne, flower pot, red curtains, black walls, 
+<lora:Milf:0.5> <lora:hamichichiB:0.5>
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'name': 'Milf', 'type': 'lora', 'weight': 0.5}, {'name': 'hamichichiB', 'type': 'lora', 'weight': 0.5}, {'hash': '0d5db2f3ed', 'name': 'DivineEleganceMix6', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.8), (wost quality, low quality:1.4), blurry, blur, bokeh, fog, mist, bloom, (latex, shiny clothes:1.2), 
+tight, skin tight, impossible clothes, halterneck,
+	Denoising strength: 0.3
+	id: 1659108
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/b4c71652-f082-431e-8cfb-f99776f9663e/width=450/1659108.jpeg
+	nsfw: Soft
+	width: 1152
+	height: 1920
+	hash: U7Duxn0L00EK$$9ZE2^k00~U%2M|9]xa-UNH
+	Size: 512x768
+	seed: 2229771615
+	Model: DivineEleganceMix6
+	steps: 50
+	prompt: (Masterpiece, Best Quality, Highres:1.4), Detailed, Intricate Details, 4K, color splashes, line art, art, fibonacci, 1girl, looking at viewer,
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': '0d5db2f3ed', 'name': 'DivineEleganceMix6', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.2), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.2), (Blush:1.5), (Loli:1.4), Holding, Skirt, Dress, Wings, Green, Blue, Muscular, Abs, thighs, legs, signature, watermark, artist name,
+	Denoising strength: 0.3
+	id: 1659110
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9fa65c92-67f5-4ee5-9258-60fd51dd102a/width=450/1659110.jpeg
+	nsfw: Soft
+	width: 1152
+	height: 1920
+	hash: UFJQvH020f?aQ,M{0g-;Ao~V%2?G%hIU$%NI
+	Size: 512x768
+	seed: 121549333
+	Model: DivineEleganceMix6
+	steps: 50
+	prompt: (masterpice, best quality, high quality, highres:1.4), extremely detailed, detailed skin, ambient soft lighting, 4K,
+1girl, upper body, color splashes, line art, art, fibonacci, flower ornament, hair flower, white flowers, looking at viewer, smile, cleavage, blue eyes, closed mouth, abstract, blonde hair, long hair,
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': '0d5db2f3ed', 'name': 'DivineEleganceMix6', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.8), (wost quality, low quality:1.4), blurry, blur, bokeh, fog, mist, bloom, (latex, shiny clothes:1.2), 
+tight, skin tight, impossible clothes, cleavage cutout, bare shoulders,
+	Denoising strength: 0.3
+	id: 1659111
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/e1692a34-8e51-449d-87cc-b79b25f890e5/width=450/1659111.jpeg
+	nsfw: None
+	width: 1152
+	height: 1920
+	hash: U4F$Ii0000%|00^*0M9Y4TD~-=tR~q034m^m
+	Size: 512x768
+	seed: 2229771615
+	Model: DivineEleganceMix6
+	steps: 50
+	prompt: (masterpice, best quality, high quality, highres:1.4), extremely detailed, detailed skin, ambient soft lighting, 4K, 
+1girl, solo, (upper body, face focus:1.2), sitting on rock, from above,
+white hair, long hair, fox ears, curled hair, fox tail, fluffy tail,
+black eyes, black irises, long eyelashes, thick eyelashes, looking at viewer,
+white shirt, white skirt, belt, ornate clothes, black bowtie, white thighhighs,
+thick thighs, skindentation,
+outdoors, jungle, nature, forest, trees, grass, detailed grass, tall grass, plants, flowers, rocks, waterfall, water, pond
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': '0d5db2f3ed', 'name': 'DivineEleganceMix6', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.8), (wost quality, low quality:1.4), blurry, blur, bokeh, fog, mist, bloom, (latex, shiny clothes:1.2),
+tight, skin tight, impossible clothes,
+	Denoising strength: 0.3
+	id: 1659116
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/f8c5c3e6-630a-42b2-8719-414bb319a75e/width=450/1659116.jpeg
+	nsfw: None
+	width: 1152
+	height: 1920
+	hash: UABWo80N00-:OZxpM|%L_LWAIBo#~oNID$oI
+	Size: 512x768
+	seed: 3166314666
+	Model: DivineEleganceMix6
+	steps: 50
+	prompt: (masterpiece, best quality, high quality, highres:1.4), extremely detailed, ambient soft lighting, 4K,
+outdoors, nature, forest, trees, grass, plants, flowers, river, caustics, water flow, ripples, (waterfall:1.2), pond, jungle, lush leaves, fern,
+ <lora:NoiseOffset:1.5>
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'name': 'NoiseOffset', 'type': 'lora', 'weight': 1.5}, {'hash': '0d5db2f3ed', 'name': 'DivineEleganceMix6', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.4), blurry, blur, bokeh, fog, mist, bloom,
+	Denoising strength: 0.3
+	id: 1659119
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/eed1e8b1-e2fc-4c52-9c34-ed2d7be50fdb/width=450/1659119.jpeg
+	nsfw: Soft
+	width: 1152
+	height: 1920
+	hash: UNHewQ_M5O4ocB%0-o%LbDxsWCt6xYM|IUt7
+	Size: 512x768
+	seed: 140305707
+	Model: DivineEleganceMix6
+	steps: 50
+	prompt: (masterpice, best quality, high quality, highres:1.4), extremely detailed, detailed skin, soft skin, ambient soft lighting, 4K,
+1girl, solo, upper body, (mature female, milf:1.2), standing, medium shot, cowboy shot, from behind, from below,
+white hair, silver hair, long hair, floating hair, messy hair, straight hair,
+blue eyes, long eyelashes, thick eyelashes, looking at viewer, looking back,
+closed mouth, smile,
+undershirt, shirt, white thighhighs, see-through, wet, (bottomless:1.1),
+curvy, small breasts, thick thighs, skindentation, pussy, puffy pussy, cleft of venus, ass,
+outdoors, forest, pines, grass, rocks, flowers, plants, (river:1.2), partially submerged,
+<lora:Add Detail:0.3>
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': '0d5db2f3ed', 'name': 'DivineEleganceMix6', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.8), (wost quality, low quality:1.4), blurry, blur, bokeh, fog, mist, bloom, (latex, shiny clothes:1.2),
+tight, skin tight, impossible clothes, ribs, abs, (panties:1.2), stick,
+	Denoising strength: 0.3
+	id: 1797214
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/5da22b0e-458a-4967-aebf-74608a2cee28/width=450/1797214.jpeg
+	nsfw: Soft
+	width: 1152
+	height: 1920
+	hash: U9GHxY4:BPIU9a0L={Rk00~V^Q9]_2W=~V=|
+	Size: 512x768
+	seed: 3331650550
+	Model: DivineEleganceMix6
+	steps: 30
+	prompt: (masterpiece, best quality:1.2), extremely detailed, soft ambient lighting, sharp focus, 4K,
+(1boy:1.2), (tomboy:1.2), close-up face,
+long hair,
+red eyes, (eyelashes, long eyelashes, thick eyelashes:1.2), looking at viewer, half-closed eyes, (slit pupils:1.2),
+(freckles:1.2), closed mouth, puffy lips, lips,
+white shirt, short sleeves, cleavage,
+(medium breasts:1.2),
+<lora:Tsurime:1.2>  <lora:Tomboy-3000-12repeats:1>
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'name': 'Tsurime', 'type': 'lora', 'weight': 1.2}, {'hash': '0d5db2f3ed', 'name': 'DivineEleganceMix6', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.8), (worst quality, low quality:1.2), simple background,
+tight, skin tight, impossible clothes, ribs, abs,
+	Denoising strength: 0.3
+	id: 1659120
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/4eb53f99-7d47-47c4-b081-7fe939f532c3/width=450/1659120.jpeg
+	nsfw: Mature
+	width: 1152
+	height: 1920
+	hash: U9H^ks00GZ-p0f9Z9[xaV|Ey^+Nc-qR49v~B
+	Size: 512x768
+	seed: 962329855
+	Model: DivineEleganceMix6
+	steps: 50
+	prompt: (masterpice, best quality, high quality, highres:1.4), extremely detailed, detailed skin, soft skin, ambient soft lighting, 4K, 
+1girl, solo, upper body, (mature female, milf:1.2) sitting,
+(red hair:1.2), long hair, (twintails:1.2), hair ornament,
+green eyes, long eyelashes, thick eyelashes, looking at viewer,
+closed mouth, smile,
+naked,
+black bra, black panties, lace trim, cameltoe,
+indoors, bedroom, bed, furniture, lamp, window, sunset,
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': '0d5db2f3ed', 'name': 'DivineEleganceMix6', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (EasyNegative:0.8), (wost quality, low quality:1.4), blurry, blur, bokeh, fog, mist, bloom, (latex, shiny clothes:1.2),
+tight, skin tight, impossible clothes, ribs, abs,
+	Denoising strength: 0.3
+downloadUrl: https://civitai.com/api/download/models/122702
+Model Version Data:
+id: 48473
+modelId: 6174
+name: DivineEleganceMix v5
+createdAt: None
+updatedAt: 2023-10-28T13:53:33.445Z
+trainedWords: []
+baseModel: SD 1.5
+earlyAccessTimeFrame: 0
+description: <p>Main goal of DivineElegance in mostly achieved now. Anime-styled semi-real faces with intricate detailed clothes and interiors. I hope you will like and enjoy the real elegance now.</p><p>Version changes:</p><ul><li><p>Slightly reimagined recipe</p></li><li><p>SenzusHolyshit is now part of the mix</p></li><li><p>Slightly more realistic and slender faces | bodies</p><ul><li><p>If you want to stay more anime, just use v4</p></li></ul></li><li><p>Better landscapes and interiors</p></li><li><p>Better lighting, darker ambience and shadows</p></li></ul>
+stats:
+	downloadCount: 17832
+	ratingCount: 103
+	rating: 4.96
+files:
+	name: divineelegancemix_V5.ckpt
+	id: 35845
+	sizeKB: 5540056.399414062
+	type: Model
+	Metadata:
+		fp: fp32
+		size: full
+		format: PickleTensor
+	pickleScanResult: Success
+	pickleScanMessage: No Pickle imports
+	virusScanResult: Success
+	scannedAt: 2023-04-18T00:03:02.698Z
+	Hashes:
+		AutoV2: 7A64A12D2B
+		SHA256: 7A64A12D2B01F53E92202DF921505DC5B86552F31CEAC062F5FD01EA0746AED4
+		CRC32: EF1DF73B
+		BLAKE3: BDE2C062F67F8656657CB6A87F630676F0844E471182CF72ED472751F99FFD3F
+	downloadUrl: https://civitai.com/api/download/models/48473?type=Model&format=PickleTensor&size=full&fp=fp32
+	primary: None
+images:
+	id: 520699
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/472cac5c-c67a-4b7a-cff2-ddac86fe8600/width=450/520699.jpeg
+	nsfw: Soft
+	width: 1152
+	height: 1920
+	hash: U5GQ^J00ys+GGq}X0~5Q00pxvi0fLLZO-BOX
+	Size: None
+	seed: 1639375511
+	Model: None
+	steps: 50
+	prompt: (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, Ambient Soft Lighting, 4K, Ornate,
+
+Indoors, (Renaissance, Vintage:1.4), Plants, Window,
+
+1Gril, (Solo:1.4), (Milf:1.2), Standing, Upper Body, (Face Focus:1.2),
+
+(Extremely Detailed Hair:1.2), Blonde Hair, Long Hair, Long Sidelocks, Bangs, (Hair Intakes, High Ponytail:1.4),
+
+Expressionless, Emotionless, (Red Eyes, Glaring, Contempt, Disgust, Looking at Viewer:1.2),
+
+Curvy, Huge Breasts, Skindentation, (Bursting Breasts:1.2), 
+
+(Tiara:1.2), Crown, (Cleavage, Strapless, Red Dress, Frilled Dress, Long Skirt, Puffy Skirt, Puffy Sleeves, Juliet Sleeves, Long Sleeves:1.2), Jewelry,
+
+<lora:Milf:0.5>  <lora:Bursting Breasts:0.5>
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'name': 'Milf', 'type': 'lora', 'weight': 0.5}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Blush:1.5),
+
+(Halter Dress, Tight, Skin TIght, Shiny Clothes, Latex, Impossible Clothes:1.4),
+Steps: 50, Sampler: Euler a, CFG scale: 8, Seed: 1639375511, Size: 448x704, Model hash: 0a03c339c7, Model: DivineEleganceMix5, Denoising strength: 0.35, Clip skip: 2, DDetailer prompt: "Anime, (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, 4K,
+
+(Extremely Detailed Eyes:1.4), Red Eyes, Looking at Viewer, Angry, Disgust, Glaring, ", DDetailer neg prompt: "EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), (Blush:1.5),
+	Denoising strength: None
+	id: 520714
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3443ff16-96b0-45b7-61e9-252196e2ca00/width=450/520714.jpeg
+	nsfw: Soft
+	width: 1152
+	height: 1920
+	hash: UJF;.#%gAE~V_2-;tR_2Nuofxbt7IoV[W=n%
+	Size: None
+	seed: 1156554472
+	Model: None
+	steps: 50
+	prompt: (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, Ambient Soft Lighting, 4K, Ornate,
+
+Indoors, (Renaissance, Vintage:1.4), Plants, Window,
+
+1Gril, (Solo:1.4), (Milf:1.2), Standing, Upper Body, (Face Focus:1.2),
+
+(Extremely Detailed Hair:1.2), Blonde Hair, Long Hair, Long Sidelocks, Bangs, (Hair Intakes, High Ponytail:1.4),
+
+Expressionless, Emotionless, (Red Eyes, Glaring, Contempt, Disgust, Looking at Viewer:1.2),
+
+Curvy, Huge Breasts, Skindentation,
+
+(Tiara:1.2), Crown, (Cleavage, Strapless, Red Dress, Frilled Dress, Long Skirt, Puffy Skirt, Puffy Sleeves, Juliet Sleeves, Long Sleeves:1.2), Jewelry,
+
+<lora:Milf:0.5>
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'name': 'Milf', 'type': 'lora', 'weight': 0.5}]
+	Clip skip: None
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Blush:1.5),
+
+(Halter Dress, Tight, Skin TIght, Shiny Clothes, Latex, Impossible Clothes:1.4),
+Steps: 50, Sampler: Euler a, CFG scale: 8, Seed: 1156554472, Size: 448x704, Model hash: 0a03c339c7, Model: DivineEleganceMix5, Denoising strength: 0.35, Clip skip: 2, DDetailer prompt: "Anime, (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, 4K,
+
+(Extremely Detailed Eyes:1.4), Red Eyes, Looking at Viewer, Angry, Disgust, Glaring, ", DDetailer neg prompt: "EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), (Blush:1.5),
+	Denoising strength: None
+	id: 620577
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/da6fb902-fe3d-48c9-b9ad-078297bc7200/width=450/620577.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UBDbZu0M00={~BIVIoxu0esT-p%1jZoeRkjZ
+	Size: 512x768
+	seed: 128716089
+	Model: DivineEleganceMix5-unpruned
+	steps: 30
+	prompt: (Masterpiece, Best Quality, Highres:1.4), Detailed, Intricate Details, 4K,
+color splashes, line art, art, fibonacci, abstract, 1girl,
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': '7a64a12d2b', 'name': 'DivineEleganceMix5-unpruned', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.2), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.2), (Blush:1.5), (Loli:1.4),
+Holding, Skirt, Dress, Wings, Green, Blue, Muscular, Abs,
+	Denoising strength: 0.4
+	id: 620576
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/fd1869e9-0300-4bfd-4727-cb63f8e41800/width=450/620576.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: UVGuRE4pS1M|~VM{R*ax%LoLf7WB-:WBafWV
+	Size: 512x768
+	seed: 121549333
+	Model: DivineEleganceMix5-unpruned
+	steps: 30
+	prompt: (Masterpiece, Best Quality, Highres:1.4), Detailed, Intricate Details, 4K,
+color splashes, line art, art, fibonacci,
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'hash': '7a64a12d2b', 'name': 'DivineEleganceMix5-unpruned', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.2), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.2), (Blush:1.5), (Loli:1.4),
+Holding, Skirt, Dress, Wings, Green, Blue, Muscular, Abs,
+	Denoising strength: 0.4
+	id: 605463
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a1de8ad3-71a6-4f64-8516-df4657d6df00/width=450/605463.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: UDGl3N%h00%NELRjRj?H0JIUD%4.~VM{MyM|
+	Size: 512x768
+	seed: 3224757294
+	Model: DivineEleganceMix5-unpruned
+	steps: 50
+	prompt: (Masterpiece, Best Quality, Highres:1.4), Detailed, Intricate Details, 4K,
+1Girl, Face Focus, Solo, (Black Eyes, Black Irises:1.2),
+White Hair, Long Hair, Floating Hair, Curled Hair, White Fox Ears, (Fox Tail:1.2),
+White Clothes, White Shirt, (White Skirt:1.2), White Thighhighs, White Capelet, Gold Trim, Jewelry,
+Large Breasts, (Skindentation:1.2),
+Nature, Jungle, Plants, Rocks, Waterfall,
+<lora:NoiseOffset:1>
+	sampler: UniPC
+	cfgScale: 8
+	resources: [{'name': 'NoiseOffset', 'type': 'lora', 'weight': 1}, {'hash': '7a64a12d2b', 'name': 'DivineEleganceMix5-unpruned', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: None
+	Hires upscaler: None
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.2), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Blush:1.5),
+(Tight, Skin Tight, Impossible Clothes:1.4),
+(Cape:1.4), 
+(Black Eyes, Black Irises:1.2),
+White Hair, Long Hair, Floating Hair, Curled Hair, White Fox Ears,
+<lora:NoiseOffset:1>", DDetailer neg prompt: "EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.2), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Blush:1.5),", DDetailer model a: bbox\mmdet_anime-face_yolov3.pth [51e1af4a], DDetailer conf a: 30, DDetailer dilation a: 4, DDetailer offset x a: 0, DDetailer offset y a: 0, DDetailer preprocess b: False, DDetailer bitwise: None, DDetailer model b: None, DDetailer conf b: 30, DDetailer dilation b: 4, DDetailer offset x b: 0, DDetailer offset y b: 0, DDetailer mask blur: 4, DDetailer denoising: 0.3, DDetailer inpaint full: True, DDetailer inpaint padding: 32, DDetailer cfg: 7, Script: Detection Detailer, Hires upscale: 2, Hires steps: 15, Hires upscaler: Latent (nearest-exact)
+	Denoising strength: 0.5
+	id: 605468
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/fc73784b-d191-4636-25a5-7db945e36600/width=450/605468.jpeg
+	nsfw: X
+	width: 1024
+	height: 1536
+	hash: USG*yo~V9ZkW-;?H-:%MNaxvozj?NGbcxuR*
+	Size: 512x768
+	seed: 3346826323
+	Model: DivineEleganceMix5
+	steps: 30
+	prompt: (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, Ambient Soft Lighting, 4K, 
+Indoors, Modern, Room, Window, Night, Dark, 
+1Girl, (Solo:1.4), (Mature, Milf:1.4), Standing, Dynamic Pose, Upper Body, Naked, 
+Long Hair, (White Hair:1.4), (Purple Hair:1.2), Very Long Hair, Floating Hair, Messy Hair, Straight Hair, 
+(Big Eyes, Purple Eyes:1.2), Looking at Viewer, 
+Smile, 
+Wet, See-Thought, (Undershirt:1.2), Covered Nipples, (White Thighhighs:1.2), Bottomless, Open Shirt, 
+Curvy, (Thick Thighs, Skindentation:1.2), Medium Breasts, Pussy, Puffy Pussy, Cleft of Venus, Fat Mons,
+	sampler: Euler a
+	cfgScale: 10
+	resources: [{'hash': '0a03c339c7', 'name': 'DivineEleganceMix5', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: None
+	Hires upscaler: None
+	negativePrompt: EasyNegative, Bad-Hands-3, Realistic, Realism, (Low Quality, Worst Quality, Lowres:1.4), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Blush:1.5),
+(Swimsuit, Cape, Wings, Holding, Tight, Skin Tight, Impossible Clothes:1.4),
+Long Hair, (White Hair:1.4), (Purple Hair:1.2), Very Long Hair, Floating Hair, Messy Hair, Straight Hair, 
+(Big Eyes, Purple Eyes:1.2), Looking at Viewer, 
+Smile, ", DDetailer neg prompt: "EasyNegative, Bad-Hands-3, Realistic, Realism, (Low Quality, Worst Quality, Lowres:1.4), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Blush:1.5),", DDetailer model a: bbox\mmdet_anime-face_yolov3.pth [51e1af4a], DDetailer conf a: 30, DDetailer dilation a: 4, DDetailer offset x a: 0, DDetailer offset y a: 0, DDetailer preprocess b: False, DDetailer bitwise: None, DDetailer model b: None, DDetailer conf b: 30, DDetailer dilation b: 4, DDetailer offset x b: 0, DDetailer offset y b: 0, DDetailer mask blur: 4, DDetailer denoising: 0.3, DDetailer inpaint full: True, DDetailer inpaint padding: 32, DDetailer cfg: 7, Hires upscale: 2, Hires steps: 10, Hires upscaler: 4x_fatal_Anime_500000_G
+	Denoising strength: 0.5
+	id: 520746
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/cfcf97b4-4101-4403-74b8-4466ee5f2300/width=450/520746.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UPG*yi_3%gE2~p?atRa$E2%LM|WBIV%LIVRj
+	Size: 448x640
+	seed: 3021632268
+	Model: DivineEleganceMix5
+	steps: 50
+	prompt: (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, Ambient Soft Lighting, 4K,
+
+Indoors, Bedroom, Bed, Window, 
+
+1Gril, (Solo:1.4), (Milf:1.2), Sitting, On Bed, Spread Legs, Upper Body, (Face Focus:1.2),
+
+(Extremely Detailed Hair:1.2), White Hair, Long Hair, Bangs, Hairband, (Twintails:1.2), 
+
+Purple Eyes, 
+
+Black Panties, Cameltoe, 
+
+Large Breasts, Cleavage, 
+
+<lora:Milf:0.5>
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'name': 'Milf', 'type': 'lora', 'weight': 0.5}, {'hash': '0a03c339c7', 'name': 'DivineEleganceMix5', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Blush:1.5),
+
+(Halter Dress, Tight, Skin TIght, Shiny Clothes, Latex, Impossible Clothes:1.4),
+	Denoising strength: 0.35
+	id: 520821
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/5d29f038-0be8-454d-bea0-3f93e5288300/width=450/520821.jpeg
+	nsfw: X
+	width: 1024
+	height: 1536
+	hash: UEEyb]00UG^+T0DO$g8{*0IU%MNaM}%L-VIU
+	Size: 448x640
+	seed: 3110844916
+	Model: DivineEleganceMix5
+	steps: 30
+	prompt: (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, Ambient Soft Lighting, 4K,
+
+Indoors, Window, Bath, (Bath, Bathtub:1.4),
+
+1Gril, (Solo:1.4), (Milf:1.4), 
+
+Sitting, Sitting in Room, From Behind, Looking at Viewer, Looking Back, (Close-Up Back Focus:1.3), Close-Up, (Upper Body, submerged, partially submerged:1.4), 
+
+Short Hair, 
+
+Naked, Nude, Angry, 
+
+Green Eyes, 
+
+Large Breasts, Soap bubbles, Soap Censor, 
+
+<lora:Milf:0.5>
+	sampler: Euler a
+	cfgScale: 8
+	resources: [{'name': 'Milf', 'type': 'lora', 'weight': 0.5}, {'hash': '0a03c339c7', 'name': 'DivineEleganceMix5', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Blush:1.5),
+
+(Nipples, Ass, Ass Focus, Butt Crack, From Above:1.4),
+	Denoising strength: 0.35
+	id: 520854
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/358acbff-50b1-403a-947a-00782c6a1700/width=450/520854.jpeg
+	nsfw: X
+	width: 1024
+	height: 1536
+	hash: U6E.nV8y000zTS8|?a4mAoVs~qxVtT4mxw-.
+	Size: 448x640
+	seed: 761226827
+	Model: DivineEleganceMix5
+	steps: 30
+	prompt: (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, Ambient Soft Lighting, 4K,
+
+Outdoors, (Nature, Oak Forest:1.2), (Rocks:1.2), Mountais, Flowers, Plants, Lake, 
+
+1Girl, Solo, Standing, Naked, Nude, Adjusting Hair, Partially Submerged, 
+
+Blonde Hair, Long Hair, (High Ponytail:1.2),
+
+Smile, Closed Eyes, 
+
+Curvy, Large Breasts, Puffy Areolae, Puffy Nipples, Pussy, Cleft of Venus,
+
+From Below, 
+
+<lora:NoiseOffset:1>
+	sampler: UniPC
+	cfgScale: 8
+	resources: [{'name': 'NoiseOffset', 'type': 'lora', 'weight': 1}, {'hash': '0a03c339c7', 'name': 'DivineEleganceMix5', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Blush:1.5),
+	Denoising strength: 0.35
+	id: 520855
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/55973035-94b2-4c8a-3ba8-d42c23186c00/width=450/520855.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: U8CGDG?u009Z14-;$+RR~9s+IqM}~RxaM~n#
+	Size: 448x640
+	seed: 820213329
+	Model: DivineEleganceMix5
+	steps: 30
+	prompt: (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, Ambient Soft Lighting, 4K,
+
+Outdoors, (Nature, Oak Forest:1.2), (Rocks:1.2), Mountais, Flowers, Plants,
+
+<lora:NoiseOffset:2>
+	sampler: UniPC
+	cfgScale: 8
+	resources: [{'name': 'NoiseOffset', 'type': 'lora', 'weight': 2}, {'hash': '0a03c339c7', 'name': 'DivineEleganceMix5', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Blush:1.5),
+	Denoising strength: 0.35
+downloadUrl: https://civitai.com/api/download/models/48473
+Model Version Data:
+id: 28423
+modelId: 6174
+name: DivineEleganceMix v4
+createdAt: None
+updatedAt: 2023-10-28T13:53:33.445Z
+trainedWords: []
+baseModel: SD 1.5
+earlyAccessTimeFrame: 0
+description: <p>Version changes:</p><ul><li><p>Reimagined recipe sequence and weights</p></li><li><p><a target="_blank" rel="ugc" href="https://huggingface.co/WarriorMama777/OrangeMixs/blob/main/Models/AbyssOrangeMix3/AOM3_orangemixs.safetensors">AOM3</a> is now part of the mix</p></li><li><p><a target="_blank" rel="ugc" href="https://civitai.com/models/2583/grapefruit-hentai-model">Grapefruit</a> version changed to <a target="_blank" rel="ugc" href="https://civitai.com/models/2583/grapefruit-hentai-model">3.1</a> because of <a target="_blank" rel="ugc" href="https://civitai.com/models/2583/grapefruit-hentai-model">4.1</a> baked vae</p></li><li><p><a target="_blank" rel="ugc" href="https://civitai.com/models/16161/zerotolerances">ZeroTolerances</a> removed from mix</p></li><li><p>Restored some concepts by mixing <a target="_blank" rel="ugc" href="https://huggingface.co/WarriorMama777/OrangeMixs/blob/main/Models/AbyssOrangeMix3/AOM3_orangemixs.safetensors">AOM3</a></p></li><li><p>Way better LoRA compatibility</p></li><li><p>Back to more anime-like style</p></li><li><p>More accurate lowres and eyes, especially</p></li><li><p>Beautiful haircuts</p></li></ul><p>Some of these changes are biased and based on my personal opinion. But i hope you will like another model's iteration!</p>
+stats:
+	downloadCount: 3516
+	ratingCount: 21
+	rating: 5
+files:
+	name: divineelegancemix_V4.safetensors
+	id: 23480
+	sizeKB: 2082642.022460938
+	type: Model
+	Metadata:
+		fp: fp16
+		size: full
+		format: SafeTensor
+	pickleScanResult: Success
+	pickleScanMessage: No Pickle imports
+	virusScanResult: Success
+	scannedAt: 2023-03-24T14:42:13.916Z
+	Hashes:
+		AutoV2: 96618C301B
+		SHA256: 96618C301BC54A5822EDC3DA70514BF6772B9043D27B871CC45611D4C9CB927F
+		CRC32: 808FA859
+		BLAKE3: 51B20EEB58E90DB9E077A1AC792C5747E738FF6C16B4E217CFE5975AB3C615A2
+	downloadUrl: https://civitai.com/api/download/models/28423
+	primary: True
+images:
+	id: 390777
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/8c136ef0-03af-426d-cae1-124e42fa8f00/width=450/390777.jpeg
+	nsfw: None
+	width: 1152
+	height: 1920
+	hash: UIG*4$01OXR5_ND%NJIoNZRP%2jZ9Z%LNHxu
+	Size: 512x768
+	seed: 2293920610
+	Model: DIvineEleganceMix4
+	steps: 30
+	prompt: Realistic, Realism, (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, Ambient Soft Lighting, 4K, (Extremely Detailed Eyes, Detailed Face and Skin:1.2), Ornate, Indoor, (Renaissance:1.4), (Vintage Windows:1.1), Royal Furniture, 1Girl, (Solo:1.4), Standing, (Upper Body:1.2), Looking at Viewer, Hands on Hips, Blonde Hair, (High Ponytail, Hair Intakes, Long Sidelocks, Swept Bangs:1.3), (Red Eyes:1.2), (Curvy:1.4), Wide Hips, Large Breasts, Cleavage, (Fully Clothed, Elegant Gold Trim Red Dress, Puffy Long Skirt, Puffy Juliet Sleeves, Gorget:1.2), Jewelry,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '96618c301b', 'name': 'DIvineEleganceMix4', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: None
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Shiny Clothes, Latex, Impossible Clothes, Black Dress:1.4), (Bare Thighs, Bare Legs:1.4), (Breast Apart, Sagging Breasts:1.4),
+	Denoising strength: 0.21
+	id: 320010
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/f158689c-0a31-454b-2ccd-e79ad7275500/width=450/320010.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UcG7;?~BtR%LX8fls:ofIVM|jZWCofoLWBae
+	Size: 768x512
+	seed: 3233926045
+	Model: DIvineElegance4
+	steps: 30
+	prompt: Realistic, Realism, (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, Ambient Soft Lighting, 4K, (Extremely Detailed Eyes, Detailed Face and Skin:1.2), Ornate, 
+
+Indoor, (Renaissance:1.4), (Vintage Windows:1.1), Royal Furniture,
+
+1Girl, (Solo:1.4), Standing, (Upper Body:1.2), Looking at Viewer, Hands on Hips, 
+
+Blonde Hair, (High Ponytail, Hair Intakes, Long Sidelocks, Swept Bangs:1.3),
+
+(Red Eyes:1.2),
+
+(Curvy:1.4), Large Breasts,
+
+(Fully Clothed, Elegant Gold Trim Red Dress, Puffy Long Skirt, Puffy Juliet Sleeves, Gorget:1.2), Jewelry,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '96618c301b', 'name': 'DIvineElegance4', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4),
+
+(Impossible Clothes, Black Dress:1.4), (Bare Thighs, Bare Legs:1.4), Cleavage,
+	Denoising strength: 0.21
+	id: 325147
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3753e907-1e87-4061-311c-810dab790a00/width=450/325147.jpeg
+	nsfw: Soft
+	width: 1536
+	height: 1024
+	hash: UUHA*0~p~W?bx]b^%L-p9ZR6M{WBOXoen%WB
+	Size: 768x512
+	seed: 2372906794
+	Model: DIvineEleganceMix4
+	steps: 30
+	prompt: (Realistic, Realism:1.2), (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, Ambient Soft Lighting, 4K, (Extremely Detailed Eyes:1.2), Ornate, 
+
+Indoor, (Renaissance:1.4), (Vintage Windows:1.1), Royal Furniture, (Red Bed:1.2),
+
+1Girl, (Solo:1.4), Lying on Bed, On Stomach, (Medium Shot:1.2), nero claudius \(fate\), 
+
+Blonde Hair, (Braided Hair, Hair Intakes, Long Sidelocks, Bangs:1.3),
+
+(Red Eyes:1.2), Looking at Viewer, 
+
+(Curvy:1.4), Large Breasts,
+
+(Fully Clothed, Elegant Gold Trim Black Dress, Puffy Long Skirt, Puffy Juliet Sleeves, Gorget:1.2), Jewelry,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '96618c301b', 'name': 'DIvineEleganceMix4', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Blush:1.5), 
+
+(Bare Legs, Bare Thighs:1.4), Red Dress, Green Clothes, Green Furniture, Green,
+	Denoising strength: 0.21
+	id: 325144
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c6490b17-00eb-4175-47b3-47442acd8200/width=450/325144.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UCCi{p?Z00Dk?@%fr@R5.Q%L$fE2_2ocD%t8
+	Size: 768x512
+	seed: 381358828
+	Model: DIvineEleganceMix4
+	steps: 30
+	prompt: (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, Ambient Soft Lighting, 4K, (Extremely Detailed Eyes Face and Skin:1.2), (Desaturated:1.2),
+
+Outdoors, Moubtains Background, Blue Sky, (Sunbeam:1.2), Nature, Forest, Rock, Wooden House, (Log Cabin:1.2),
+
+1Girl, (Solo:1.4), Upper Body, Standing, Floating Hair,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '96618c301b', 'name': 'DIvineEleganceMix4', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Blush:1.5), 
+
+Modern, Contemporary,
+	Denoising strength: 0.21
+	id: 325143
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d4a78df4-e692-4b17-91cf-87904759be00/width=450/325143.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UHD0DM_09XMyI[N1nk%0EAD-RPR%_NxtMwNH
+	Size: 768x512
+	seed: 275315866
+	Model: DIvineEleganceMix4
+	steps: 30
+	prompt: (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, Ambient Soft Lighting, 4K, (Extremely Detailed Eyes Face and Skin:1.2), (Desaturated:1.2),
+
+Outdoors, Moutains, Nature, Day, Forest, Rocks, Wooden House, (Detailed Foliage, Detailed Grass:1.4), (Tall Grass:1.2),
+
+1Girl, (Solo:1.4), Upper Body, Standing,
+
+Brown Hair, Floating Hair, Short Hair,
+	sampler: DPM++ SDE Karras
+	cfgScale: 7
+	resources: [{'hash': '96618c301b', 'name': 'DIvineEleganceMix4', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Blush:1.5), 
+
+Modern, Contemporary,
+	Denoising strength: 0.21
+	id: 391317
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/861125d5-6513-4e16-ff92-8083ebf24e00/width=450/391317.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: U5BW|]0400?cytD,#Ioy.mx.DiIb={x,9ZH{
+	Size: 768x512
+	seed: 3662669186
+	Model: DIvineEleganceMix4
+	steps: 30
+	prompt: Realistic, Realism, (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, Ambient Soft Lighting, 4K, 
+
+Outdoors, City, Cityscape, (Trees:1.2), Scyscraper,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '96618c301b', 'name': 'DIvineEleganceMix4', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Blush:1.5), (Shiny Clothes, Latex, Impossible Clothes, Black Dress:1.4), (Bare Thighs, Bare Legs:1.4), (Breast Apart, Sagging Breasts:1.4),
+	Denoising strength: 0.21
+	id: 325142
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/bb08049b-677e-472c-53e7-7c8b7576a900/width=450/325142.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UDD]_Jpe00^+E.D+oJ%M4.V[%NS$~W-;pJkY
+	Size: 768x512
+	seed: 2970378520
+	Model: DIvineEleganceMix4
+	steps: 30
+	prompt: Anime, (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, Ambient Soft Lighting, 4K, (Extremely Detailed Eyes:1.2), 
+
+Moutains, Log Nordic House, Snow, (Moutains Background:1.2), (Detailed Pines:1.2), Plants, Snowing, Snowflakes, 
+
+1Girl, (Solo:1.4), Meium Shot, (Dynamic Pose:1.2),
+
+White Hair, Wolf Ears, 
+
+Blue Eyes,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '96618c301b', 'name': 'DIvineEleganceMix4', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Blush:1.5), 
+
+Animals, Wolf, Tail,
+	Denoising strength: 0.21
+	id: 325141
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/fabebdd1-98e8-4301-ae0a-2d15af307700/width=450/325141.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UPE:lJkY8_tQxVjYMwM__4tRIUV@o#RjjFjZ
+	Size: 768x512
+	seed: 1371440885
+	Model: DIvineEleganceMix4
+	steps: 30
+	prompt: Anime, (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, Ambient Soft Lighting, 4K, (Extremely Detailed Eyes:1.2), 
+
+Realistic, Realism,
+
+Moutains, Log Nordic House, Snow, (Moutains Background:1.2), (Detailed Pines:1.2), Plants, Snowing, Snowflakes, 
+
+1Girl, (Solo:1.4), Meium Shot, (Dynamic Pose:1.2),
+
+White Hair, Wolf Ears, 
+
+Blue Eyes,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '96618c301b', 'name': 'DIvineEleganceMix4', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Blush:1.5), 
+
+Animals, Wolf, Tail,
+	Denoising strength: 0.21
+	id: 391316
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/68368184-f41b-4607-7c05-557b7f767a00/width=450/391316.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UED0$J_4Mwt89Fe-?w%hVYIUS5jY?v%ht7RP
+	Size: 768x512
+	seed: 907208348
+	Model: DIvineEleganceMix4
+	steps: 30
+	prompt: Realistic, Realism, (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, Ambient Soft Lighting, 4K, 
+
+(Science Fiction, Sci-Fi:1.2), (Generator:1.4), (Frostpunk:1.4), (Snow:1.2), Winter, Pines, Ice, (Icy Mountais, Canyon:1.2),
+	sampler: DPM++ 2M Karras
+	cfgScale: 7
+	resources: [{'hash': '96618c301b', 'name': 'DIvineEleganceMix4', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), (Blurry, Blurry Background, Depth of Field, Bokeh, DOF, Fog, Bloom:1.4), (Blush:1.5),
+	Denoising strength: 0.21
+	id: 325146
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/e370cf95-70e3-4304-ce78-63f6d284a600/width=450/325146.jpeg
+	nsfw: Soft
+	width: 1536
+	height: 1024
+	hash: UjJ7O49atkMe~WR*xuMxXTt7afocoyR-WBt7
+	Size: 768x512
+	seed: 2627638321
+	Model: DIvineElegance4
+	steps: 30
+	prompt: (Masterpiece, Best Quality, High Quality, Highres:1.4), Detailed, Extremely Detailed, Ambient Soft Lighting, 4K, (Extremely Detailed Eyes:1.2),
+
+medium shot of a cute woman partially merged in a river, standing, reeds, blue eyes, (orange hair, face freckels:1.4), very long hair, (backlighting), realistic, masterpiece, highest quality, lens flare, shade, bloom, [[chromatic aberration]], by Jeremy Lipking, by Antonio J. Manzanedo, digital painting, nude, large breast, (black bra:1.2),
+	sampler: Euler a
+	cfgScale: 10
+	resources: [{'hash': '96618c301b', 'name': 'DIvineElegance4', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: EasyNegative, Bad-Hands-3, (Low Quality, Worst Quality, Lowres:1.4), 
+
+Brown Hair, Red Hair, Yellow Hair, Body Freckles,
+	Denoising strength: 0.21
+downloadUrl: https://civitai.com/api/download/models/28423
+Model Version Data:
+id: 24619
+modelId: 6174
+name: DivineEleganceMix v3
+createdAt: None
+updatedAt: 2023-10-28T13:53:33.445Z
+trainedWords: []
+baseModel: SD 1.5
+earlyAccessTimeFrame: 0
+description: <p>Version changes:</p><ul><li><p>More semi-realistic style in some cases</p></li><li><p>Better Skin</p></li><li><p>Better Faces</p></li><li><p>Better Lowres Images</p></li><li><p>Eyes for lives</p></li><li><p>Reduced weight (2Gb), instant loading</p></li></ul><p>Let's be honest. This changes are biased as f4k, so just try new version by youself.</p>
+stats:
+	downloadCount: 2121
+	ratingCount: 6
+	rating: 5
+files:
+	name: divineelegancemix_V3.safetensors
+	id: 20417
+	sizeKB: 2082642.022460938
+	type: Model
+	Metadata:
+		fp: fp16
+		size: full
+		format: SafeTensor
+	pickleScanResult: Success
+	pickleScanMessage: No Pickle imports
+	virusScanResult: Success
+	scannedAt: 2023-03-17T13:07:30.602Z
+	Hashes:
+		AutoV2: BB690F6A8D
+		SHA256: BB690F6A8D4AD5170861477A1B7A03E5CEC05D87EAAD8C321D344B51E6D897DD
+		CRC32: C817AEA2
+		BLAKE3: E1DE31DC92F067517ACC08FA91E46C68F0D92F6E5CC899DC36D858C64C3CCB52
+	downloadUrl: https://civitai.com/api/download/models/24619
+	primary: True
+images:
+	id: 268750
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/960ef199-9a4e-4a27-92cc-56b83fc65a00/width=450/268750.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UQJ@8#MwX-IA~pn$o~M{0fozV^W=~VNHD*R*
+	Size: 512x768
+	seed: 690864263
+	Model: DivineEleganceMix3
+	steps: 40
+	prompt: (Best Quality, Masterpiece:1.4), (Realism:1.2), (Realisitc:1.2), (Absurdres:1.2), 4K, Detailed, Ultra-Detailed, Digital Art, Detailed Face, (Hyper-Detailed Eyes:1.2),
+
+Indoors, Renaissance, Vintage Windows, (Face Focus:1.4), (Face Close-Up:1.2), (Very Long Dull Blonde High Ponytail:1.4), (Blunt Bangs:1.2), (Red Eyes:1.4), (Tsurime:1.4), (Angry:1.2), Looking at Viewer, (Puffy Lips:1.4), (Large Breasts:1.2), (Off Shoulder Red Gown:1.4), (Puffy Skirt:1.4), (Puffy Juliet Sleeves:1.4), Jewelry
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': 'bb690f6a8d', 'name': 'DivineEleganceMix3', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (worst quality, low quality:1.4), EasyNegative, Bad-Hands-3, Blurry, Depth of Field, (Bloom:1.4),
+
+Modern, Contemporary, Cityscape, Skyscraper, Megapolis,
+	Denoising strength: 0.21
+	id: 268749
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/676caf44-3644-4568-df87-ec7818f24200/width=450/268749.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UXHKRu~VI:bbx[%2NHM|9aNGs;M|xuWBM{sm
+	Size: 512x768
+	seed: 2490316747
+	Model: DivineEleganceMix3
+	steps: 40
+	prompt: (Best Quality, Masterpiece:1.4), (Realism:1.2), (Realisitc:1.2), (Absurdres:1.2), 4K, Detailed, Ultra-Detailed, Digital Art, Detailed Face, (Hyper-Detailed Eyes:1.2),
+
+Indoors, Renaissance, Vintage Windows, (Face Focus:1.4), (Face Close-Up:1.2), (Very Long Dull Blonde High Ponytail:1.4), (Blunt Bangs:1.2), (Red Eyes:1.4), (Tsurime:1.4), (Angry:1.2), Looking at Viewer, (Puffy Lips:1.4), (Large Breasts:1.2), (Off Shoulder Red Gown:1.4), (Puffy Skirt:1.4), (Puffy Juliet Sleeves:1.4), Jewelry
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': 'bb690f6a8d', 'name': 'DivineEleganceMix3', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (worst quality, low quality:1.4), EasyNegative, Bad-Hands-3, Blurry, Depth of Field, (Bloom:1.4),
+
+Modern, Contemporary, Cityscape, Skyscraper, Megapolis,
+	Denoising strength: 0.21
+	id: 268748
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/8bb22472-fb23-4783-60e9-14159850fc00/width=450/268748.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UPJ7RE01O@xD~UD%T0M{Ins:NHfk?Goexaxt
+	Size: 512x768
+	seed: 3588035435
+	Model: DivineEleganceMix3
+	steps: 40
+	prompt: (Best Quality, Masterpiece:1.4), (Realism:1.2), (Realisitc:1.2), (Absurdres:1.2), 4K, Detailed, Ultra-Detailed, Digital Art, Detailed Face, (Hyper-Detailed Eyes:1.2), Ornate,
+
+Indoors, Renaissance, Vintage Windows, 1Girl, (Solo:1.4), (Nero Claudius \(Fate\):1.2), (Face Focus:1.4), (Face Close-Up:1.2), (Short Blonde Hair:1.4), (French Braid:1.2), (Hair Intakes:1.2), (Long Sidelocks:1.2), (Red Eyes:1.4), (Tsurime:1.4), Looking at Viewer, (Puffy Lips:1.2), Closed Mouth, (Large Breasts:1.2), (Off Shoulder Black Gown:1.4), (Puffy Juliet Sleeves:1.4), (Black Hair Ribbon:1.2), Jewelry
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': 'bb690f6a8d', 'name': 'DivineEleganceMix3', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (worst quality, low quality:1.4), EasyNegative, Bad-Hands-3, Blurry, Depth of Field, (Bloom:1.4),
+
+Modern, Contemporary, Cityscape, Skyscraper, Megapolis, Red Dress, (Ribbon:1.2),
+	Denoising strength: 0.21
+	id: 268747
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/86e6b38c-ba84-4de5-c27a-01c649987d00/width=450/268747.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UFI|zUpJFe~W^%?ukrbGNZxuE2IU%g-o^QRQ
+	Size: 512x768
+	seed: 10479610
+	Model: DivineEleganceMix3
+	steps: 40
+	prompt: (Best Quality, Masterpiece:1.4), (Realism:1.2), (Realisitc:1.2), (Absurdres:1.2), 4K, Detailed, Ultra-Detailed, Digital Art, Detailed Face, (Hyper-Detailed Eyes:1.2), Ornate,
+
+Indoors, Renaissance, Vintage Windows, 1Girl, (Solo:1.4), (Nero Claudius \(Fate\):1.2), (Face Focus:1.4), (Face Close-Up:1.2), (Short Dull Blonde Hair:1.4), (French Braid:1.2), (Hair Intakes:1.1), (Long Sidelocks:1.2), (Red Eyes:1.4), (Tsurime:1.4), Looking at Viewer, (Puffy Lips:1.2), Closed Mouth, (Large Breasts:1.4), (Off Shoulder Black Gown:1.4), (Puffy Juliet Sleeves:1.4), (Black Hair Ribbon:1.2), Jewelry
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': 'bb690f6a8d', 'name': 'DivineEleganceMix3', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (worst quality, low quality:1.4), EasyNegative, Bad-Hands-3, Blurry, Depth of Field, (Bloom:1.4),
+
+Modern, Contemporary, Cityscape, Skyscraper, Megapolis, Red Dress, (Red Hair Ribbon:1.4), (Red Ribbon;1.2), (Red Hair Ornament:1.2),
+	Denoising strength: 0.21
+	id: 268746
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/0a2a8e37-7703-4eae-6e89-83d7a4be6700/width=450/268746.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UDH.1n001Oi^Gv+ZJD9t9tX4~WIU=|9aIp^k
+	Size: 512x768
+	seed: 763193492
+	Model: DivineEleganceMix3
+	steps: 40
+	prompt: (Best Quality, Masterpiece:1.4), (Realism:1.2), (Realisitc:1.2), (Absurdres:1.2), 4K, Detailed, Ultra-Detailed, Digital Art, Detailed Face, (Hyper-Detailed Eyes:1.2),
+
+Rocks, Coast, (Shore:1.2), (Sitting:1.4), Sitting on Rock, Trees, Plants, (Bush:1.2), Waves, (Causting:1.2), (Hyper-Detailed Water:1.4), 
+
+(Solo:1.4), 1Girl, (Facing Viewer:1.2), (Nakiri Erina:1.4),
+
+(Blonde Hair:1.2), Long Hair, (Sidelocks:1.2), 
+
+(Purple Eyes:1.4),
+
+(Curvy:1.4), Large Breasts, Thick Thighs, 
+
+(White Bra:1.2), (White Panties:1.2),
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': 'bb690f6a8d', 'name': 'DivineEleganceMix3', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (worst quality, low quality:1.4), EasyNegative, Bad-Hands-3, Blurry, Depth of Field, (Bloom:1.4),
+
+Modern, Contemporary, Cityscape, Skyscraper, Megapolis, (Lying, On Back, On Side, On Knees, Kneeling, All Fours:1.2),
+	Denoising strength: 0.21
+	id: 268745
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/975aff28-681b-4b6c-926d-7b43e7182600/width=450/268745.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UEI}L+?w020M2_.9%hkrTe%~W@%M-=NfxGxa
+	Size: 512x768
+	seed: 618671210
+	Model: DivineEleganceMix3
+	steps: 40
+	prompt: (Best Quality, Masterpiece:1.4), (Realism:1.2), (Realisitc:1.2), (Absurdres:1.2), 4K, Detailed, Ultra-Detailed, Digital Art, Detailed Face, (Hyper-Detailed Eyes:1.2), Ornate,
+
+Rocks, Coast, (Shore:1.2), (Sitting:1.4), Sitting on Rock, Trees, Plants, (Bush:1.2), Waves, (Causting:1.2), (Hyper-Detailed Water:1.4),
+
+(Solo:1.4), 1Girl, (Facing Viewer:1.2), (Nakiri Erina:1.4),
+
+(Blonde Hair:1.2), Long Hair, (Sidelocks:1.2),
+
+(Purple Eyes:1.4),
+
+(Curvy:1.4), Large Breasts, Thick Thighs,
+
+(White Bra:1.2), (White Panties:1.2),
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': 'bb690f6a8d', 'name': 'DivineEleganceMix3', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (worst quality, low quality:1.4), EasyNegative, Bad-Hands-3, Blurry, Depth of Field, (Bloom:1.4),
+
+Modern, Contemporary, Cityscape, Skyscraper, Megapolis, (Lying, On Back, On Side, On Knees, Kneeling, All Fours:1.2),
+	Denoising strength: 0.21
+	id: 268744
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/91357f90-969f-4e9a-ed46-6661f1eba700/width=450/268744.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UDFO+99G00%NyreSNFxv~qIB4nXn58n#xax[
+	Size: 512x768
+	seed: 3644336563
+	Model: DivineEleganceMix3
+	steps: 40
+	prompt: (Best Quality, Masterpiece:1.4), (Realism:1.2), (Realisitc:1.2), (Absurdres:1.2), 4K, Detailed, Ultra-Detailed, Digital Art, Detailed Face, (Hyper-Detailed Eyes:1.2), (Ornate:1.2),
+
+(Nature:1.2), (Forest:1.4), (Mountains:1.2), Rocks, Rock, River, (Wooden Bridge:1.2),
+
+(Solo:1.4), 1Girl, (Standing:1.2), (Elf:1.2), Pointy Ears, 
+
+(White Hair:1.2), Long Hair, (Sidelocks:1.2),
+
+(Green Eyes:1.4),
+
+(Curvy:1.4), Large Breasts, Thick Thighs,
+
+Brown Knee Boots, (Brown Shorts:1.2), (Brown Cloak:1.2), (Brown Thighhighs:1.4), Green Dress, Black Belt,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': 'bb690f6a8d', 'name': 'DivineEleganceMix3', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (worst quality, low quality:1.4), EasyNegative, Bad-Hands-3, Blurry, Depth of Field, (Bloom:1.4),
+
+Modern, Contemporary, Cityscape, Skyscraper, Megapolis, (Lying, On Back, On Side, On Knees, Kneeling, All Fours:1.2), White Thighhighs,
+	Denoising strength: 0.21
+	id: 268743
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2cc4fae5-5b48-460d-de80-22e56f06ac00/width=450/268743.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UGF5vx~p9t4.yX%fIVRP~UozM{t5WAsoxtoz
+	Size: 512x768
+	seed: 2124002892
+	Model: DivineEleganceMix3
+	steps: 40
+	prompt: (Best Quality, Masterpiece:1.4), (Realism:1.2), (Realisitc:1.2), (Absurdres:1.2), 4K, Detailed, Ultra-Detailed, Digital Art, Detailed Face, (Hyper-Detailed Eyes:1.2), (Ornate:1.2),
+
+(Nature:1.2), (Forest:1.4), (Mountains:1.2), Rocks, Rock, River, (Wooden Bridge:1.2),
+
+(Solo:1.4), 1Girl, (Standing:1.2), (Elf:1.2), Pointy Ears, 
+
+(White Hair:1.2), Long Hair, (Sidelocks:1.2),
+
+(Green Eyes:1.4),
+
+(Curvy:1.4), Large Breasts, Thick Thighs,
+
+Brown Knee Boots, (Brown Skirt:1.2), (Brown Cloak:1.2), (Brown Thighhighs:1.4), Green Shirt, Green Corset, Black Belt, (Framed Breasts:1.2),
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': 'bb690f6a8d', 'name': 'DivineEleganceMix3', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (worst quality, low quality:1.4), EasyNegative, Bad-Hands-3, Blurry, Depth of Field, (Bloom:1.4),
+
+Modern, Contemporary, Cityscape, Skyscraper, Megapolis, (Lying, On Back, On Side, On Knees, Kneeling, All Fours:1.2), White Thighhighs,
+	Denoising strength: 0.21
+	id: 268742
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7e870824-63c6-4a53-246d-d8098f205900/width=450/268742.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: UBF5X10#_N^j%OkW_3%3-;SiENs,_M-U?GNG
+	Size: 512x768
+	seed: 1853090502
+	Model: DivineEleganceMix3
+	steps: 40
+	prompt: (Best Quality, Masterpiece:1.4), (Realism:1.2), (Realisitc:1.2), (Absurdres:1.2), 4K, Detailed, Ultra-Detailed, Digital Art, Detailed Face, (Hyper-Detailed Eyes:1.2), (Ornate:1.2),
+
+Town, (Renaissance:1.2), Vintage, 
+
+Solo, (Male:1.2), (Brutal:1.2), (Face Focus:1.2), (Face Close-Up:1.1), 
+
+Black Hair, Long Hair, (Black Beard:1.2),
+
+Armor, (Large Detailed Pauldrons:1.2), Shoulder
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': 'bb690f6a8d', 'name': 'DivineEleganceMix3', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (worst quality, low quality:1.4), EasyNegative, Bad-Hands-3, Blurry, Depth of Field, (Bloom:1.4),
+
+Modern, Contemporary, Cityscape, Skyscraper, Megapolis, (Lying, On Back, On Side, On Knees, Kneeling, All Fours:1.2), White Thighhighs,
+	Denoising strength: 0.21
+	id: 268741
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7b4d76ec-d8b1-4c5c-a2c9-bafd46c92400/width=450/268741.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: UGC6DR4:.7-U~WIU?a$*-;oI%Lay-:ae-ot6
+	Size: 512x768
+	seed: 1145386472
+	Model: DivineEleganceMix3
+	steps: 40
+	prompt: (Best Quality, Masterpiece:1.4), (Realism:1.2), (Realisitc:1.2), (Absurdres:1.2), 4K, Detailed, Ultra-Detailed, Digital Art, Detailed Face, (Hyper-Detailed Eyes:1.2), (Ornate:1.2),
+
+Town, (Renaissance:1.2), Vintage, 
+
+Solo, (Male:1.2), (Brutal:1.2), (Face Focus:1.2), (Face Close-Up:1.1), 
+
+Black Hair, Long Hair, (Black Beard:1.2),
+
+Armor, (Large Detailed Pauldrons:1.2), Shoulder
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': 'bb690f6a8d', 'name': 'DivineEleganceMix3', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (worst quality, low quality:1.4), EasyNegative, Bad-Hands-3, Blurry, Depth of Field, (Bloom:1.4),
+
+Modern, Contemporary, Cityscape, Skyscraper, Megapolis, (Lying, On Back, On Side, On Knees, Kneeling, All Fours:1.2), White Thighhighs,
+	Denoising strength: 0.21
+downloadUrl: https://civitai.com/api/download/models/24619
+Model Version Data:
+id: 11047
+modelId: 6174
+name: DivineEleganceMix v2
+createdAt: None
+updatedAt: 2023-10-28T13:53:33.445Z
+trainedWords: []
+baseModel: SD 1.5
+earlyAccessTimeFrame: 0
+description: <p>Version changes:</p><ul><li><p>Better visuals on backgrounds</p></li><li><p>Better close-up eyes visuals</p></li><li><p>Better furry characters</p></li><li><p>Slightly faster loading time</p></li><li><p>Less random objects on backgrounds</p></li><li><p>Less weight (FP16)</p></li></ul><p>Most of these changes are biased and based on my personal opinion. But i hope you will like another model's iteration before i would bring global changes into it.</p>
+stats:
+	downloadCount: 2372
+	ratingCount: 3
+	rating: 5
+files:
+	name: divineelegancemix_V2.ckpt
+	id: 10371
+	sizeKB: 2082883.91015625
+	type: Pruned Model
+	Metadata:
+		fp: fp16
+		size: pruned
+		format: PickleTensor
+	pickleScanResult: Success
+	pickleScanMessage: No Pickle imports
+	virusScanResult: Success
+	scannedAt: 2023-02-16T04:57:16.197Z
+	Hashes:
+		AutoV2: F993105C70
+		SHA256: F993105C70107ED94983F78F5F89870EA1A3CC7E16E7DDAED9DA8260C82F4D06
+		CRC32: BB9A3CB3
+		BLAKE3: E525D45A48D1F5DBA6BB5BB473D614500F9A7178A8F84029ECC41238EB4183EB
+	downloadUrl: https://civitai.com/api/download/models/11047?type=Pruned%20Model&format=PickleTensor&size=pruned&fp=fp16
+	primary: None
+images:
+	id: 162831
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d230646a-b859-4df1-b835-f933637f5c00/width=450/162831.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UaI;F#,-JAJA_MV?SOR,NHM{o#NaozWVnlsm
+	Size: 512x768
+	seed: 671373428
+	Model: divineelegancemix_V2Beta
+	steps: 40
+	prompt: (Masterpiece, Best Quality:1.4), (Highres), (Hyper Detailed:1.4), (Digital Art:1.2), 4K,
+
+Indoors, Renaissance, Vintage Windows,
+
+(Face Focus:1.4), (Face Close-Up:1.1), 
+
+(Very Long Blonde High Ponytail:1.4), (Blunt Bangs:1.2),
+
+(Red Eyes:1.4), (Tsurime:1.4),(Angry:1.2), Looking at Viewer,
+
+(Puffy Lips:1.4),
+
+Large Breasts,
+
+(Off Shoulder Red Gown:1.4), (Puffy Skirt:1.4), (Puffy Juliet Sleeves:1.4), Jewelry
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '98a8021e3a', 'name': 'divineelegancemix_V2Beta', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Low Quality, Bad Quality, Worst Quality:1.3), (Monochrome:1.2), Blurry, Bloom,
+
+(Blush:1.5), (Orange Lighting:1.4), (Yellow Lighting:1.4),
+
+((Front Slit)), ((Side Slit)), ((China Dress)), Tight, Tight Dress, Bare Legs, Chinese, Japanese, (Cleavage Cutout:1.4),
+	Denoising strength: 0.25
+	id: 162830
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/db89b05c-ff40-41ab-8227-9e0c0efdb100/width=450/162830.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UhLWCVE2tR%M~pVsS2tRo}axspj[%MjFRjM|
+	Size: 512x768
+	seed: 1701489701
+	Model: divineelegancemix_V2Beta
+	steps: 40
+	prompt: (Masterpiece, Best Quality:1.4), (Highres), (Hyper Detailed:1.4), (Digital Art:1.2), 4K, (Ornate:1.2), 
+
+Indoors, Renaissance, Vintage Windows,
+
+(Face Focus:1.4), (Close-Up Face Focus:1.4), 
+
+(Very Long Blonde High Ponytail:1.4), (Blunt Bangs:1.2),
+
+(Red Eyes:1.4), (Tsurime:1.4),(Angry:1.2), Looking at Viewer,
+
+(Puffy Lips:1.4),
+
+(Off Shoulder Red Gown:1.4), (Puffy Skirt:1.4), (Puffy Juliet Sleeves:1.4), Jewelry
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '98a8021e3a', 'name': 'divineelegancemix_V2Beta', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Low Quality, Bad Quality, Worst Quality:1.3), (Monochrome:1.2), Blurry, Bloom,
+
+(Blush:1.5), (Orange Lighting:1.4), (Yellow Lighting:1.4),
+
+((Front Slit)), ((Side Slit)), ((China Dress)), Tight, Tight Dress, Bare Legs, Chinese, Japanese, (Cleavage Cutout:1.4), Pointy Ears,
+	Denoising strength: 0.25
+	id: 162829
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/fac9cc6d-46a6-4750-d9c4-c962b1b76300/width=450/162829.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UIIqGs00PA-U~W9GT0Ri5QofM{t7~WRORjx[
+	Size: 512x768
+	seed: 4211931540
+	Model: divineelegancemix_V2Beta
+	steps: 40
+	prompt: (Masterpiece, Best Quality:1.4), (Highres), (Hyper Detailed:1.4), (Digital Art:1.2), 4K, (Ornate:1.2), 
+
+Indoors, Renaissance, Vintage Windows,
+
+1Girl, Solo, 
+
+(Face Focus:1.4), 
+
+(Very Long Blonde High Ponytail:1.4), (Blunt Bangs:1.2),
+
+(Red Eyes:1.4), (Tsurime:1.4), Looking at Viewer,
+
+(Puffy Lips:1.2), Closed Mouth, 
+
+(Off Shoulder Black Gown:1.4), (Puffy Juliet Sleeves:1.4), Jewelry
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '98a8021e3a', 'name': 'divineelegancemix_V2Beta', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Low Quality, Bad Quality, Worst Quality:1.3), (Monochrome:1.2), Blurry, Bloom,
+
+(Blush:1.5), (Orange Lighting:1.4), (Yellow Lighting:1.4),
+	Denoising strength: 0.25
+	id: 162828
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d2af5a98-5848-4baf-71be-6b78de620800/width=450/162828.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: UWK0c@M{In-p~BNGIVRla_%1Ipa{xqxa%2s,
+	Size: 512x768
+	seed: 2807123192
+	Model: divineelegancemix_V2Beta
+	steps: 40
+	prompt: (Masterpiece, Best Quality:1.4), (Highres), (Hyper Detailed:1.4), (Digital Art:1.2), 4K, (Ornate:1.2), 
+
+Indoors, Renaissance, Vintage Windows,
+
+1Girl, Solo, 
+
+(Face Focus:1.4), (Portrait:1.4),
+
+(Very Long Blonde High Ponytail:1.4), (Blunt Bangs:1.2),
+
+(Red Eyes:1.4), (Tsurime:1.4), Looking at Viewer,
+
+(Puffy Lips:1.2), Closed Mouth, 
+
+Large Breasts, 
+
+(Black Gown:1.4), (Puffy Juliet Sleeves:1.4), Jewelry
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '98a8021e3a', 'name': 'divineelegancemix_V2Beta', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Low Quality, Bad Quality, Worst Quality:1.3), (Monochrome:1.2), Blurry, Bloom,
+
+(Blush:1.5), (Orange Lighting:1.4), (Yellow Lighting:1.4), Elf,
+	Denoising strength: 0.25
+	id: 162827
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2daed2c4-9226-4a8f-6f62-2e2a9c403500/width=450/162827.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: UKFrO=Di_3Mc_NE1tSM{EMx]D%xa-o%1i^WC
+	Size: 512x768
+	seed: 2165129196
+	Model: divineelegancemix_V2Beta
+	steps: 40
+	prompt: (Masterpiece, Best Quality:1.4), (Highres), (Hyper Detailed:1.4), (Digital Art:1.2), 4K, (Ornate:1.2), 
+
+Indoors, Renaissance, Vintage Windows,
+
+Mature Male, Male Focus, Old, King, Black Beard, Black Hair, Armor, (Face Focus;1.4), (Solo:1.2),
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '98a8021e3a', 'name': 'divineelegancemix_V2Beta', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Low Quality, Bad Quality, Worst Quality:1.3), (Monochrome:1.2), Blurry, Bloom,
+
+(Blush:1.5), (Orange Lighting:1.4), (Yellow Lighting:1.4), Elf,
+	Denoising strength: 0.25
+	id: 162826
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/19fc7303-49c8-4425-04d3-d347edd48000/width=450/162826.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: UTF~29~q_M?b?b-;tSxv4:RjM|WEE1WAWAn#
+	Size: 512x768
+	seed: 2577991372
+	Model: divineelegancemix_V2Beta
+	steps: 40
+	prompt: (Masterpiece, Best Quality:1.4), (Highres), (Hyper Detailed:1.4), (Digital Art:1.2), 4K, (Ornate:1.2), 
+
+Indoors, Renaissance, Vintage Windows,
+
+Mature Male, Male Focus, Old, King, Black Beard, Black Hair, Armor, (Face Focus;1.4), (Solo:1.2),
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '98a8021e3a', 'name': 'divineelegancemix_V2Beta', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Low Quality, Bad Quality, Worst Quality:1.3), (Monochrome:1.2), Blurry, Bloom,
+
+(Blush:1.5), (Orange Lighting:1.4), (Yellow Lighting:1.4), Elf,
+	Denoising strength: 0.25
+	id: 162825
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/66b5444e-1e8e-4ac6-a889-b8f674b25300/width=450/162825.jpeg
+	nsfw: Mature
+	width: 1024
+	height: 1536
+	hash: UmIF3yrqEMI:%%ngRlNdJWoxxtxa-ptRaxoK
+	Size: 512x768
+	seed: 1253725096
+	Model: divineelegancemix_V2Beta
+	steps: 40
+	prompt: (Masterpiece, Best Quality:1.4), (Highres), (Hyper Detailed:1.4), (Digital Art:1.2), 4K, (Ornate:1.2), 
+
+Outdoors, Rock, (Plants:1.4), Coast, (Shore:1.2), Waves, 
+
+1Girl, Solo, (Sitting on Rock:1.2),
+
+Blonde Hair, Long Hair, 
+
+Blue Eyes, 
+
+(Curvy:1.4), Large Breasts, 
+
+White Dress, Wet, See-Through,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '98a8021e3a', 'name': 'divineelegancemix_V2Beta', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Low Quality, Bad Quality, Worst Quality:1.3), (Monochrome:1.2), Blurry, Bloom,
+
+(Blush:1.5), (Orange Lighting:1.4), (Yellow Lighting:1.4), Elf,
+	Denoising strength: 0.25
+	id: 162824
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/83e20071-2957-4e96-b240-18d643762600/width=450/162824.jpeg
+	nsfw: Mature
+	width: 1024
+	height: 1536
+	hash: UVI#id.9E~IUlVI[W?slElRQnlt7x^%MWAX8
+	Size: 512x768
+	seed: 1559472093
+	Model: divineelegancemix_V2Beta
+	steps: 40
+	prompt: (Masterpiece, Best Quality:1.4), (Highres), (Hyper Detailed:1.4), (Digital Art:1.2), 4K,
+
+Outdoors, Rock, (Plants:1.4), Coast, (Shore:1.2), Waves, 
+
+1Girl, Solo, (Sitting on Rock:1.2),
+
+Blonde Hair, Long Hair, 
+
+Blue Eyes, 
+
+(Curvy:1.4), Large Breasts, 
+
+(White Sundress:1.2), Wet, See-Through,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '98a8021e3a', 'name': 'divineelegancemix_V2Beta', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Low Quality, Bad Quality, Worst Quality:1.3), (Monochrome:1.2), Blurry, Bloom,
+
+(Blush:1.5), (Orange Lighting:1.4), (Yellow Lighting:1.4),
+
+Cleavage Cutout,
+	Denoising strength: 0.25
+	id: 162823
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/8d7f0093-75e1-412b-3348-c17e8e9fbf00/width=450/162823.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UHGuq9-pxtNH5s4n4oxbt7I99Zxu~qM{_2tR
+	Size: 512x768
+	seed: 3626589256
+	Model: divineelegancemix_V2Beta
+	steps: 40
+	prompt: (Masterpiece, Best Quality:1.4), (Highres), (Hyper Detailed:1.4), (Digital Art:1.2), 4K,
+
+(Indoors:1.2), (Office:1.2),
+
+1Girl, Solo, Looking Up, Looking at Viewer, 
+
+White Hair, Short Hair, Blunt Bangs, Long Sidelocks, Pointy Ears,
+
+Green Eyes, 
+
+(Curvy:1.4), Large Breasts, Wide Hips, 
+
+White Shirt, Black Jacket, Black Office Skirt, Black Necktie,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '98a8021e3a', 'name': 'divineelegancemix_V2Beta', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Low Quality, Bad Quality, Worst Quality:1.3), (Monochrome:1.2), Blurry, Bloom,
+
+(Blush:1.5), (Orange Lighting:1.4), (Yellow Lighting:1.4),
+
+Cleavage Cutout,
+	Denoising strength: 0.25
+	id: 162822
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a8dda8aa-4646-485b-ea98-144a683e1f00/width=450/162822.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UJGITF-;ELR*~qWq4.V@D%RjR,WB?b%L?bxt
+	Size: 512x768
+	seed: 2183480354
+	Model: divineelegancemix_V2Beta
+	steps: 40
+	prompt: (Masterpiece, Best Quality:1.4), (Highres), (Hyper Detailed:1.4), (Digital Art:1.2), 4K,
+
+(Indoors:1.2), (Office:1.2),
+
+1Girl, Solo, Looking Up, Looking at Viewer, 
+
+White Hair, Blunt Bangs, Long Sidelocks, Pointy Ears,
+
+Green Eyes, 
+
+(Curvy:1.4), Large Breasts, Wide Hips, 
+
+White Shirt, Black Jacket, Black Office Skirt, Black Necktie, Pantyhose,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '98a8021e3a', 'name': 'divineelegancemix_V2Beta', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Low Quality, Bad Quality, Worst Quality:1.3), (Monochrome:1.2), Blurry, Bloom,
+
+(Blush:1.5), (Orange Lighting:1.4), (Yellow Lighting:1.4),
+
+Cleavage Cutout,
+	Denoising strength: 0.25
+downloadUrl: https://civitai.com/api/download/models/11047
+Model Version Data:
+id: 7236
+modelId: 6174
+name: DivineEleganceMix v1
+createdAt: None
+updatedAt: 2023-10-28T13:53:33.445Z
+trainedWords: []
+baseModel: SD 1.5
+earlyAccessTimeFrame: 0
+description: <p>Initial release.</p>
+stats:
+	downloadCount: 1027
+	ratingCount: 4
+	rating: 5
+files:
+	name: divineelegancemix_V1.safetensors
+	id: 7332
+	sizeKB: 7522729.684570312
+	type: Model
+	Metadata:
+		fp: fp16
+		size: full
+		format: SafeTensor
+	pickleScanResult: Success
+	pickleScanMessage: No Pickle imports
+	virusScanResult: Success
+	scannedAt: 2023-02-02T02:36:32.537Z
+	Hashes:
+		AutoV2: D1E2A7E3C6
+		SHA256: D1E2A7E3C6CA436A5561F017F20B67876E7105AC01DCFBCA65FAC17EC1DCBFD5
+		CRC32: F35AAFB1
+		BLAKE3: 876FA8E6DD1FFF397FA8FF410BAE177BB0872649621FEAD63E64218FC7B7A840
+	downloadUrl: https://civitai.com/api/download/models/7236?type=Model&format=SafeTensor&size=full&fp=fp16
+	primary: None
+images:
+	id: 85173
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/8432f105-fb17-47f3-e224-7410dcc13200/width=450/85173.jpeg
+	nsfw: Soft
+	width: 1920
+	height: 1280
+	hash: UMHd1~~Vx]-;yC^kxuS59[axIpIoNaE1rrxG
+	Size: 768x512
+	seed: 2982406484
+	Model: DivineEleganceMix
+	steps: 40
+	prompt: (Highres), 4K, Detailed, Ambient Light, Realistic Shadows, Digital Art, Soft Lighting,
+
+(Indoors:1.4), Renaissance, Vintage Windows, (Red Sofa:1.4), (Candlelight:1.1),
+
+(Solo:1.3), Woman, (Sitting:1.2), Sitting on Red Sofa, 
+
+(Very Long Blonde High Ponytail:1.4),
+
+Red Eyes, Expressionless, Emotionless, (Glaring:1.2), (Contempt:1.2), (Disgust:1.2), (Looking at Viewer:1.2), 
+
+(Puffy Lips:1.2), Parted Lips,
+
+Medium Breasts,
+
+(Gold-Trim Off-Shoulder Long Red Gown:1.3), (Puffy Long Juliet Sleeves:1.3), Jewelry, (Sheer Clothes:1.2), (See-Throught:1.4),
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': 'd1e2a7e3c6', 'name': 'DivineEleganceMix', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2.5
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Bad-Prompt-Version2:0.7), (Low Quality, Bad Quality, Worst Quality:1.3), Loli, Young, Younger, Aged Down,
+
+Multiple Shots, Simple Background, Sunset, Turtleneck, (Blush:1.5), (Orange Light:1.4), (Orange Lighting:1.4), (((Lamp))), Light_bulb, Blur, Blurry, Fog, Latex,
+	Denoising strength: 0.15
+	id: 85175
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7d9daceb-a1c1-4c1c-0ef9-ce1e2e17c400/width=450/85175.jpeg
+	nsfw: Soft
+	width: 1920
+	height: 1280
+	hash: UFJP_LHs~W00Gt00?a,:0#I.EhJ6r^tk%2NG
+	Size: 768x512
+	seed: 2159546527
+	Model: DivineEleganceMix
+	steps: 40
+	prompt: (Highres), 4K, Detailed, Ambient Light, Realistic Shadows, Digital Art, Soft Lighting,
+
+(Indoors:1.4), Renaissance, Vintage Windows, (Red Sofa:1.4), (Candlelight:1.1),
+
+(Solo:1.3), Woman, (Sitting:1.2), Sitting on Red Sofa, (Crow:1.4), 
+
+(Very Long Blonde High Ponytail:1.4),
+
+Red Eyes, Expressionless, Emotionless, (Glaring:1.2), (Contempt:1.2), (Disgust:1.2), (Looking at Viewer:1.2), 
+
+(Puffy Lips:1.2), Parted Lips, Open Mouth, 
+
+Medium Breasts,
+
+(Gold-Trim Off-Shoulder Fethered Long Red Gown:1.3), (Puffy Long Juliet Sleeves:1.3), Jewelry, (Sheer Clothes:1.2), (See-Throught:1.4),
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': 'd1e2a7e3c6', 'name': 'DivineEleganceMix', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2.5
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Bad-Prompt-Version2:0.7), (Low Quality, Bad Quality, Worst Quality:1.3), Loli, Young, Younger, Aged Down,
+
+Multiple Shots, Simple Background, Sunset, Turtleneck, (Blush:1.5), (Orange Light:1.4), (Orange Lighting:1.4), (((Lamp))), Light_bulb, Blur, Blurry, Fog, Latex,
+	Denoising strength: 0.15
+	id: 85174
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/f61c4ba9-7772-4087-6b5b-4653c0dc5200/width=450/85174.jpeg
+	nsfw: None
+	width: 1920
+	height: 1280
+	hash: UPJ%Xu8x?u$i?^E1%gIoELtQs:R*MyNHRjxG
+	Size: 768x512
+	seed: 3637952402
+	Model: DivineEleganceMix
+	steps: 40
+	prompt: (Highres), 4K, Detailed, Ambient Light, Realistic Shadows, Digital Art, Soft Lighting,
+
+(Indoors:1.4), Renaissance, Vintage Windows, (Red Sofa:1.4), (Candlelight:1.1),
+
+(Solo:1.3), Woman, (Sitting:1.2), Sitting on Red Sofa, 
+
+(Very Long Blonde High Ponytail:1.4),
+
+Red Eyes, Expressionless, Emotionless, (Glaring:1.2), (Contempt:1.2), (Disgust:1.2), (Looking at Viewer:1.2), 
+
+(Puffy Lips:1.2), Parted Lips,
+
+Medium Breasts,
+
+(Gold-Trim Off-Shoulder Long Red Gown:1.3), (Puffy Long Juliet Sleeves:1.3), Jewelry, (Sheer Clothes:1.2), (See-Throught:1.4),
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': 'd1e2a7e3c6', 'name': 'DivineEleganceMix', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2.5
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Bad-Prompt-Version2:0.7), (Low Quality, Bad Quality, Worst Quality:1.3), Loli, Young, Younger, Aged Down,
+
+Multiple Shots, Simple Background, Sunset, Turtleneck, (Blush:1.5), (Orange Light:1.4), (Orange Lighting:1.4), (((Lamp))), Light_bulb, Blur, Blurry, Fog, Latex,
+	Denoising strength: 0.15
+	id: 85172
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/bd6f3fd9-98eb-4421-f1f8-193a307f7c00/width=450/85172.jpeg
+	nsfw: Soft
+	width: 1536
+	height: 1024
+	hash: UXJG[@9at,^%~pIo%MxtNaocxtIpRjWXWVaf
+	Size: 768x512
+	seed: 3924453583
+	Model: DivineEleganceMix
+	steps: 40
+	prompt: (Highres), 4K, Detailed, Ambient Light, Realistic Shadows, Digital Art, Soft Lighting, 
+
+Indoors, Renaissance, Sitting on (Throne:1.2), Throne Room, Windows,  
+
+Woman, (Face Focus:1.2), 
+
+(Very Long Blonde High Ponytail:1.4), 
+
+Red Eyes, Expressionless, (Glaring:1.1), 
+
+(Gold-Trim Off-Shoulder Long Red Dress:1.3), (Puffy Long Juliet Sleeves:1.3), Jewelry, Gorget,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': 'd1e2a7e3c6', 'name': 'DivineEleganceMix', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: Bad-Artist, Bad-Artist-Anime, Bad-Hands-5, (Bad-Prompt-Version2:0.8), Low Quality, Bad Quality, Worst Quality, Loli,
+
+Multiple Shots, Simple Background, Sunset, Turtleneck, (Blush:1.5), (Orange Light:1.4), (Orange Lighting:1.4), Wide Shot, Far Away,
+	Denoising strength: 0.21
+	id: 85171
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/e7f92998-10d3-4df6-7331-69357d5f5900/width=450/85171.jpeg
+	nsfw: Soft
+	width: 1536
+	height: 1024
+	hash: UZJ@5nxa_MoL_2xa%gIpIoWVM|n%xZR*n$xt
+	Size: 768x512
+	seed: 1364685628
+	Model: DivineEleganceMix
+	steps: 40
+	prompt: (Highres), 4K, Detailed, Ambient Light, Realistic Shadows, Digital Art, Soft Lighting,
+
+Renaissance, Sitting on (Throne:1.2), Vintage Windows,
+
+Woman, 
+
+(Very Long Blonde High Ponytail:1.4), 
+
+Red Eyes, Expressionless, (Glaring:1.1), 
+
+(Gold-Trim Off-Shoulder Long Red Dress:1.3), (Puffy Long Juliet Sleeves:1.3), Jewelry, Gorget,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': 'd1e2a7e3c6', 'name': 'DivineEleganceMix', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: Art by Bad-Artist, Art by Bad-Artist-Anime, Bad-Hands-5, (Bad-Prompt-Version2:0.8), Low Quality, Bad Quality, Worst Quality, Loli,
+
+Multiple Shots, Simple Background, Sunset, Turtleneck, (Blush:1.5), Chair,
+	Denoising strength: 0.21
+	id: 85170
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/69ec9e50-48f3-4f63-1756-101f84fda500/width=450/85170.jpeg
+	nsfw: Soft
+	width: 1920
+	height: 1280
+	hash: U7LWnl003sKi*00J4=?v0K_N8_02Ort7r=?H
+	Size: 768x512
+	seed: 3174448214
+	Model: DivineEleganceMix
+	steps: 40
+	prompt: (Highres), 4K, Detailed, Ambient Light, Realistic Shadows, Digital Art, Soft Lighting,
+
+(Indoors:1.4), Renaissance, (Standing:1.2), Vintage Windows, (Candlelight:1.1), 
+
+(Solo:1.3), Woman, (Face Focus:1.4), (Portrait:1.4),
+
+(Very Long Blonde High Ponytail:1.4),
+
+Red Eyes, Expressionless, (Glaring:1.2),
+
+(Puffy Lips:1.2), Parted Lips, 
+
+Huge Breasts,
+
+(Gold-Trim Off-Shoulder Long Black Gown:1.3), (Puffy Long Juliet Sleeves:1.3), Jewelry, (Sheer Clothes:1.2), (See-Throught:1.4), <lora:Style - Sakimichan:0.15>,  <hypernet:cutesexyrobutts:0.15>
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'name': 'cutesexyrobutts', 'type': 'hypernet', 'weight': 0.15}, {'hash': 'd1e2a7e3c6', 'name': 'DivineEleganceMix', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2.5
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Bad-Prompt-Version2:0.7), (Low Quality, Bad Quality, Worst Quality:1.3), Loli, Young, Younger, Aged Down,
+
+Multiple Shots, Simple Background, Sunset, Turtleneck, (Blush:1.5), (Orange Light:1.4), (Orange Lighting:1.4), (((Lamp))), Light_bulb, Blur, Blurry, Fog, Latex,
+	Denoising strength: 0.21
+	id: 85169
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/de04fbb1-e886-47ef-dacf-4196198fb300/width=450/85169.jpeg
+	nsfw: None
+	width: 1920
+	height: 1280
+	hash: UOIzr1~q%g.9t,?Gog-p9v-VR*IU%LbvofIo
+	Size: 768x512
+	seed: 3883835800
+	Model: DivineEleganceMix
+	steps: 40
+	prompt: (Highres), 4K, Detailed, Ambient Light, Realistic Shadows, Digital Art, Soft Lighting,
+
+(Indoors:1.4), Renaissance, (Standing:1.2), Vintage Windows, (Candlelight:1.1), 
+
+(Solo:1.3), Woman, (Face Focus:1.4), (Portrait:1.4),
+
+(Very Long Blonde High Ponytail:1.4),
+
+Red Eyes, Expressionless, (Glaring:1.2),
+
+(Puffy Lips:1.2), Parted Lips, 
+
+Huge Breasts,
+
+(Gold-Trim Off-Shoulder Long Black Gown:1.3), (Puffy Long Juliet Sleeves:1.3), Jewelry, (Sheer Clothes:1.2), (See-Throught:1.4), <lora:Style - Sakimichan:0.15>,  <hypernet:cutesexyrobutts:0.15>
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'name': 'cutesexyrobutts', 'type': 'hypernet', 'weight': 0.15}, {'hash': 'd1e2a7e3c6', 'name': 'DivineEleganceMix', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2.5
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Bad-Prompt-Version2:0.7), (Low Quality, Bad Quality, Worst Quality:1.3), Loli, Young, Younger, Aged Down,
+
+Multiple Shots, Simple Background, Sunset, Turtleneck, (Blush:1.5), (Orange Light:1.4), (Orange Lighting:1.4), (((Lamp))), Light_bulb, Blur, Blurry, Fog, Latex,
+	Denoising strength: 0.21
+	id: 85168
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/12e802b8-999d-4dcc-1ab1-f18228fdda00/width=450/85168.jpeg
+	nsfw: Soft
+	width: 1920
+	height: 1280
+	hash: USK12c~qELNI%#%MsC-pNexFD*adtRR+nhn%
+	Size: 768x512
+	seed: 1271964111
+	Model: DivineEleganceMix
+	steps: 40
+	prompt: (Highres), 4K, Detailed, Ambient Light, Realistic Shadows, Digital Art, Soft Lighting,
+
+(Indoors:1.4), Renaissance, (Standing:1.2), Vintage Windows, (Candlelight:1.1), 
+
+(Solo:1.3), Woman, (Face Focus:1.4), (Portrait:1.4),
+
+(Very Long Blonde High Ponytail:1.4),
+
+Red Eyes, Expressionless, (Glaring:1.2),
+
+(Puffy Lips:1.2), Parted Lips, 
+
+Huge Breasts,
+
+(Gold-Trim Off-Shoulder Long Black Gown:1.3), (Puffy Long Juliet Sleeves:1.3), Jewelry, (Sheer Clothes:1.2), (See-Throught:1.4), <lora:Style - Sakimichan:0.15>,  <hypernet:cutesexyrobutts:0.15>
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'name': 'cutesexyrobutts', 'type': 'hypernet', 'weight': 0.15}, {'hash': 'd1e2a7e3c6', 'name': 'DivineEleganceMix', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2.5
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Bad-Prompt-Version2:0.7), (Low Quality, Bad Quality, Worst Quality:1.3), Loli, Young, Younger, Aged Down,
+
+Multiple Shots, Simple Background, Sunset, Turtleneck, (Blush:1.5), (Orange Light:1.4), (Orange Lighting:1.4), (((Lamp))), Light_bulb, Blur, Blurry, Fog, Latex,
+	Denoising strength: 0.21
+	id: 85167
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/852864ff-8215-4b4d-93df-fd9c58307300/width=450/85167.jpeg
+	nsfw: None
+	width: 1920
+	height: 1280
+	hash: UoKT#x~p?btSIVoJWBt7M{WBaeM|t7Rjaeof
+	Size: 768x512
+	seed: 510676479
+	Model: DivineEleganceMix
+	steps: 40
+	prompt: (Highres), 4K, Detailed, Ambient Light, Realistic Shadows, Digital Art, Soft Lighting,
+
+(Indoors:1.4), Renaissance, (Standing:1.2), Vintage Windows, (Candlelight:1.1), 
+
+(Solo:1.3), Woman, (Face Focus:1.4), (Portrait:1.4),
+
+(Very Long Blonde High Ponytail:1.4),
+
+Red Eyes, Expressionless, (Glaring:1.2),
+
+(Puffy Lips:1.2), Parted Lips, 
+
+Huge Breasts,
+
+(Gold-Trim Off-Shoulder Long Black Gown:1.3), (Puffy Long Juliet Sleeves:1.3), Jewelry, (Sheer Clothes:1.2), (See-Throught:1.4),
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': 'd1e2a7e3c6', 'name': 'DivineEleganceMix', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2.5
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Bad-Prompt-Version2:0.7), (Low Quality, Bad Quality, Worst Quality:1.3), Loli, Young, Younger, Aged Down,
+
+Multiple Shots, Simple Background, Sunset, Turtleneck, (Blush:1.5), (Orange Light:1.4), (Orange Lighting:1.4), (((Lamp))), Light_bulb, Blur, Blurry, Fog, Latex,
+	Denoising strength: 0.21
+	id: 85166
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/057d89e6-45fc-424c-241b-fc08542b8f00/width=450/85166.jpeg
+	nsfw: Soft
+	width: 1920
+	height: 1280
+	hash: U7K^Ng001}#jF_9G9atmoI9G4oyE_NRi={Mx
+	Size: 768x512
+	seed: 893629100
+	Model: DivineEleganceMix
+	steps: 40
+	prompt: (Highres), 4K, Detailed, Ambient Light, Realistic Shadows, Digital Art, Soft Lighting,
+
+(Indoors:1.4), Renaissance, (Standing:1.2), Vintage Windows, (Candlelight:1.1), 
+
+(Solo:1.3), Woman, (Face Focus:1.4), (Portrait:1.4),
+
+(Very Long Blonde High Ponytail:1.4),
+
+Red Eyes, Expressionless, (Glaring:1.2),
+
+(Puffy Lips:1.2), Parted Lips, 
+
+Large Breasts,
+
+(Gold-Trim Off-Shoulder Long Black Gown:1.3), (Puffy Long Juliet Sleeves:1.3), Jewelry, (Sheer Clothes:1.2), (See-Throught:1.4),
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': 'd1e2a7e3c6', 'name': 'DivineEleganceMix', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2.5
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (Bad-Artist:0.7), (Bad-Artist-Anime:0.7), Bad-Hands-3, (Bad-Prompt-Version2:0.7), (Low Quality, Bad Quality, Worst Quality:1.3), Loli, Young, Younger, Aged Down,
+
+Multiple Shots, Simple Background, Sunset, Turtleneck, (Blush:1.5), (Orange Light:1.4), (Orange Lighting:1.4), (((Lamp))), Light_bulb, Blur, Blurry, Fog, Latex,
+	Denoising strength: 0.21
+downloadUrl: https://civitai.com/api/download/models/7236
+Model Version Data:
+id: 7237
+modelId: 6174
+name: DivinePastelMix V1
+createdAt: None
+updatedAt: 2023-10-28T13:53:33.445Z
+trainedWords: []
+baseModel: SD 1.5
+earlyAccessTimeFrame: 0
+description: <p>Secondary model.</p>
+stats:
+	downloadCount: 581
+	ratingCount: 1
+	rating: 5
+files:
+	name: divineelegancemix_divinepastelmixV1.safetensors
+	id: 7333
+	sizeKB: 7522729.684570312
+	type: Model
+	Metadata:
+		fp: fp16
+		size: full
+		format: SafeTensor
+	pickleScanResult: Success
+	pickleScanMessage: No Pickle imports
+	virusScanResult: Success
+	scannedAt: 2023-02-02T02:36:53.436Z
+	Hashes:
+		AutoV2: 8B1BDFA052
+		SHA256: 8B1BDFA05289B9C8EDE7494920CF905C6F9C7DEBCBA4772F3DEB865C6C74D74F
+		CRC32: 4E5AB0F0
+		BLAKE3: 9F244E1D20F0C04B03350BF67B4A237D890A690314CBFA308BF46690AFC1B6E4
+	downloadUrl: https://civitai.com/api/download/models/7237?type=Model&format=SafeTensor&size=full&fp=fp16
+	primary: None
+images:
+	id: 66788
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2e131745-9a96-4041-8eac-2b36e510bb00/width=450/66788.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UKJGp4$%_M57IUW=4:WC9ZWViwt6^+s:ShIo
+	Size: 768x512
+	seed: 1905302834
+	Model: PastelCocoaMixV2_FixedTensors
+	steps: 40
+	prompt: (Realism), (Highres), 4K, 8K, Detailed Illustration, Ultra-Detailed, Ambient Light, Backlighting, Realistic Shadows, Glowing Particles, Light Particles, Digital Art, Soft Light, Soft Lighting, White Light, White Lighting, Reflections, Detailed Face, (Detailed Hair:1.2), (Hyper-Detailed Eyes:1.2), Dim Lighting, Indirect Lighting, Reflections, Detailed Face, (Detailed Hair:1.2), (Hyper-Detailed Eyes:1.2)
+
+(Indoors:1.4), (Day:1.2), ((Sitting on Throne)), Renaissance, Renaissance Architecture, Windows, Noblesse, Throneroom, Sitting, Throne, Massive Thone, Ornated Throne, 
+
+
+(Dull Blonde Hair:1.15), (Blunt Bangs:1.4), (Very Long Hair:1.4), Long Sidelocks, (High Ponytail:1.4), (Red Eyes:1.3), Expressionless, Emotionless, (Disgust:1.4), (Contempt:1.4), (Glaring:1.3), Long Eyelashes, Thick Eyelashes, (Close-Up Face:1.4), (Looking at Viewer:1.4),
+
+(Solo:1.4), Mature Female, Full Body, Curvy, Medium Breasts,
+
+
+(Elegant Long Red Dress:1.3), Ornate Clothes, Ornate Dress, (Red Off-Shoulder Dress:1.3), Bare Shoulders, (Red Dress:1.3), (Red Puffy Sleeves, Long Sleeves, Juliet Sleeves:1.3), (Frilled Dress:1.3), (Jewelry:1.15), Gorget, Gold-Trim, Gold Trim, Tiara,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '8b1bdfa052', 'name': 'PastelCocoaMixV2_FixedTensors', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: Art by Bad-Artist, Art by Bad-Artist-Anime, Bad-Hands-5, (Bad-Prompt-Version2:0.8), Low Quality, Bad Quality, Worst Quality, Loli, Younger,
+
+Multiple Shots, Simple Background, Fog, Blurry, Blurry Foreground, Blurry Background, (Tight:1.4), (Impossible Clothes:1.4), Side Slit, Exposed Thighs, (Blush:1.5), Out of Focus, Chair,
+	Denoising strength: 0.21
+	id: 66787
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9e7d4640-ac2c-4d6e-0846-1f20390b9e00/width=450/66787.jpeg
+	nsfw: Soft
+	width: 1536
+	height: 1024
+	hash: UoMF:x~WXTbI%LWYS#%fNHjFjFkCozt6M|M|
+	Size: 768x512
+	seed: 2918197320
+	Model: PastelCocoaMixV2_FixedTensors
+	steps: 40
+	prompt: (Realism), (Highres), 4K, 8K, Detailed Illustration, Ultra-Detailed, Ambient Light, Backlighting, Realistic Shadows, Glowing Particles, Light Particles, Digital Art, Soft Light, Soft Lighting, White Light, White Lighting, Reflections, Detailed Face, (Detailed Hair:1.2), (Hyper-Detailed Eyes:1.2), Dim Lighting, Indirect Lighting, Reflections, Detailed Face, (Detailed Hair:1.2), (Hyper-Detailed Eyes:1.2)
+
+(Indoors:1.4), (Day:1.2), ((Sitting on Throne)), Renaissance, Renaissance Architecture, Windows, Noblesse, Throneroom, Sitting, Throne, Massive Thone, Ornated Throne, 
+
+
+(Dull Blonde Hair:1.15), (Blunt Bangs:1.4), (Very Long Hair:1.4), Long Sidelocks, (High Ponytail:1.4), (Red Eyes:1.3), Expressionless, Emotionless, (Disgust:1.4), (Contempt:1.4), (Glaring:1.3), Long Eyelashes, Thick Eyelashes, (Close-Up Face:1.4), (Looking at Viewer:1.4),
+
+(Solo:1.4), Mature Female, Full Body, Curvy, Medium Breasts,
+
+
+(Elegant Long Red Dress:1.3), Ornate Clothes, Ornate Dress, (Red Off-Shoulder Dress:1.3), Bare Shoulders, (Red Dress:1.3), (Red Puffy Sleeves, Long Sleeves, Juliet Sleeves:1.3), (Frilled Dress:1.3), (Jewelry:1.15), Gorget, Gold-Trim, Gold Trim, Tiara,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '8b1bdfa052', 'name': 'PastelCocoaMixV2_FixedTensors', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: Art by Bad-Artist, Art by Bad-Artist-Anime, Bad-Hands-5, (Bad-Prompt-Version2:0.8), Low Quality, Bad Quality, Worst Quality, Loli, Younger,
+
+Multiple Shots, Simple Background, Fog, Blurry, Blurry Foreground, Blurry Background, (Tight:1.4), (Impossible Clothes:1.4), Side Slit, Exposed Thighs, (Blush:1.5), Out of Focus
+	Denoising strength: 0.21
+	id: 66786
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/06587da0-c263-42dd-9d1d-57c8a1bff200/width=450/66786.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UKJjC:~B-:S~0z-oEM0f0LVr4:%1aKIp%1My
+	Size: 768x512
+	seed: 875055473
+	Model: PastelCocoaMixV2_FixedTensors
+	steps: 40
+	prompt: (Realism), (Highres), 4K, 8K, Detailed Illustration, Ultra-Detailed, Ambient Light, Backlighting, Realistic Shadows, Glowing Particles, Light Particles, Digital Art, Soft Light, Soft Lighting, White Light, White Lighting, Reflections, Detailed Face, (Detailed Hair:1.2), (Hyper-Detailed Eyes:1.2), Dim Lighting, Indirect Lighting, Reflections, Detailed Face, (Detailed Hair:1.2), (Hyper-Detailed Eyes:1.2)
+
+(Indoors:1.4), (Day:1.2), ((Sitting on Throne)), Renaissance, Renaissance Architecture, Windows, Noblesse, Throneroom, Sitting, Throne, Massive Thone, Ornated Throne, 
+
+
+(Dull Blonde Hair:1.15), (Blunt Bangs:1.4), (Very Long Hair:1.4), Long Sidelocks, (High Ponytail:1.4), (Red Eyes:1.3), Expressionless, Emotionless, (Disgust:1.4), (Contempt:1.4), (Glaring:1.3), Long Eyelashes, Thick Eyelashes, (Close-Up Face:1.4), (Looking at Viewer:1.4),
+
+(Solo:1.4), Mature Female, Full Body, Curvy, Medium Breasts,
+
+
+(Elegant Long Red Dress:1.3), Ornate Clothes, Ornate Dress, (Red Off-Shoulder Dress:1.3), Bare Shoulders, (Red Dress:1.3), (Red Puffy Sleeves, Long Sleeves, Juliet Sleeves:1.3), (Frilled Dress:1.3), (Jewelry:1.15), Gorget, Gold-Trim, Gold Trim, Tiara,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '8b1bdfa052', 'name': 'PastelCocoaMixV2_FixedTensors', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: Art by Bad-Artist, Art by Bad-Artist-Anime, Bad-Hands-5, (Bad-Prompt-Version2:0.8), Low Quality, Bad Quality, Worst Quality, Loli, Younger,
+
+Multiple Shots, Simple Background, (((Fog))), Blurry, Blurry Foreground, Blurry Background, (Tight:1.4), (Impossible Clothes:1.4), Side Slit, Exposed Thighs, (Blush:1.5), Out of Focus, Chair,
+	Denoising strength: 0.21
+	id: 66785
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/8e42d374-edb1-4dbe-6d6a-53c2f2fdc000/width=450/66785.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UUK0pR0fyX~B~WM|-;%2NGf+WVRkjFfkR+R+
+	Size: 768x512
+	seed: 2086057863
+	Model: PastelCocoaMixV2_FixedTensors
+	steps: 40
+	prompt: (Realism), (Highres), 4K, 8K, Detailed Illustration, Ultra-Detailed, Ambient Light, Backlighting, Realistic Shadows, Glowing Particles, Light Particles, Digital Art, Soft Light, Soft Lighting, White Light, White Lighting, Reflections, Detailed Face, (Detailed Hair:1.2), (Hyper-Detailed Eyes:1.2), Dim Lighting, Indirect Lighting, Reflections, Detailed Face, (Detailed Hair:1.2), (Hyper-Detailed Eyes:1.2)
+
+(Indoors:1.4), (Day:1.2), ((Sitting on Throne)), Renaissance, Renaissance Architecture, Windows, Noblesse, Throneroom, Sitting, Throne, Massive Thone, Ornated Throne, 
+
+
+(Dull Blonde Hair:1.15), (Blunt Bangs:1.4), (Very Long Hair:1.4), Long Sidelocks, (High Ponytail:1.4), (Red Eyes:1.3), Expressionless, Emotionless, (Disgust:1.4), (Contempt:1.4), (Glaring:1.3), Long Eyelashes, Thick Eyelashes, (Close-Up Face:1.4), (Looking at Viewer:1.4),
+
+(Solo:1.4), Mature Female, Full Body, Curvy, Medium Breasts,
+
+
+(Elegant Long Red Dress:1.3), Ornate Clothes, Ornate Dress, (Red Off-Shoulder Dress:1.3), Bare Shoulders, (Red Dress:1.3), (Red Puffy Sleeves, Long Sleeves, Juliet Sleeves:1.3), (Frilled Dress:1.3), (Jewelry:1.15), Gorget, Gold-Trim, Gold Trim, Tiara,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '8b1bdfa052', 'name': 'PastelCocoaMixV2_FixedTensors', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: Art by Bad-Artist, Art by Bad-Artist-Anime, Bad-Hands-5, (Bad-Prompt-Version2:0.8), Low Quality, Bad Quality, Worst Quality, Loli, Younger,
+
+Multiple Shots, Simple Background, (((Fog))), Blurry, Blurry Foreground, Blurry Background, (Tight:1.4), (Impossible Clothes:1.4), Side Slit, Exposed Thighs, (Blush:1.5), Out of Focus, Chair,
+	Denoising strength: 0.21
+	id: 66784
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/8a12bdf3-303e-46c8-da43-2a2b11080e00/width=450/66784.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UiI|zT~WODV@IVIoM|M|IoRjs:bH%MkCV[V@
+	Size: 768x512
+	seed: 12976418
+	Model: PastelCocoaMixV2_FixedTensors
+	steps: 40
+	prompt: (Realism), (Highres), 4K, 8K, Detailed Illustration, Ultra-Detailed, Ambient Light, Backlighting, Realistic Shadows, Glowing Particles, Light Particles, Digital Art, Soft Light, Soft Lighting, White Light, White Lighting, Reflections, Detailed Face, (Detailed Hair:1.2), (Hyper-Detailed Eyes:1.2), Dim Lighting, Indirect Lighting, Reflections, Detailed Face, (Detailed Hair:1.2), (Hyper-Detailed Eyes:1.2)
+
+(Indoors:1.4), (Day:1.2), ((Sitting on Throne)), Renaissance, Renaissance Architecture, Windows, Noblesse, Throneroom, Sitting, Throne, Massive Thone, Ornated Throne, 
+
+
+(Dull Blonde Hair:1.15), (Blunt Bangs:1.4), (Very Long Hair:1.4), Long Sidelocks, (High Ponytail:1.4), (Red Eyes:1.3), Expressionless, Emotionless, (Disgust:1.4), (Contempt:1.4), (Glaring:1.3), Long Eyelashes, Thick Eyelashes, (Close-Up Face:1.4), (Looking at Viewer:1.4),
+
+(Solo:1.4), Mature Female, Full Body, Curvy, Medium Breasts,
+
+
+(Elegant Long Red Dress:1.3), Ornate Clothes, Ornate Dress, (Red Off-Shoulder Dress:1.3), Bare Shoulders, (Red Dress:1.3), (Red Puffy Sleeves, Long Sleeves, Juliet Sleeves:1.3), (Frilled Dress:1.3), (Jewelry:1.15), Gorget, Gold-Trim, Gold Trim, Tiara,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '8b1bdfa052', 'name': 'PastelCocoaMixV2_FixedTensors', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: Art by Bad-Artist, Art by Bad-Artist-Anime, Bad-Hands-5, (Bad-Prompt-Version2:0.8), Low Quality, Bad Quality, Worst Quality, Loli, Younger,
+
+Multiple Shots, Simple Background, (((Fog))), Blurry, Blurry Foreground, Blurry Background, (Tight:1.4), (Impossible Clothes:1.4), Side Slit, Exposed Thighs, (Blush:1.5), Out of Focus, Chair,
+	Denoising strength: 0.21
+	id: 66783
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2be8f71a-4331-4707-bf5d-b09ff6174100/width=450/66783.jpeg
+	nsfw: None
+	width: 1152
+	height: 768
+	hash: U98;3~9Z4nxv9Zof%2NG0K-p%Mj[~VNG9Zxt
+	Size: 768x512
+	seed: None
+	Model: PastelCocoaMixV2
+	steps: 40
+	prompt: realism, Indirect Illumination, Skybox, dark skin, 1girl, wearing Slacks , (White Shirt:1.2), serious, wrapped in chains, A land where nothing makes sense and everything is out of place, Spirit Beast, Bone Dragon, curled horns, ominous shadow, revealing clothes, Early Christian architecture, The City of Mirrors, dim lighting, DarkSkin_Style, See-Through, Lsthr Breasts, Wet,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '8b1bdfa052', 'name': 'PastelCocoaMixV2', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (worst quality, low quality:1.4), blurry, loli, pussy,
+	Denoising strength: 0.21
+	id: 66782
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/b3b98507-eb96-4939-e599-47f5ccfbd300/width=450/66782.jpeg
+	nsfw: Mature
+	width: 1152
+	height: 768
+	hash: UTDvm6_4Di9Ex^xvt7RjtlxubHog?btQE0NG
+	Size: 768x512
+	seed: None
+	Model: PastelCocoaMixV2_FixedTensors
+	steps: 40
+	prompt: (Realism), (Highres), 4K, 8K, Detailed Illustration, Ultra-Detailed, Ambient Light, Backlighting, Realistic Shadows, Glowing Particles, Light Particles, Digital Art, Soft Light, Soft Lighting, White Light, White Lighting, Reflections, Detailed Face, (Detailed Hair:1.2), (Hyper-Detailed Eyes:1.2), Dim Lighting, Indirect Lighting, 
+
+City, Cityscape, Street, 
+
+Mature Female, Solo, Dark Skin, Dark-Skinned Female, 
+
+Short Hair, Black Hair, Dragon Horns, 
+
+Curvy, Thick Thighs, Large Breasts,
+
+Slacks, Revealing Clothes, (White Shirt:1.2), See-Through, Wet,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '8b1bdfa052', 'name': 'PastelCocoaMixV2_FixedTensors', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: (worst quality, low quality:1.4), blurry, loli, pussy,
+	Denoising strength: 0.21
+	id: 66781
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/66b5e0c7-0b4a-4708-bde2-3dd5ba1cab00/width=450/66781.jpeg
+	nsfw: Mature
+	width: 1536
+	height: 1024
+	hash: UNG*vY%NRND%-=~VD%VrbwNHjFjYNaM|WAM|
+	Size: 768x512
+	seed: None
+	Model: PastelCocoaMixV2_FixedTensors
+	steps: 40
+	prompt: (Realism), (Highres), 4K, 8K, Detailed Illustration, Ultra-Detailed, Ambient Light, Backlighting, Realistic Shadows, Glowing Particles, Light Particles, Digital Art, Soft Light, Soft Lighting, White Light, White Lighting, Reflections, Detailed Face, (Detailed Hair:1.2), (Hyper-Detailed Eyes:1.2), Dim Lighting, Indirect Lighting, 
+
+Indoors, Renaissance, Renaissance Architecture, Mansion, Noblesse, Royal Furniture, Windows, 
+
+Mature Female, Solo, Dark Skin, Dark-Skinned Female, 
+
+Short Hair, Black Hair, Dragon Horns, 
+
+Curvy, Thick Thighs, Large Breasts,
+
+Slacks, Revealing Clothes, (White Shirt:1.2), See-Through, Wet,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '8b1bdfa052', 'name': 'PastelCocoaMixV2_FixedTensors', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: Art by Bad-Artist, Art by Bad-Artist-Anime, Bad-Hands-5, (Bad-Prompt-Version2:0.8), Low Quality, Bad Quality, Worst Quality,
+
+Multiple Shots, Simple Background, Fog, Blurry, Blurry Foreground, Blurry Background, Car, Cars, Cellphone, Phone,
+	Denoising strength: 0.21
+	id: 66780
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c90e5e67-d5f0-4e75-e365-ba0fc97d5900/width=450/66780.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UOIXaB_39F%L_NkW9G%2IqxtjGad%MxuWAM{
+	Size: 768x512
+	seed: None
+	Model: PastelCocoaMixV2_FixedTensors
+	steps: 40
+	prompt: (Realism), (Highres), 4K, 8K, Detailed Illustration, Ultra-Detailed, Ambient Light, Backlighting, Realistic Shadows, Glowing Particles, Light Particles, Digital Art, Soft Light, Soft Lighting, White Light, White Lighting, Reflections, Detailed Face, (Detailed Hair:1.2), (Hyper-Detailed Eyes:1.2), Dim Lighting, Indirect Lighting, 
+
+Indoors, Renaissance, Renaissance Architecture, Mansion, Noblesse, Royal Furniture, Windows, 
+
+Mature Female, Solo, Dark Skin, Dark-Skinned Female, 
+
+Short Hair, Black Hair, Dragon Horns, 
+
+Curvy, Thick Thighs, Large Breasts,
+
+Slacks, Revealing Clothes, (White Shirt:1.2), See-Through, Wet,
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '8b1bdfa052', 'name': 'PastelCocoaMixV2_FixedTensors', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: Art by Bad-Artist, Art by Bad-Artist-Anime, Bad-Hands-5, (Bad-Prompt-Version2:0.8), Low Quality, Bad Quality, Worst Quality,
+
+Multiple Shots, Simple Background, Fog, Blurry, Blurry Foreground, Blurry Background, Car, Cars, Cellphone, Phone,
+	Denoising strength: 0.21
+	id: 66779
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a79336b4-9798-4df9-c6a3-c47ec1a5c500/width=450/66779.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UJH1b=00~pH?0h%LIpIqD%-:aex]MxWCW?xZ
+	Size: 768x512
+	seed: None
+	Model: PastelCocoaMixV2_FixedTensors
+	steps: None
+	prompt: (Realism), (Highres), 4K, 8K, Detailed Illustration, Ultra-Detailed, Ambient Light, Backlighting, Realistic Shadows, Glowing Particles, Light Particles, Digital Art, Soft Light, Soft Lighting, White Light, White Lighting, Reflections, Detailed Face, (Detailed Hair:1.2), (Hyper-Detailed Eyes:1.2), Dim Lighting, Indirect Lighting, 
+
+Indoors, Renaissance, Renaissance Architecture, Mansion, Noblesse, Royal Furniture, Windows, 
+
+Mature Female, Solo, Dark Skin, Dark-Skinned Female, 
+
+Short Hair, Black Hair, Dragon Horns, <(Long_Horns:1.4)> ,
+
+Curvy, Thick Thighs, <Small_Breasts>,
+
+Slacks, Revealing Clothes, (White Shirt:1.2),
+	sampler: None
+	cfgScale: None
+	resources: [{'hash': '8b1bdfa052', 'name': 'PastelCocoaMixV2_FixedTensors', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_fatal_Anime_500000_G
+	negativePrompt: Art by Bad-Artist, Art by Bad-Artist-Anime, Bad-Hands-5, (Bad-Prompt-Version2:0.8), Low Quality, Bad Quality, Worst Quality,
+
+Multiple Shots, Simple Background, Fog, Blurry, Blurry Foreground, Blurry Background, Car, Cars, Cellphone, Phone,
+	Denoising strength: 0.21
+downloadUrl: https://civitai.com/api/download/models/7237

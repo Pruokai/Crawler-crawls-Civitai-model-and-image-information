@@ -1,0 +1,1217 @@
+Model ID: 7371
+Model Name: ReV Animated
+Model Description: <h3 id="heading-186">Update 3:</h3><h3 id="heading-189">Disclaimer/Permissions updated</h3><p></p><h3 id="heading-415">Update 2:<br />I am no longer maintaining/updating this model<br /><br />Quick Update:</h3><p>I've been a bit burnt out on SD model development (SD in general tbh) and that is the reason there have not been an update. Looking to come back around and develop again by next month or so.<br /><br />Thank you everyone who sends reviews and enjoy my model<br /><br /></p><p><strong>Pay attention to the <em><u>About this version</u></em></strong> <strong>section </strong>of model page<strong> for specific version information. ➡️➡️➡️➡️➡️</strong></p><h3 id="heading-416"><br /><br /><u>Model Overview:</u></h3><ul><li><p><u>rev</u> or <u>revision</u>: The concept of how the model generates images is likely to change as I see fit.</p></li><li><p><u>Animated</u>: The model has the ability to create 2.5D like image generations. This model is a checkpoint merge, meaning it is a product of other models to create a product that derives from the originals.</p></li><li><p>Kind of generations:</p><ul><li><p>Fantasy</p></li><li><p>Anime</p></li><li><p>semi-realistic</p></li><li><p><em>decent Landscape</em></p></li></ul></li><li><p>LoRA friendly</p></li><li><p>It works <strong><em><u>best on these resolution dimensions:</u></em></strong></p><ul><li><p>512x512</p></li><li><p>512x768</p></li><li><p>768x512</p></li></ul></li></ul><p></p><h3 id="heading-417"><u>VAE</u>:</h3><ul><li><p><a target="_blank" rel="ugc" href="https://huggingface.co/WarriorMama777/OrangeMixs/blob/main/VAEs/orangemix.vae.pt"><u>orangemix.vae.pt</u></a></p></li><li><p><a target="_blank" rel="ugc" href="https://huggingface.co/hakurei/waifu-diffusion-v1-4/tree/main/vae">kl-f8-anime2.ckpt</a></p></li><li><p><a target="_blank" rel="ugc" href="https://huggingface.co/NoCrypt/blessed_vae/blob/main/blessed2.vae.pt">Blessed2.vae.pt</a></p><p><br /></p></li></ul><h3 id="heading-418"><u>Prompting</u>:</h3><ul><li><p><strong>Order matters</strong> - words near the front of your prompt are weighted more heavily than the things in the back of your prompt.</p></li><li><p><strong>Prompt order</strong> - content type &gt; description &gt; style &gt; composition</p></li><li><p><strong>This model likes</strong>: ((best quality)), ((masterpiece)), (detailed) in beginning of prompt if you want anime-2.5D type</p></li><li><p>This model does great on<strong> <u>PORTRAITS</u></strong></p></li></ul><p></p><p><strong><u>Negative Prompt Embeddings:</u></strong></p><ul><li><p><a target="_blank" rel="ugc" href="https://huggingface.co/embed/EasyNegative/tree/main">EasyNegative</a></p></li><li><p><a target="_blank" rel="ugc" href="https://civitai.com/models/4629/deep-negative-v1x">Deep Negative</a></p></li><li><p><a target="_blank" rel="ugc" href="https://huggingface.co/embed/bad_prompt/blob/main/bad_prompt_version2.pt">bad_prompt_version2</a></p></li><li><p><a target="_blank" rel="ugc" href="https://huggingface.co/nick-x-hacker/bad-artist/blob/main/bad-artist.pt">bad-artist</a></p></li><li><p><a target="_blank" rel="ugc" href="https://huggingface.co/nick-x-hacker/bad-artist/blob/main/bad-artist-anime.pt">bad-artist-anime</a></p></li><li><p><a target="_blank" rel="ugc" href="https://huggingface.co/p1atdev/badquality/tree/main">bad-quality</a></p></li><li><p>Make use of weights in negative prompts (i.e (worst quality, low quality:1.4))</p><p></p></li></ul><p></p><h3 id="heading-419"><u>Video Features</u></h3><p></p><p><a target="_blank" rel="ugc" href="https://youtu.be/Nl43zR5dVuM?t=192">Olivio Sarikas - Why Is EVERYONE Using This Model?! - Rev Animated for Stable Diffusion / A1111</a></p><p></p><p><a target="_blank" rel="ugc" href="https://www.youtube.com/watch?v=A6dQPMy_tHY">Olivio Sarikas - ULTRA SHARP Upscale! - Don't miss this Method!!! / A1111 - NEW Model</a><br /><br /><a target="_blank" rel="ugc" href="https://www.youtube.com/watch?v=ezNDCWhv4pQ">AMAZING SD Models - And how to get the MOST out of them!</a></p><p></p><p></p><h2 id="heading-420"><strong><u>Disclaimer (Updated 10/31/2023):</u></strong><br /></h2><p><strong>Do not sell</strong> this model on any website without permissions from creator (me)</p><p><strong>Credit</strong> me if you use my model in your own merges</p><p><strong>I do not authorize</strong> this model to be used on <strong>generative services</strong></p><p><strong><u>You can use derivative models which uses ReV Animated for Buzz points and site-based currency that does not convert over to real world currency.</u></strong></p><p>Do not use this model to <strong><u>monetize</u></strong> on other platforms without expressed written consent. <br /><br /></p><p>if you would like to support me:<br /><a target="_blank" rel="ugc" href="https://ko-fi.com/s6yx0">https://ko-fi.com/s6yx0</a></p><h2 id="heading-421"><br /></h2>
+Model Type: Checkpoint
+NSFW: X
+Allow No Credit: False
+Allow Commercial Use: Rent
+Allow Derivatives: True
+Creator Username: s6yx
+Download Count: 366242
+Favorite Count: 30512
+Comment Count: 413
+Rating Count: 2482
+Rating: 4.94
+Tags: ['anime', 'base model', 'illustration', 'cartoon', 'fantasy', 'portraits']
+Model Version Data:
+id: 46846
+modelId: 7371
+name: v1.2.2-EOL
+createdAt: None
+updatedAt: 2023-08-24T09:05:05.011Z
+trainedWords: []
+baseModel: SD 1.5
+earlyAccessTimeFrame: 0
+description: <p>EOL-1.2.2<br /><br />Should fix issues with invoke &amp; comfyui. Untested as I only use a1111</p><pre><code>Model type identified as SD-v1. Model components are: CLIP-v1-SD, VAE-v1-SD, UNET-v1-SD. Uses the SD-v2 VAE.</code></pre><ul><li><p>1.2.2 - 2023-04-16</p><ul><li><p>using @s1dlx sd-webui-bayesian-merger newest version which fixes missing weights issue = ReV_1.2.1 + animatrix</p></li><li><p>epiNoiseoffset_v2Pynoise:1.0:ALL0.5 via supermerger</p></li></ul></li></ul>
+stats:
+	downloadCount: 283274
+	ratingCount: 1819
+	rating: 4.94
+files:
+	name: revAnimated_v122EOL.safetensors
+	id: 34909
+	sizeKB: 5376404.0390625
+	type: Model
+	Metadata:
+		fp: fp32
+		size: full
+		format: SafeTensor
+	pickleScanResult: Success
+	pickleScanMessage: No Pickle imports
+	virusScanResult: Success
+	scannedAt: 2023-04-16T07:44:01.209Z
+	Hashes:
+		AutoV2: 4199BCDD14
+		SHA256: 4199BCDD147E11328D5F3560301D5A7AB4AC7EEEFBF49DC3EB663CB3E772B9AC
+		CRC32: 15467F52
+		BLAKE3: E5BFC883C9C6752A371C7138F95A8A3926C1243F258B70744183AAF55BFD4D92
+	downloadUrl: https://civitai.com/api/download/models/46846
+	primary: True
+images:
+	id: 506112
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/13303d08-1b18-4b89-728f-82aa3b4aaa00/width=450/506112.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: U7CZIj02VD~ph1#lDOI:E2NaVYWB0g-7EONx
+	Size: 512x768
+	seed: 735323561
+	Model: rev_1.2.2
+	steps: 30
+	prompt: ((best quality)), ((masterpiece)), (detailed), alluring succubus, ethereal beauty, perched on a cloud, (fantasy illustration:1.3), enchanting gaze, captivating pose, delicate wings, otherworldly charm, mystical sky, (Luis Royo:1.2), (Yoshitaka Amano:1.1), moonlit night, soft colors, (detailed cloudscape:1.3), (high-resolution:1.2)
+	sampler: DPM++ 2M Karras
+	cfgScale: 8.5
+	resources: [{'hash': '66d6caba66', 'name': 'rev_1.2.2', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: 3d, cartoon, anime, sketches, (worst quality, bad quality, child, cropped:1.4) ((monochrome)), ((grayscale)),  (bad-hands-5:1.0), (badhandv4:1.0), (easynegative:0.8),  (bad-artist-anime:0.8), (bad-artist:0.8), (bad_prompt:0.8), (bad-picture-chill-75v:0.8), (bad_prompt_version2:0.8),  (bad_quality:0.8)
+	Denoising strength: 0.55
+	id: 506097
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/6b14bf3f-b85e-453b-907c-ab1073a41700/width=450/506097.jpeg
+	nsfw: None
+	width: 1024
+	height: 1024
+	hash: UBH^S0%100V@~Xt6+[s9?HofNFsn%fxZ,:jF
+	Size: 512x512
+	seed: 1192013237
+	Model: rev_1.2.2
+	steps: 30
+	prompt: (digital painting),(best quality), serene Japanese garden, cherry blossoms in full bloom, koi pond, footbridge, pagoda, Ukiyo-e art style, Hokusai inspiration, Deviant Art popular, 8k ultra-realistic, pastel color scheme, soft lighting, golden hour, tranquil atmosphere, landscape orientation
+	sampler: DPM++ 2M Karras
+	cfgScale: 8.5
+	resources: [{'hash': '66d6caba66', 'name': 'rev_1.2.2', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: (worst quality:1.2), (low quality:1.2), (lowres:1.1), (monochrome:1.1), (greyscale), multiple views, comic, sketch, (((bad anatomy))), (((deformed))), (((disfigured))), watermark, multiple_views, mutation hands, mutation fingers, extra fingers, missing fingers, watermark
+	Denoising strength: 0.55
+	id: 506104
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/053fee54-f577-430a-8140-697765d84000/width=450/506104.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: UIGude0M-:R$?Z4o^+Mx~pRjiyM{E0od$jWA
+	Size: 512x768
+	seed: 2937362614
+	Model: rev_1.2.2
+	steps: 30
+	prompt: ((best quality)), ((masterpiece)), (detailed), woman with green hair, holding a sword, (Artgerm inspired:1.2), (pixiv contest winner:1.1), (octopus goddess:1.3), (Berserk art style:1.2), close-up portrait, goddess skull, (Senna from League of Legends:1.1), (Tatsumaki with green curly hair:1.2), card game illustration, thick brush, HD anime wallpaper, (Akali from League of Legends:1.1), 8k resolution
+	sampler: DPM++ 2M Karras
+	cfgScale: 8.5
+	resources: [{'hash': '66d6caba66', 'name': 'rev_1.2.2', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: 3d, cartoon, anime, sketches, (worst quality, bad quality, child, cropped:1.4) ((monochrome)), ((grayscale)),  (bad-hands-5:1.0), (badhandv4:1.0), (easynegative:0.8),  (bad-artist-anime:0.8), (bad-artist:0.8), (bad_prompt:0.8), (bad-picture-chill-75v:0.8), (bad_prompt_version2:0.8),  (bad_quality:0.8)
+	Denoising strength: 0.55
+	id: 506095
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/793b0ca4-265e-434c-9549-6f6310df7400/width=450/506095.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: UAFOPwWX0m585IRj~opH%dXQxbs;?t9b9H?G
+	Size: 512x768
+	seed: 3653604530
+	Model: rev_1.2.2
+	steps: 30
+	prompt: ((best quality)), ((masterpiece)), ((realistic)), vintage Afro-Caribbean woman, elegant attire, 1950s fashion, radiant smile, confident stance, cultural pride, (oil painting:1.2), (Lois Mailou Jones:1.1), (Kadir Nelson:1.1), vivid colors, nostalgic background, authentic vintage feel, (portrait composition:1.3), (high-resolution:1.2)
+	sampler: DPM++ 2M Karras
+	cfgScale: 8.5
+	resources: [{'hash': '66d6caba66', 'name': 'rev_1.2.2', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: 3d, cartoon, anime, sketches, (worst quality, bad quality, child, cropped:1.4) ((monochrome)), ((grayscale)),  (bad-hands-5:1.0), (badhandv4:1.0), (easynegative:0.8),  (bad-artist-anime:0.8), (bad-artist:0.8), (bad_prompt:0.8), (bad-picture-chill-75v:0.8), (bad_prompt_version2:0.8),  (bad_quality:0.8)
+	Denoising strength: 0.55
+	id: 506111
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/f327dd41-3fe4-4dba-7308-57a585ce0c00/width=450/506111.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UD9%;nDi55?b*JIAR5%fpHRPVsoytkRQ%2s:
+	Size: 768x512
+	seed: 2652653862
+	Model: rev_1.2.2
+	steps: 30
+	prompt: (masterpiece, best quality:1.4), cinematic light, colorful, high contrast, mountain, grass, tree, night, (horror (theme):1.2), (mon(masterpiece, best quality:1.4), (captivating digital art), cinematic lighting, colorful, high contrast, eerie mountain landscape, lush grass, twisted trees, night scene, (horror theme:1.2), (menacing monster:1.2) lurking in shadows, dark atmosphere, blood rain pouring down, blood-red river flowing, haunting blood moon in the sky, chilling and intense visual experiencester:1.2), dark, blood rain, blood river, blood moon
+	sampler: DPM++ 2M Karras
+	cfgScale: 8.5
+	resources: [{'hash': '66d6caba66', 'name': 'rev_1.2.2', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: (worst quality:1.2), (low quality:1.2), (lowres:1.1), (monochrome:1.1), (greyscale), multiple views, comic, sketch, (((bad anatomy))), (((deformed))), (((disfigured))), watermark, multiple_views, mutation hands, mutation fingers, extra fingers, missing fingers, watermark
+	Denoising strength: 0.55
+	id: 506094
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/1044269e-caa3-4019-6e48-653d1f635a00/width=450/506094.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: UAD+h|014:~VozWBE2-p01-pMxozx]s.01Nc
+	Size: 512x768
+	seed: 1328103044
+	Model: rev_1.2.2
+	steps: 30
+	prompt: ((best quality)), ((masterpiece)), (detailed), beautiful face, female warrior, (defiance512:1.2), big eyes, heavy black iron armor, detailed helmet, intense gaze, battle-ready, contrasting soft skin, (lighting:1.2), close-up portrait, 4:3 aspect ratio
+	sampler: DPM++ 2M Karras
+	cfgScale: 8.5
+	resources: [{'hash': '66d6caba66', 'name': 'rev_1.2.2', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: 3d, cartoon, anime, sketches, (worst quality, bad quality, child, cropped:1.4) ((monochrome)), ((grayscale)),  (bad-hands-5:1.0), (badhandv4:1.0), (easynegative:0.8),  (bad-artist-anime:0.8), (bad-artist:0.8), (bad_prompt:0.8), (bad-picture-chill-75v:0.8), (bad_prompt_version2:0.8),  (bad_quality:0.8)
+	Denoising strength: 0.55
+	id: 506107
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/708622b1-7d6d-44a2-3200-38771610b300/width=450/506107.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: ULGkj__NxukqPpxu-6-:o#s.57nht8-p-:tR
+	Size: 512x768
+	seed: 2055475037
+	Model: rev_1.2.2
+	steps: 30
+	prompt: 8k high quality, detailed, colorful analog photo, masterpiece, photorealistic, vibrant color film, masterclass, heavy (film grain), Fujicolor 400, Nikon F401
+	sampler: DPM++ 2M Karras
+	cfgScale: 8.5
+	resources: [{'hash': '66d6caba66', 'name': 'rev_1.2.2', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: 3d, cartoon, anime, sketches, (worst quality, bad quality, child, cropped:1.4) ((monochrome)), ((grayscale)),  (bad-hands-5:1.0), (badhandv4:1.0), (easynegative:0.8),  (bad-artist-anime:0.8), (bad-artist:0.8), (bad_prompt:0.8), (bad-picture-chill-75v:0.8), (bad_prompt_version2:0.8),  (bad_quality:0.8)
+	Denoising strength: 0.55
+	id: 506098
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9464838a-b3d4-4d66-05b0-d031b5f9e900/width=450/506098.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: UDGktJ~V0K9a~Cs;9ajJ^lxb01-B~WSd}[-o
+	Size: 512x768
+	seed: 1514816117
+	Model: rev_1.2.2
+	steps: 30
+	prompt: pretty 1girl, absurdres, 8k uhd, platinum blonde hair, bob cut, medium breasts, black tshirt, denim shorts, garden background, flowers, magnolias, apple tree, close up portrait
+	sampler: DPM++ 2M Karras
+	cfgScale: 8.5
+	resources: [{'hash': '66d6caba66', 'name': 'rev_1.2.2', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: 3d, cartoon, anime, sketches, (worst quality, bad quality, child, cropped:1.4) ((monochrome)), ((grayscale)),  (bad-hands-5:1.0), (badhandv4:1.0), (easynegative:0.8),  (bad-artist-anime:0.8), (bad-artist:0.8), (bad_prompt:0.8), (bad-picture-chill-75v:0.8), (bad_prompt_version2:0.8),  (bad_quality:0.8)
+	Denoising strength: 0.55
+	id: 506099
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/1013dccd-e32a-474a-9bef-2ad130aca400/width=450/506099.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1536
+	hash: UDH-lY00KO-o~p9FAE$*-:IT9ut7yEoJ$hIU
+	Size: 512x768
+	seed: 3774228737
+	Model: rev_1.2.2
+	steps: 30
+	prompt: (1girl), medium breasts, tan, dewy skin, sweaty skin, wavy blonde hair, punk tshirt, punk girl
+	sampler: DPM++ 2M Karras
+	cfgScale: 8.5
+	resources: [{'hash': '66d6caba66', 'name': 'rev_1.2.2', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: 3d, cartoon, anime, sketches, (worst quality, bad quality, child, cropped:1.4) ((monochrome)), ((grayscale)),  (bad-hands-5:1.0), (badhandv4:1.0), (easynegative:0.8),  (bad-artist-anime:0.8), (bad-artist:0.8), (bad_prompt:0.8), (bad-picture-chill-75v:0.8), (bad_prompt_version2:0.8),  (bad_quality:0.8)
+	Denoising strength: 0.55
+	id: 506105
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7ba1569e-966a-4bec-765f-2bfece305300/width=450/506105.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: U6AmPTo~1F9t-NNG5Uxb{a$f02RP-pt60Mr;
+	Size: 768x512
+	seed: 1307711212
+	Model: rev_1.2.2
+	steps: 30
+	prompt: ((best quality)), ((masterpiece)), (detailed), oil painting, (nebula under the sea:1.3), (galactic:1.2), celestial, ocean, (incredibly detailed:1.1), (complex details:1.2), (Studio Ghibli influence:1.1), mosaic, (photorealistic:1.2), volumetric lighting, (ray tracing:1.1), well lit, (octane render:1.1), (Art Nouveau style:1.2)
+	sampler: DPM++ 2M Karras
+	cfgScale: 8.5
+	resources: [{'hash': '66d6caba66', 'name': 'rev_1.2.2', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: (worst quality:1.2), (low quality:1.2), (lowres:1.1), (monochrome:1.1), (greyscale), multiple views, comic, sketch, (((bad anatomy))), (((deformed))), (((disfigured))), watermark, multiple_views, mutation hands, mutation fingers, extra fingers, missing fingers, watermark
+	Denoising strength: 0.55
+downloadUrl: https://civitai.com/api/download/models/46846
+Model Version Data:
+id: 43978
+modelId: 7371
+name: v1.2.1-inp
+createdAt: None
+updatedAt: 2023-04-22T15:34:10.637Z
+trainedWords: []
+baseModel: SD 1.5
+earlyAccessTimeFrame: 0
+description: <p>Inpainting version of model v1.2.1</p>
+stats:
+	downloadCount: 10523
+	ratingCount: 24
+	rating: 5
+files:
+	name: revAnimated_v121Inp-inpainting.safetensors
+	id: 33310
+	sizeKB: 4165238.1875
+	type: Model
+	Metadata:
+		fp: fp32
+		size: full
+		format: SafeTensor
+	pickleScanResult: Success
+	pickleScanMessage: No Pickle imports
+	virusScanResult: Success
+	scannedAt: 2023-04-12T19:12:12.041Z
+	Hashes:
+		AutoV2: 8836C40038
+		SHA256: 8836C4003836B74B2FD124B08FD3E1CB62D0E14996FD90118003E9886EBEE42F
+		CRC32: 8EA79F58
+		BLAKE3: 76784265C90306C30B08C8C2EBEFAD9E54B13BF2EE24AF1DE9536D0C156E8341
+	downloadUrl: https://civitai.com/api/download/models/43978
+	primary: True
+images:
+	id: 480042
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/ed2e3e8b-f7f0-402e-5f8d-b184dc1eb500/width=450/480042.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1280
+	hash: ULFr9Q^+D%Md~V%ME1D%RjRjIpV[t6WBWExa
+	Size: 512x640
+	seed: 1435131581
+	Model: rev_tests_revAnimated_v121
+	steps: 30
+	prompt: Masterpiece, best quality, nsfw, a portrait photograph of a gorgeous sexy slim small framed petite goth woman with huge tits and spider tattoos, wearing an elegant (black bridal ballgown) with opals embroidered in and a black tulle veil, carrying a bouquet of red roses in a dark and crowded satanic church with an upside down cross in the background, chiaroscuro, by suicide girls
+	sampler: DPM++ 2M Karras
+	cfgScale: 7.5
+	resources: [{'hash': 'f57b21e57b', 'name': 'rev_tests_revAnimated_v121', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: Latent
+	negativePrompt: 3d max, lowres, (worst quality, low quality, normal quality:2), grotesque, infant, split panels,featureless, colorless, sfw
+	Denoising strength: 0.53
+	id: 479991
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/dc6d5fb2-3b9f-48eb-cea6-a7cac78c3b00/width=450/479991.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1280
+	hash: UAC~M70f00~V4:%1NaxaD%kB-;IUE2xtbbM|
+	Size: 512x640
+	seed: 1557675819
+	Model: rev_tests_revAnimated_v121
+	steps: 30
+	prompt: a raw portrait with erotic composition of a ((gorgeous Female Demon)), (((Fiery-red-hair, Coal Black Eyes))), buxom, voluptuous, Demon Queen, (Blood Red Wings) Detailed gorgeous face!! Full Body (((skimpy sexy Metallic  Armor))), (angry512:1.2), Malevolent, lewd,,  best quality, masterpiece, photographed on a Plaubel Makina W67 Camera, (dynamic lighting), scanlines, natural lights, (dimly lit:1.4), style by David Palumbo
+	sampler: DPM++ 2M Karras
+	cfgScale: 7.5
+	resources: [{'hash': 'f57b21e57b', 'name': 'rev_tests_revAnimated_v121', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: Latent
+	negativePrompt: (easynegative:1.3), 3d, cartoon, (low quality:1.5), (bad art:1.5), duplicate, multiple, disfigured, asian, middle eastern, old, ugly, watermark, logo, signature, anime, asian, drawing, letters, words, blurry, floating limb, extra limb, 3 feet, 4 feet, 5 feet, 6 toes, 4 toes, floating foot, bad feet, cgi, cgi render, 3d render, blender, screens, blurry, particles, ((nude, nsfw))
+	Denoising strength: 0.53
+	id: 480075
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/62723191-1aa6-4734-c630-ba9807429e00/width=450/480075.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UQEL~Y9GjZ9Z~qD%xaRj.7RjWBWB-;RjRjWB
+	Size: 768x512
+	seed: 3989000774
+	Model: rev_tests_revAnimated_v121
+	steps: 30
+	prompt: 1 white sci-fi female armor with (cybernetic helmet), full armor, insulated armor, spacesuit, bald head, lots of fine detail, sci-fi movie style, outdoor photo, photography, natural light, photorealism, cinematic rendering, ray tracing, the highest quality, the highest detail, Cinematic, Third-Person View, Blur Effect, Long Exposure, 8K, Ultra-HD, Natural Lighting, Moody Lighting, Cinematic Lighting <hypernet:sxzBloom_sxzBloom:0.7>
+	sampler: DPM++ 2M Karras
+	cfgScale: 7.5
+	resources: [{'name': 'sxzBloom_sxzBloom', 'type': 'hypernet', 'weight': 0.7}, {'hash': 'f57b21e57b', 'name': 'rev_tests_revAnimated_v121', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: Latent (bicubic antialiased)
+	negativePrompt: sketch, (worst quality:1.5), (low quality:1.5), (normal quality:1.5), lowres, bad anatomy, bad hands, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyeblows, vaginas in breasts, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username, artist name, conjoined fingers, deformed fingers, ugly eyes, imperfect eyes, skewed eyes, unnatural face, unnatural body, error
+	Denoising strength: 0.6
+	id: 480089
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d964758c-7fc9-470d-5d53-9839f9218900/width=450/480089.jpeg
+	nsfw: Soft
+	width: 896
+	height: 1280
+	hash: UCHnW]~W0001DN56yZ%N0N9FRO-;~qIUIA~q
+	Size: 448x640
+	seed: 1396919711
+	Model: Bayesianmerger_bbwm-Rev1.1_fix_novae-colorful_v26-it_2
+	steps: 40
+	prompt: award winning photo beautiful woman, deadly style, Masterpiece, best quality, high contrast, shiny skin, soft lighting, (bodycon), small breasts, cleavage, (backlighting:1.2), (bloom:1.2), (light sparkles:1.1), (chromatic aberration:1.2), sharp focus, Style-Heavenly, in the style of Style-Undead
+	sampler: DPM++ 2M Karras
+	cfgScale: 8.5
+	resources: [{'hash': 'a3046fc233', 'name': 'Bayesianmerger_bbwm-Rev1.1_fix_novae-colorful_v26-it_2', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: Latent
+	negativePrompt: nsfw, 3d, cartoon, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
+	Denoising strength: 0.7
+downloadUrl: https://civitai.com/api/download/models/43978
+Model Version Data:
+id: 40248
+modelId: 7371
+name: v1.2.1
+createdAt: None
+updatedAt: 2023-04-22T15:34:10.637Z
+trainedWords: []
+baseModel: SD 1.5
+earlyAccessTimeFrame: 0
+description: <ul><li><p><strong>1.2 - 2023-04-08</strong></p><ul><li><p><strong>Fixes: </strong>Thanks to <a target="_blank" rel="ugc" href="https://civitai.com/user/recoilme">recoilme</a> for bringing attention to vae issue.</p></li><li><p>@s1dlx <a target="_blank" rel="ugc" href="https://github.com/s1dlx/sd-webui-bayesian-merger"><strong>sd-webui-bayesian-merger</strong></a> = ReV_1.1-novae + <a target="_blank" rel="ugc" href="https://civitai.com/models/21916/animatrix">animatrix</a></p></li><li><p><a target="_blank" rel="ugc" href="https://civitai.com/models/13941/epinoiseoffset"><strong>epiNoiseoffset_v2Pynoise</strong></a>:1.0:ALL0.5<strong> via supermerger</strong></p></li></ul></li></ul>
+stats:
+	downloadCount: 18513
+	ratingCount: 194
+	rating: 4.91
+files:
+	name: revAnimated_v121.safetensors
+	id: 31496
+	sizeKB: 1919225.754882812
+	type: Model
+	Metadata:
+		fp: fp32
+		size: full
+		format: SafeTensor
+	pickleScanResult: Success
+	pickleScanMessage: No Pickle imports
+	virusScanResult: Success
+	scannedAt: 2023-04-09T08:17:16.385Z
+	Hashes:
+		AutoV2: F57B21E57B
+		SHA256: F57B21E57B3178E4999D719C26F3B3E7E3FE8EF6CB839E2617209063A0ECE487
+		CRC32: C15812B0
+		BLAKE3: B809E5243656FDE701A9480BDBF7A37D19F6A7AAB405623B242EF4F266BD2F49
+	downloadUrl: https://civitai.com/api/download/models/40248
+	primary: True
+images:
+	id: 449520
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/ae7d3ad4-b2ed-426c-4d3f-c2fbc4c7cf00/width=450/449520.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UWHK^I9aIV^*~VIVs,ozt7NGM{W=WXt6Rkof
+	Size: 768x512
+	seed: 254619605
+	Model: Bayesianmerger_rev_1-0521-0850-0613_4
+	steps: 20
+	prompt: ((best quality)), ((masterpiece)), (detailed), beautiful face, female warrior, (defiance512:1.2), big eyes, heavy black iron armor, detailed helmet, intense gaze, battle-ready, contrasting soft skin, (lighting:1.2), close-up portrait, 4:3 aspect ratio.
+	sampler: DPM++ 2M Karras
+	cfgScale: 6.5
+	resources: [{'hash': 'f57b21e57b', 'name': 'Bayesianmerger_rev_1-0521-0850-0613_4', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: Latent
+	negativePrompt: cartoon, anime, (painting:1.1), (illustration:1.3), (worst quality, low quality:1.4), (malformed hands:1.4), (poorly drawn hands:1.4),(mutated fingers:1.4), (extra limbs:1.35), (poorly drawn face:1.4), NG_DeepNegative_V1_75T,  (bad-hands-5, bad-artist:1.2)
+	Denoising strength: 0.53
+	id: 449591
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/5be41bd0-202e-4b71-8a19-67b6f531fd00/width=450/449591.jpeg
+	nsfw: None
+	width: 1024
+	height: 1280
+	hash: UDCF;a~BI:9t_2-og3IoSz%L?Ge.-oxaIVbI
+	Size: 512x640
+	seed: 1825306517
+	Model: Bayesianmerger_rev_1-0521-0850-0613_4
+	steps: 30
+	prompt: (dark:1.4), deep shadow, darkness, (moonlight:1.3), award winning photo, extremely detailed, amazing, fine detail, absurdres, highly detailed woman, extremely detailed eyes and face, piercing red eyes, detailed clothes, skinny, (gothic), twintails, bangs, frills, skirt,red hair, by lee jeffries, nikon d850 film, stock photograph, 4 kodak, portra 400 camera f1.6 lens, rich colors, hyper realistic, lifelike texture, dramatic, lighting, unrealengine, trending on artstation, cinestill 800 tungsten, Style-Neeko, (facial clarity:1.5),(transparent clothes:1.1),anatomical, (tattoo:1.1)
+	sampler: DPM++ 2M Karras
+	cfgScale: 5
+	resources: [{'hash': 'f57b21e57b', 'name': 'Bayesianmerger_rev_1-0521-0850-0613_4', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: 3d, cartoon, anime, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, bad anatomy, girl, loli, young, NG_DeepNegative_V1_75T
+	Denoising strength: 0.75
+	id: 449575
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/860f0c2c-8acd-44e5-15cb-c0cff945cc00/width=450/449575.jpeg
+	nsfw: Mature
+	width: 1536
+	height: 1024
+	hash: U4Am#fw]0000?^%M4TIUtPyDMeMd~qR+00IU
+	Size: 768x512
+	seed: 1076151393
+	Model: rev_1-0521-0850-0613_4
+	steps: 75
+	prompt: best quality, ultra high res, photorealistic, sfw, armored wizard, magical tattoos, apprentice, 1girl, looking at viewer, upper body, slender, small breasts, purple hair with white stripes, white croptop, (dark and moody universe:1.3), (elden ring style:1.3), (warhammer style:1.1), floating rocks, glowing pebbles, fiery dust, concept artist, global illumination, depth of field, gloomy, unsettling, splash art, art by artgerm and greg rutkowski and viktoria gavrilenko, scary smile, purple light, rule of the thirds
+	sampler: Euler a
+	cfgScale: 7.5
+	resources: [{'hash': '02aecf0c7d', 'name': 'rev_1-0521-0850-0613_4', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: Latent
+	negativePrompt: easynegative,  NG_DeepNegative_V1_75T, bad-hands-5, bad_prompt_version2, bad-image-v2-39000, blur, grayscale, moles, wrinkles, nipples, (moon:1.3), horns, naked, wings, winglets, crown, watermark
+	Denoising strength: 0.6
+	id: 449628
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/df6f780d-cc7e-4b88-7aec-0d16b1258d00/width=450/449628.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UED+uaIUI9t60K~A-pof9GIp%2-VI:IoIpIp
+	Size: 768x512
+	seed: 4227011501
+	Model: rev_1-0521-0850-0613_4
+	steps: 47
+	prompt: mountain ranges with the moon in the sky, light clouds lit by the moon, dark lighting, moody lighting, caustics, 8k, hyperrealistic, realistic, hdr, realism
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '02aecf0c7d', 'name': 'rev_1-0521-0850-0613_4', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: (worst quality, low quality:1.4), (logo, text, watermask, username), NG_DeepNegative_V1_75T,  (bad-hands-5, bad-artist:1.2)
+	Denoising strength: 0.6
+	id: 449487
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/df3cdee8-e287-4732-b2c5-1d59482c0500/width=450/449487.jpeg
+	nsfw: None
+	width: 1024
+	height: 1024
+	hash: UJFEcN02?FaK-;9H~ANH9]-At6Ip-PSiIpxE
+	Size: 512x512
+	seed: 2628067685
+	Model: Bayesianmerger_rev_1-0521-0850-0613_4
+	steps: 32
+	prompt: ((best quality)), ((masterpiece)), (detailed), portrait, female samurai, mystical, night, dark deep forest, (glowing skull in hand:1.2), cinematic, armor, determined expression, traditional hairstyle, moonlight, (shadows:1.2), subtle glow, 16:9 aspect ratio, close-up view.
+	sampler: DPM++ 2M Karras
+	cfgScale: 7.5
+	resources: [{'hash': 'f57b21e57b', 'name': 'Bayesianmerger_rev_1-0521-0850-0613_4', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 2
+	Hires upscaler: Latent
+	negativePrompt: (worst quality, low quality:1.4), (logo, text, watermask, username), NG_DeepNegative_V1_75T,  (bad-hands-5, bad-artist:1.2)
+	Denoising strength: 0.6
+	id: 449638
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/bfe32586-3a4f-430e-0ac2-5fb5e9aa6600/width=450/449638.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UIFrnraJ4no~_N4;RO%2ERNH={R%D*jFt7E2
+	Size: 768x512
+	seed: 2503839220
+	Model: rev_1-0521-0850-0613_4
+	steps: 47
+	prompt: ancient chinese style landscape painting, yellow paper color, painted with black and white ink, extremely sharp old paper detail, high paper detail, high line detail, high resolution, ultra high quality, raw, 8k image, extremely high color detail, intricate, epic composition, cinematic lighting, masterpiece, bold complimentary colors. stunning masterfully illustrated by artgerm and range  chinese style landscape painting, yellow paper color, painted with black and white ink, extremely sharp old paper detail, high paper detail, high line detail, high resolution, ultra high quality, raw, 8k image, extremely high color detail, intricate, epic composition, cinematic lighting, masterpiece, Artstation, Sergey Svistunov, hyperrealistic
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '02aecf0c7d', 'name': 'rev_1-0521-0850-0613_4', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: (worst quality, low quality:1.4), (logo, text, watermask, username), NG_DeepNegative_V1_75T,  (bad-hands-5, bad-artist:1.2)
+	Denoising strength: 0.6
+	id: 449689
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/24b5ae3a-0e9a-40f3-43e1-38c65fee2b00/width=450/449689.jpeg
+	nsfw: None
+	width: 1024
+	height: 1280
+	hash: UKHeOR~W0exb~Vt6D*jc.SNxVs-p-;xujboe
+	Size: 512x640
+	seed: 2567404376
+	Model: rev_1-0521-0850-0613_4
+	steps: 55
+	prompt: pretty 1girl, absurdres, 8k uhd, platinum blonde hair, bob cut, medium breasts, black tshirt, denim shorts, garden background, flowers, magnolias, apple tree, close up portrait
+	sampler: DPM++ SDE Karras
+	cfgScale: 7
+	resources: [{'hash': '02aecf0c7d', 'name': 'rev_1-0521-0850-0613_4', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: Latent
+	negativePrompt: photograph by bad-artist, lowres, bad anatomy, bad hands, mutated hand, missing fingers, extra digit, fewer digits, (lolicon, loli:1.4), (worst quality, low quality:1.4), (greyscale, monochrome:1.0), text, title, logo, signature, (multiple girls:1.4), cropped, watermark, text, out of frame, error, extra limbs, missing limbs,
+	Denoising strength: 0.7
+	id: 449699
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/e4de0946-6b7e-472b-fa3d-d65ed712c900/width=450/449699.jpeg
+	nsfw: Soft
+	width: 1024
+	height: 1280
+	hash: UHI;kqR+px~V-Un%E1%1ROxZIUNGNa%LxHE2
+	Size: 512x640
+	seed: 3645565855
+	Model: rev_1-0521-0850-0613_4
+	steps: 55
+	prompt: (1girl), medium breasts, tan, dewy skin, sweaty skin, wavy blonde hair, punk tshirt, punk girl
+	sampler: DPM++ SDE Karras
+	cfgScale: 7
+	resources: [{'hash': '02aecf0c7d', 'name': 'rev_1-0521-0850-0613_4', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: Latent
+	negativePrompt: lowres, bad anatomy, bad hands, mutated hand, missing fingers, extra digit, fewer digits, (lolicon, loli:1.4), (worst quality, low quality:1.4), (greyscale, monochrome:1.0), text, title, logo, signature, (multiple girls:1.4), cropped, watermark, text, out of frame, error, extra limbs, missing limbs,
+	Denoising strength: 0.7
+	id: 449809
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/882bfb89-440f-4815-b177-1b5e628e8900/width=450/449809.jpeg
+	nsfw: None
+	width: 1536
+	height: 1024
+	hash: UBG8l#008{x]_N01M|?G%0Rj-oIp9aaeX9%1
+	Size: 768x512
+	seed: 1968862951
+	Model: rev_1-0521-0850-0613_4
+	steps: 57
+	prompt: a monk is meditating, wearing a white robe in the temple, the temple is in the forest, raw photo, surreal photo, unreal engine 4, 8k, super sharp, detailed colors, wide color coverage , extreme scene detail, shading, anti-aliasing, error detail smoothing,raw photo, surreal image, unreal engine 4, 8k, super sharp, detailed colors, wide color coverage, extremely high scene detail, shading, anti-aliasing, error detail smoothing, raw photo, surreal photo, unreal engine 4.8k, super sharp, detailed color, wide color coverage, scene detail extremely tall object , (8k, RAW photo, best quality, masterpiece:1.2), (realistic, photo-realistic:1.37),modelshoot style, (extremely detailed CG unity 8k wallpaper),professional majestic oil painting by Ed Blinkey, Atey Ghailan, Studio Ghibli, by Jeremy Mann, Greg Manchess, Antonio Moro, trending on ArtStation, trending on CGSociety, Intricate, High Detail, Sharp focus, dramatic, photorealistic painting art by midjourney and greg rutkowski, scene detail extreme objects, shading, anti-aliasing, error detail smoothing
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '02aecf0c7d', 'name': 'rev_1-0521-0850-0613_4', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: R-ESRGAN 4x+
+	negativePrompt: windows, canvas frame, cartoon, 3d, ((disfigured)), ((bad art)), ((deformed)),((extra limbs)),((close up)),((b&w)), wierd colors, blurry, (((duplicate))), ((morbid)), ((mutilated)), [out of frame], extra fingers, mutated hands, ((poorly drawn hands)), ((poorly drawn face)), (((mutation))), (((deformed))), blurry, ((bad anatomy)), (((bad proportions))), ((extra limbs)), cloned face, (((disfigured))), out of frame, extra limbs, (bad anatomy), gross proportions, (malformed limbs), ((missing arms)), ((missing legs)), (((extra arms))), (((extra legs))), mutated hands, (fused fingers), (too many fingers), (((long neck))), Photoshop, video game, tiling, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, mutation, mutated, extra limbs, extra legs, extra arms, disfigured, deformed, cross-eye, body out of frame, blurry, bad art, bad anatomy, 3d render
+	Denoising strength: 0.6
+	id: 449907
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d9781a01-9781-44f2-ad3d-e2b4f4544e00/width=450/449907.jpeg
+	nsfw: None
+	width: 1024
+	height: 1536
+	hash: UJG*$oAJtS~V0M-;NIxZR5R%%fM|$$%gX9RP
+	Size: 512x768
+	seed: 133959084
+	Model: rev_1-0521-0850-0613_4
+	steps: 47
+	prompt: futuristic fashion, professional photo of tall thai model posing at (bangkok international motor show:1.2), wearing (futuristic embellished spacesuit:1.2), over-knee boots, huge breasts, detailed eyes, detailed skin, Redhead ponytail, (bokeh:1.2), highly detailed, intricate details
+	sampler: Euler a
+	cfgScale: 7
+	resources: [{'hash': '02aecf0c7d', 'name': 'rev_1-0521-0850-0613_4', 'type': 'model'}]
+	Clip skip: None
+	Hires upscale: 2
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: (worst quality, low quality:1.4), (logo, text, watermask, username), NG_DeepNegative_V1_75T,  (bad-hands-5, bad-artist:1.2)
+	Denoising strength: 0.6
+downloadUrl: https://civitai.com/api/download/models/40248
+Model Version Data:
+id: 22258
+modelId: 7371
+name: v1.1-inpainting
+createdAt: None
+updatedAt: 2023-04-22T15:34:10.637Z
+trainedWords: []
+baseModel: SD 1.5
+earlyAccessTimeFrame: 0
+description: <p>This version is meant for inpainting and outpainting.<br /><br />Like the work, you can support me here:<br /><a target="_blank" rel="ugc" href="https://ko-fi.com/s6yx0">https://ko-fi.com/s6yx0</a></p>
+stats:
+	downloadCount: 4202
+	ratingCount: 11
+	rating: 4.91
+files:
+	name: revAnimated_v11-inpainting.safetensors
+	id: 18546
+	sizeKB: 5539894.537109375
+	type: Model
+	Metadata:
+		fp: fp16
+		size: full
+		format: SafeTensor
+	pickleScanResult: Success
+	pickleScanMessage: No Pickle imports
+	virusScanResult: Success
+	scannedAt: 2023-03-12T21:12:31.376Z
+	Hashes:
+		AutoV2: 2B6DDA3D4B
+		SHA256: 2B6DDA3D4BC9CB98A5C545FBCEDDBB23C7E37412DDA0386DEAED674D93820038
+		CRC32: 16A8E24F
+		BLAKE3: 23661B32DADA28A2BF1A1BF35C1108BC8FB3444983C4BB09248B44508DC0DA4F
+	downloadUrl: https://civitai.com/api/download/models/22258
+	primary: True
+images:
+	id: 239277
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/19815363-dbe9-4f57-95b6-9c8108ccd800/width=450/239277.jpeg
+	nsfw: Soft
+	width: 768
+	height: 960
+	hash: UEG7*wD*MI^O%gO?0y9u0M~Br@D%tkE2Rjs.
+	Size: 512x640
+	seed: 572489102
+	Model: 1REVA_REV_1.1c
+	steps: 30
+	prompt: (dark:1.4), deep shadow, darkness, (moonlight:1.3), award winning photo, extremely detailed, amazing, fine detail, absurdres, highly detailed woman, extremely detailed eyes and face, piercing red eyes, detailed clothes, skinny, (gothic), twintails, bangs, frills, skirt,red hair, by lee jeffries, nikon d850 film, stock photograph, 4 kodak, portra 400 camera f1.6 lens, rich colors, hyper realistic, lifelike texture, dramatic, lighting, unrealengine, trending on artstation, cinestill 800 tungsten, Style-Neeko, (freckles:0.7), (facial clarity:1.5),(transparent clothes:1.1),anatomica
+	sampler: UniPC
+	cfgScale: 5
+	resources: [{'hash': 'acfd73b8a7', 'name': '1REVA_REV_1.1c', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: 3d, cartoon, anime, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, bad anatomy, girl, loli, young
+	Denoising strength: 0.5
+	id: 239276
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/4726071e-2f59-4b77-e93c-5cef5f538e00/width=450/239276.jpeg
+	nsfw: Mature
+	width: 768
+	height: 768
+	hash: UHD0M,M{00-pMcoyV@WC*0s:$fIp~Vay4.t7
+	Size: 512x512
+	seed: 3350825551
+	Model: 1REVA_REV_1.1c
+	steps: 40
+	prompt: Mega HD, detailed, sharp, 1woman, detailed shiny skin, sfw
+	sampler: UniPC
+	cfgScale: 9
+	resources: [{'hash': 'acfd73b8a7', 'name': '1REVA_REV_1.1c', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: (worst quality, low quality, bad hands:1.4), monochrome, extra limbs, intimate, erotic, nsfw
+	Denoising strength: 0.5
+	id: 239275
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/1ecbde7e-e132-43bb-a616-0b9b87c59000/width=450/239275.jpeg
+	nsfw: Mature
+	width: 768
+	height: 1152
+	hash: U4GkIE0000-:06jXXx,[DOogNX%KEK}[.601
+	Size: 512x768
+	seed: 2795651890
+	Model: 1REVA_REV_1.1c
+	steps: 40
+	prompt: (HD, sharp, fractal, masterpiece), 1woman, ultra shiny skin, sfw, intricate, (rainbow, unicorn)
+	sampler: UniPC
+	cfgScale: 6
+	resources: [{'hash': 'acfd73b8a7', 'name': '1REVA_REV_1.1c', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: (worst quality, low quality, bad hands:1.4), monochrome, extra limbs, drawing, cartoon, nsfw,
+	Denoising strength: 0.5
+downloadUrl: https://civitai.com/api/download/models/22258
+Model Version Data:
+id: 19575
+modelId: 7371
+name: v1.1
+createdAt: None
+updatedAt: 2023-04-22T15:34:10.637Z
+trainedWords: []
+baseModel: SD 1.5
+earlyAccessTimeFrame: 0
+description: <ul><li><p>Same Base U-Net Block Merge as initial version</p></li><li><p>Same models used however used weighted sim merge script by <a target="_blank" rel="ugc" href="https://civitai.com/user/recoilme">RecoilMe</a> (<a target="_blank" rel="ugc" href="https://github.com/recoilme/losslessmix">Link to script</a>)</p></li><li><p>Added <strong><u>10%</u></strong> of <a target="_blank" rel="ugc" href="https://civitai.com/user/theally">TheAlly</a>'s <a target="_blank" rel="ugc" href="https://civitai.com/models/10391/noise-offset-for-true-darkness-in-sd">Noise Offset for True Darkness in SD </a>(R1.1+(Noiseoffset - SD1.5) @ 0.1 difference)</p></li><li><p>Better results with <strong><u>CLIP 2</u></strong></p></li><li><p>Smaller model file size</p><p></p><p>Prompt recommends:<br />((best quality)), ((masterpiece)), ((realistic)), (detailed)<br /></p></li></ul>
+stats:
+	downloadCount: 40537
+	ratingCount: 353
+	rating: 4.96
+files:
+	name: revAnimated_v11.ckpt
+	id: 16341
+	sizeKB: 5540018.401367188
+	type: Model
+	Metadata:
+		fp: fp16
+		size: full
+		format: PickleTensor
+	pickleScanResult: Success
+	pickleScanMessage: No Pickle imports
+	virusScanResult: Success
+	scannedAt: 2023-03-06T20:36:15.323Z
+	Hashes:
+		AutoV2: ACFD73B8A7
+		SHA256: ACFD73B8A79160750EEC2BC4EBAC65E83B0EEC25174D2BC8032A3FDB1BCFCD80
+		CRC32: ABBA965C
+		BLAKE3: DA668AE4863D12794E1A8053CF6BFD6625875A1D5E87DEE06BA87AF3A22F7BCF
+	downloadUrl: https://civitai.com/api/download/models/19575?type=Model&format=PickleTensor&size=full&fp=fp16
+	primary: None
+images:
+	id: 205669
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/e5b7bb5d-e5f1-4c24-6a3f-479bd9c80f00/width=450/205669.jpeg
+	nsfw: None
+	width: 768
+	height: 768
+	hash: UWHxsP%1?vMy_NRQ?HIVX9RkxHofkWozxuxu
+	Size: 512x768
+	seed: 2795651890
+	Model: 1REVA_REV_1.1c
+	steps: 40
+	prompt: (HD, sharp, fractal, masterpiece), 1woman, ultra shiny skin, sfw, intricate, (rainbow, unicorn)
+	sampler: UniPC
+	cfgScale: 6
+	resources: [{'hash': 'acfd73b8a7', 'name': '1REVA_REV_1.1c', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: 4x_foolhardy_Remacri
+	negativePrompt: (worst quality, low quality, bad hands:1.4), monochrome, extra limbs, drawing, cartoon, nsfw,
+	Denoising strength: 0.5
+	id: 205668
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/e1cadb28-5ce5-40b9-fa1d-68476bcd5e00/width=450/205668.jpeg
+	nsfw: None
+	width: 768
+	height: 768
+	hash: UHCizA{xrV?uPBwI,otSDPFy9_IBIVXms.RP
+	Size: 512x512
+	seed: 89471028
+	Model: 1REVA_REV_1.1c
+	steps: 80
+	prompt: masterpiece, best quality, (extremely detailed CG unity 8k wallpaper), (best quality), (best illustration), (best shadow), absurdres, realistic lighting, (Abyss), beautiful detailed glow, art by PeterMohrBacher,
+	sampler: DPM++ 2M Karras
+	cfgScale: 9.5
+	resources: [{'hash': 'acfd73b8a7', 'name': '1REVA_REV_1.1c', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (bad-image-v2-39000, bad_prompt_version2, bad-hands-5, EasyNegative, NG_DeepNegative_V1_4T, bad-artist-anime:0.7),(worst quality, low quality:1.3), (depth of field, blurry:1.2), (greyscale, monochrome:1.1), nose, cropped, lowres, text, jpeg artifacts, signature, watermark, username, blurry, artist name, trademark, watermark, title, (tan, muscular, loli, petite, child, infant, toddlers, chibi, sd character:1.1), multiple view, Reference sheet, long neck
+	Denoising strength: 0.45
+	id: 205667
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9d03b6fe-f840-497f-4634-f2eb1c5ae500/width=450/205667.jpeg
+	nsfw: None
+	width: 768
+	height: 768
+	hash: UbHwcK}@E1EL4:EMX9ODx[tQaeWBIVV[sns:
+	Size: 512x512
+	seed: 89471022
+	Model: 1REVA_REV_1.1c
+	steps: 80
+	prompt: red (antopomorf dragongirl), scale, (clear eyes), long dress, flat breasts, evil smile, open mouth teeth, hug
+	sampler: DPM++ 2M Karras
+	cfgScale: 9.5
+	resources: [{'hash': 'acfd73b8a7', 'name': '1REVA_REV_1.1c', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (bad-image-v2-39000, bad_prompt_version2, bad-hands-5, EasyNegative, NG_DeepNegative_V1_4T, bad-artist-anime:0.7),(worst quality, low quality:1.3), (depth of field, blurry:1.2), (greyscale, monochrome:1.1), nose, cropped, lowres, text, jpeg artifacts, signature, watermark, username, blurry, artist name, trademark, watermark, title, (tan, muscular, loli, petite, child, infant, toddlers, chibi, sd character:1.1), multiple view, Reference sheet, long neck
+	Denoising strength: 0.45
+	id: 205666
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/30f99882-e49e-49b5-558e-b8e002856000/width=450/205666.jpeg
+	nsfw: None
+	width: 768
+	height: 768
+	hash: UIGRF]%MEL=x^+%L-o#m~WWEj[adS~%2nj9a
+	Size: 512x512
+	seed: 89471030
+	Model: 1REVA_REV_1.1c
+	steps: 80
+	prompt: ((best quality)), ((masterpiece)), ((realistic)), (detailed), (1 girl) women, hoodie, arm tattoo, portrait, asymmetrical bangs, bandaid, short hair, bangs, breasts, freckles, grey eyes, large breasts, looking at viewer, neck tattoo, nose piercing, pink hair, solo, tattoo on face, upper body, detailed background, town, alley, dark alley, portrait, hood on head, night, angry, close up, closed mouth, , ((masterpiece)), absurdres
+	sampler: DPM++ 2M Karras
+	cfgScale: 9.5
+	resources: [{'hash': 'acfd73b8a7', 'name': '1REVA_REV_1.1c', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (bad-image-v2-39000, bad_prompt_version2, bad-hands-5, EasyNegative, NG_DeepNegative_V1_4T, bad-artist-anime:0.7),(worst quality, low quality:1.3), (depth of field, blurry:1.2), (greyscale, monochrome:1.1), nose, cropped, lowres, text, jpeg artifacts, signature, watermark, username, blurry, artist name, trademark, watermark, title, (tan, muscular, loli, petite, child, infant, toddlers, chibi, sd character:1.1), multiple view, Reference sheet, long neck
+	Denoising strength: 0.45
+	id: 205665
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/0bd6592f-97dc-447b-5c38-6616b021bf00/width=450/205665.jpeg
+	nsfw: None
+	width: 768
+	height: 768
+	hash: UCD+h:-O00_2KQXS$dROe,~Ur=01%gNfIV$f
+	Size: 512x512
+	seed: 89471013
+	Model: 1REVA_REV_1.1c
+	steps: 80
+	prompt: wallpaper of a sorceress walking in a field, castle, character focus, volumetric lighting, masterpiece, realistic, trending on artstation, highres, fantasy
+	sampler: DPM++ 2M Karras
+	cfgScale: 9.5
+	resources: [{'hash': 'acfd73b8a7', 'name': '1REVA_REV_1.1c', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (bad-image-v2-39000, bad_prompt_version2, bad-hands-5, EasyNegative, NG_DeepNegative_V1_4T, bad-artist-anime:0.7),(worst quality, low quality:1.3), (depth of field, blurry:1.2), (greyscale, monochrome:1.1), nose, cropped, lowres, text, jpeg artifacts, signature, watermark, username, blurry, artist name, trademark, watermark, title, (tan, muscular, loli, petite, child, infant, toddlers, chibi, sd character:1.1), multiple view, Reference sheet, long neck
+	Denoising strength: 0.45
+	id: 205664
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2dad0771-1f33-48a3-22a3-339af6d71a00/width=450/205664.jpeg
+	nsfw: None
+	width: 768
+	height: 768
+	hash: UJ8FlytRD4Rj.mo#IAbGVXWBRQoyV@V@RPaK
+	Size: 512x512
+	seed: 89471038
+	Model: 1REVA_REV_1.1c
+	steps: 80
+	prompt: staring up into the infinite maelstrom library, endless books, flying books, spiral staircases, nebula, ominous, cinematic atmosphere, negative dark mode, mc escher, art by senseijaye, matrix atmosphere, digital code swirling, matte painting
+	sampler: DPM++ 2M Karras
+	cfgScale: 9.5
+	resources: [{'hash': 'acfd73b8a7', 'name': '1REVA_REV_1.1c', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (bad-image-v2-39000, bad_prompt_version2, bad-hands-5, EasyNegative, NG_DeepNegative_V1_4T, bad-artist-anime:0.7),(worst quality, low quality:1.3), (depth of field, blurry:1.2), (greyscale, monochrome:1.1), nose, cropped, lowres, text, jpeg artifacts, signature, watermark, username, blurry, artist name, trademark, watermark, title, (tan, muscular, loli, petite, child, infant, toddlers, chibi, sd character:1.1), multiple view, Reference sheet, long neck
+	Denoising strength: 0.45
+	id: 205663
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/eb8f2afa-86b5-4615-25c0-38bc7529af00/width=450/205663.jpeg
+	nsfw: None
+	width: 768
+	height: 768
+	hash: UUD,7S_MgO$*JBt6-oof4oDjD*NHM|NHWCs.
+	Size: 512x512
+	seed: 89471011
+	Model: 1REVA_REV_1.1c
+	steps: 80
+	prompt: award winning (portrait photo:1.4) of a rugged dark science fiction space marine with robotic joints, middle aged male, Style-Cupola, electronic circuits, flashing control panel in foreground, science fiction, action, dark, tools on floor in background, backlighting, (shallow depth of field:1.5), by lee jeffries nikon d850 film stock photograph 4 kodak portra 400 camera f1.6 lens rich colors hyper realistic lifelike texture dramatic lighting unreal engine trending on artstation cinestill 800 (vignette:1.3), filmgrain
+	sampler: DPM++ 2M Karras
+	cfgScale: 9.5
+	resources: [{'hash': 'acfd73b8a7', 'name': '1REVA_REV_1.1c', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (bad-image-v2-39000, bad_prompt_version2, bad-hands-5, EasyNegative, NG_DeepNegative_V1_4T, bad-artist-anime:0.7),(worst quality, low quality:1.3), (depth of field, blurry:1.2), (greyscale, monochrome:1.1), nose, cropped, lowres, text, jpeg artifacts, signature, watermark, username, blurry, artist name, trademark, watermark, title, (tan, muscular, loli, petite, child, infant, toddlers, chibi, sd character:1.1), multiple view, Reference sheet, long neck
+	Denoising strength: 0.45
+	id: 205662
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a096e138-5152-446a-66eb-da87b2ef4a00/width=450/205662.jpeg
+	nsfw: None
+	width: 768
+	height: 768
+	hash: U6D93s4m01%j=o=i00O?04tR}=EkAfMw?vrp
+	Size: 512x512
+	seed: 89471033
+	Model: 1REVA_REV_1.1c
+	steps: 80
+	prompt: a man with a beard and sunglasses, cyberpunk art, funk art, stunning gradient colors, stylized portrait h 704, pompadour, twitch streamer, cold colors. insanely detailed, t-800, no watermark signature, in rich color, outrun
+	sampler: DPM++ 2M Karras
+	cfgScale: 9.5
+	resources: [{'hash': 'acfd73b8a7', 'name': '1REVA_REV_1.1c', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (bad-image-v2-39000, bad_prompt_version2, bad-hands-5, EasyNegative, NG_DeepNegative_V1_4T, bad-artist-anime:0.7),(worst quality, low quality:1.3), (depth of field, blurry:1.2), (greyscale, monochrome:1.1), nose, cropped, lowres, text, jpeg artifacts, signature, watermark, username, blurry, artist name, trademark, watermark, title, (tan, muscular, loli, petite, child, infant, toddlers, chibi, sd character:1.1), multiple view, Reference sheet, long neck
+	Denoising strength: 0.45
+	id: 205661
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/0a38123e-ee01-45a4-957d-c93420495500/width=450/205661.jpeg
+	nsfw: Soft
+	width: 768
+	height: 768
+	hash: UMEU[T~AELtRt7xt%1xt0fE2n%V@S2M|E2M|
+	Size: 512x512
+	seed: 89471031
+	Model: 1REVA_REV_1.1c
+	steps: 80
+	prompt: ((masterpiece, best quality)) (Koh_LisaAnn:0.9) with blue disheveled hair and piercings, with a dark and a black background, Charlie Bowater, stanley artgerm lau, a character
+	sampler: DPM++ 2M Karras
+	cfgScale: 9.5
+	resources: [{'hash': 'acfd73b8a7', 'name': '1REVA_REV_1.1c', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (bad-image-v2-39000, bad_prompt_version2, bad-hands-5, EasyNegative, NG_DeepNegative_V1_4T, bad-artist-anime:0.7),(worst quality, low quality:1.3), (depth of field, blurry:1.2), (greyscale, monochrome:1.1), nose, cropped, lowres, text, jpeg artifacts, signature, watermark, username, blurry, artist name, trademark, watermark, title, (tan, muscular, loli, petite, child, infant, toddlers, chibi, sd character:1.1), multiple view, Reference sheet, long neck
+	Denoising strength: 0.45
+	id: 205660
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/31a07980-bb66-4c13-463b-72bf6d188e00/width=450/205660.jpeg
+	nsfw: None
+	width: 768
+	height: 768
+	hash: UKH-#;_2NF02~W?HtRbI01V[-;-;M|aKxZoz
+	Size: 512x512
+	seed: 89471020
+	Model: 1REVA_REV_1.1c
+	steps: 80
+	prompt: award winning character concept art of, a cute mechanical witch, light brown hair, blue eyes, pink and white dress, blurry_background, breasts, smile, cleavage, witch hat, natural lighting, large_breasts, lips, short hair, looking_at_viewer, solo, from side, highly detailed 8k character concept portrait studio lighting by Annie Leibovitz and Steve McCurry octane render trending on artstation made in Maya 4K high quality digital painting dramatic lighting
+	sampler: DPM++ 2M Karras
+	cfgScale: 9.5
+	resources: [{'hash': 'acfd73b8a7', 'name': '1REVA_REV_1.1c', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (bad-image-v2-39000, bad_prompt_version2, bad-hands-5, EasyNegative, NG_DeepNegative_V1_4T, bad-artist-anime:0.7),(worst quality, low quality:1.3), (depth of field, blurry:1.2), (greyscale, monochrome:1.1), nose, cropped, lowres, text, jpeg artifacts, signature, watermark, username, blurry, artist name, trademark, watermark, title, (tan, muscular, loli, petite, child, infant, toddlers, chibi, sd character:1.1), multiple view, Reference sheet, long neck
+	Denoising strength: 0.45
+downloadUrl: https://civitai.com/api/download/models/19575
+Model Version Data:
+id: 11386
+modelId: 7371
+name: v1.0-inpainting
+createdAt: None
+updatedAt: 2023-04-22T15:34:10.637Z
+trainedWords: []
+baseModel: SD 1.5
+earlyAccessTimeFrame: 0
+description: <p>This version is meant for inpainting and outpainting.<br /><br />Like the work, you can support me here:<br /><a target="_blank" rel="ugc" href="https://ko-fi.com/s6yx0">https://ko-fi.com/s6yx0</a><br /></p>
+stats:
+	downloadCount: 1226
+	ratingCount: 11
+	rating: 4.91
+files:
+	name: revAnimated_v10-inpainting.safetensors
+	id: 10593
+	sizeKB: 4165238.157226562
+	type: Model
+	Metadata:
+		fp: fp16
+		size: full
+		format: SafeTensor
+	pickleScanResult: Success
+	pickleScanMessage: No Pickle imports
+	virusScanResult: Success
+	scannedAt: 2023-02-16T23:23:01.943Z
+	Hashes:
+		AutoV2: 9FCDFE7FD7
+		SHA256: 9FCDFE7FD786BB588F1FE7325720182A31707540F0221A0AA3A20EF794E9CDCC
+		CRC32: 1AD5A1F3
+		BLAKE3: D4FA1A2C8CCC60EADD12559E6008DDE8F277AFD21744D2807E984E4EA6F9487E
+	downloadUrl: https://civitai.com/api/download/models/11386
+	primary: True
+images:
+	id: 109416
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/631278f0-0493-4857-3f2f-8893ada3dc00/width=450/109416.jpeg
+	nsfw: X
+	width: 960
+	height: 768
+	hash: U37U0X^P000#~qs.0KEgtmxai^E2RPoKo}NH
+	Size: 640x512
+	seed: 3270011386
+	Model: REVA_alpha
+	steps: 55
+	prompt: ((masterpiece, best quality)), to8contrast style, (tukudani) with blonde disheveled hair and piercings, togue out, with a dark and a black background, Charlie Bowater, stanley artgerm lau, a character portrait, sots art, sharp focus, smooth, aesthetic, extremely detailed, octane render, 1girl, (defiance512:1.4) black_choker, blue_eyes, blurry, choker, earrings, jewelry, lips, nose, piercing, realistic, short_hair, solo, dark industrial background, rtx, upper body, dark makeup, elegant pose, rock clothes, tattoo on arm, leather shirt, navel, beautiful detailed glow, detailed, Cinematic light, intricate detail, highres, detailed facial features, high detail <lora:theovercomer8sContrastFix_sd15:0.55><lora:tukudaniCokeButa_vNotErasingAll:0.55>
+	sampler: DPM++ 2M Karras
+	cfgScale: 9
+	resources: [{'name': 'theovercomer8sContrastFix_sd15', 'type': 'lora', 'weight': 0.55}, {'name': 'tukudaniCokeButa_vNotErasingAll', 'type': 'lora', 'weight': 0.55}, {'hash': 'e2ca6bc023', 'name': 'REVA_alpha', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (low quality, worst quality:1.4), (text, signature, watermark:1.4), NG_DeepNegative_V1_75T
+	Denoising strength: 0.45
+	id: 109415
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2b5ef2d9-621a-4415-a241-9e5067c9fb00/width=450/109415.jpeg
+	nsfw: None
+	width: 768
+	height: 768
+	hash: U88:*O-V0L9a~Bfk4:WB-pfkIVWBS#R*RkxZ
+	Size: 512x512
+	seed: 855173055
+	Model: REVA_alpha
+	steps: 55
+	prompt: ((masterpiece, best quality)), to8contrast style, (tukudani) with blonde disheveled hair and piercings, togue out, with a dark and a black background, Charlie Bowater, stanley artgerm lau, a character portrait, sots art, sharp focus, smooth, aesthetic, extremely detailed, octane render, 1girl, (defiance512:1.4) black_choker, blue_eyes, blurry, choker, earrings, jewelry, lips, nose, piercing, realistic, short_hair, solo, dark industrial background, rtx, upper body, dark makeup, elegant pose, rock clothes, tattoo on arm, leather shirt, navel, beautiful detailed glow, detailed, Cinematic light, intricate detail, highres, detailed facial features, high detail <lora:theovercomer8sContrastFix_sd15:0.55><lora:tukudaniCokeButa_vNotErasingAll:0.55>
+	sampler: DPM++ 2M Karras
+	cfgScale: 9
+	resources: [{'name': 'theovercomer8sContrastFix_sd15', 'type': 'lora', 'weight': 0.55}, {'name': 'tukudaniCokeButa_vNotErasingAll', 'type': 'lora', 'weight': 0.55}, {'hash': 'e2ca6bc023', 'name': 'REVA_alpha', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (low quality, worst quality:1.4), (text, signature, watermark:1.4), NG_DeepNegative_V1_75T
+	Denoising strength: 0.45
+	id: 109414
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/e8c47f0d-f3a2-4829-6d3d-e0b5158feb00/width=450/109414.jpeg
+	nsfw: Mature
+	width: 768
+	height: 768
+	hash: UFD+Yu~W574.?at7M|RQIURPM{IV-oRjIVIV
+	Size: 512x512
+	seed: 1273493573
+	Model: REVA_alpha
+	steps: 32
+	prompt: (nude), big boobs,(masterpiece), best quality, extremely detailed, (watercolor), bloom, delicate and beautiful, illustration, (from below),(1girl:1.4), (solo:1.2), large breasts, (ribbed sweater:1.3), off-shoulder sweater, (short shorts:1.2), bare shoulders, ((dark skin:1.4)), beautiful eyes, underboob, (disheveled hair ),  photography, over-the-shoulder shot, by Alex Maleev, professional, canon camera, nikon camera, sharp, bokeh, studio quality, fisheye lens, by Robert Capa
+	sampler: Euler a
+	cfgScale: 5.5
+	resources: [{'hash': 'e2ca6bc023', 'name': 'REVA_alpha', 'type': 'model'}]
+	Clip skip: 2
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (low quality, worst quality:1.4), (text, signature, watermark:1.4),  easynegative
+	Denoising strength: 0.5
+downloadUrl: https://civitai.com/api/download/models/11386
+Model Version Data:
+id: 8665
+modelId: 7371
+name: v1.0
+createdAt: None
+updatedAt: 2023-04-22T15:34:10.637Z
+trainedWords: []
+baseModel: SD 1.5
+earlyAccessTimeFrame: 0
+description: <p><strong><u>Last 4 photos are using orangemix.vae.pt</u></strong><br /><br />Base: A: <a target="_blank" rel="ugc" href="https://civitai.com/models/6077/umi-ai-mythology-and-babes-by-dutchalex">Umi Olympus Landscapes v1.0</a> + B: <a target="_blank" rel="ugc" href="https://huggingface.co/nuigurumi/basil_mix/blob/main/Basil_mix_fixed.safetensors">Basil_mix_fixed</a> = 1,0.9,0.7,0.5,0.3,0.1,1,1,1,1,1,1,0,0,0,0,0,0,0,0.1,0.3,0.5,0.7,0.9,1</p><p></p><p>Anime <strong><u>LoRA</u></strong> works real well with this model. Try them at <strong><u>0.5-0.75</u></strong>.<br /><br /><strong><u>Hires.fix:</u></strong></p><ul><li><p><strong>Upscaler:</strong> ESRGAN_4x or ESRGAN_4x+ Anime6B or <a target="_blank" rel="ugc" href="https://umiai.allsync.com/s/zwXgGNF2H459fQk">Remacri Upscaler</a></p></li><li><p><strong>Upscale by: </strong>1.5-2</p></li><li><p><strong>Denoising </strong>strength: 0.4-0.5 (<strong><em>0.45</em></strong> <strong><em>recommended</em></strong>)</p></li><li><p><strong>Clip</strong>: 1</p></li></ul><p></p><p><strong><u>Vae:</u></strong></p><ul><li><p><a target="_blank" rel="ugc" href="http://orangemix.vae.pt">orangemix.vae.pt</a> - will give you more anime-like result, less 3D-like. More NSFW outputs, sfw if specified.</p></li><li><p><a target="_blank" rel="ugc" href="https://huggingface.co/hakurei/waifu-diffusion-v1-4/tree/main/vae">kl-f8-anime2.ckpt </a>- will give you a more 3D type anime model, anime/cartoon aspect but more realistic. less NSFW unless specified.</p></li></ul><p></p><p><strong><u>Models used:</u></strong></p><p><a target="_blank" rel="ugc" href="https://civitai.com/models/6077/umi-ai-mythology-and-babes-by-dutchalex">Umi AI Mythology and Babes by DutchAlex </a>-&gt; Great model series</p><p><a target="_blank" rel="ugc" href="https://huggingface.co/nuigurumi/basil_mix/blob/main/Basil_mix_fixed.safetensors">Basil_mix_fixed</a></p><p><a target="_blank" rel="ugc" href="https://huggingface.co/andite/yohan-diffusion">Cocoa</a><br />NovelAI</p><p></p><p><u>Recommends</u></p><p><strong><u>Resolution</u></strong>:</p><ul><li><p><strong>2:3</strong> ratio (i.e 512x768)</p></li><li><p><strong>1:1</strong> ratio (i.e 512x512 or 576x576)</p></li></ul><p></p><p><strong><u>Best Samplers</u></strong>:</p><ul><li><p><strong>Euler a <em>(Recommended)</em></strong></p></li><li><p><strong>DPM++ 2M Karras</strong></p></li></ul><p></p><p><strong><u>CFG scale:</u></strong></p><ul><li><p><strong>Portraits</strong>: 4.5-7</p></li><li><p><strong>Landscape</strong>: 7-9</p></li></ul><p></p><p><strong><u>Steps:</u></strong></p><ul><li><p><strong>Portraits</strong>: 30-50</p></li><li><p><strong>Landscape</strong>: 30-50</p></li></ul><p></p><p><strong><u>Negative Prompts:</u></strong></p><p><a target="_blank" rel="ugc" href="https://huggingface.co/Cordeliya/animefull-latest/tree/main">bad-xxx TI</a></p><p>i.e: (worst quality:1.4), (low quality:1.4), (monochrome:1.1), bad_prompt_version2, bad_artist_anime, (loli: 1.5), (shota:1.5), (child:1.4), ((disfigured)), ((bad art))</p><p><strong><u>Prompts:</u></strong></p><p><strong>SFW</strong>: put 'NSFW' and 'uncensored' in negative prompt, SFW in regular prompt</p><p><strong>NSFW</strong>: put 'SFW' and 'censored' in negative prompt, NSFW in regular prompt</p><p>Less negative prompts the better</p><p></p>
+stats:
+	downloadCount: 7967
+	ratingCount: 70
+	rating: 4.99
+files:
+	name: revAnimated_v10.ckpt
+	id: 8708
+	sizeKB: 4165365.202148438
+	type: Pruned Model
+	Metadata:
+		fp: fp16
+		size: pruned
+		format: PickleTensor
+	pickleScanResult: Success
+	pickleScanMessage: No Pickle imports
+	virusScanResult: Success
+	scannedAt: 2023-02-09T03:40:39.376Z
+	Hashes:
+		AutoV2: FD877B3F4C
+		SHA256: FD877B3F4C3FD3A27115D4733E2BBD2556D066DD00EDCDAE7E0E27F1A614AAC7
+		CRC32: 615351D9
+		BLAKE3: 4FD2F9EB51B17EBAADF2E282123E8502C8326E350755CF03457674956A6C8F50
+	downloadUrl: https://civitai.com/api/download/models/8665?type=Pruned%20Model&format=PickleTensor&size=pruned&fp=fp16
+	primary: None
+images:
+	id: 84519
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c8a168a8-4c05-4688-a12a-aa12b763f300/width=450/84519.jpeg
+	nsfw: Soft
+	width: 768
+	height: 768
+	hash: UMF#j%?H56Vt-;X8R%RP~WxtM{M{x[t7$*M{
+	Size: 512x512
+	seed: 1322515346
+	Model: None
+	steps: 32
+	prompt: ((best quality)), ((masterpiece)), ((realistic)), (detailed), (1 girl) women, hoodie, arm tattoo, portrait, asymmetrical bangs, bandaid, short hair, bangs, breasts, freckles, grey eyes, large breasts, looking at viewer, neck tattoo, nose piercing, pink hair, solo, tattoo on face, upper body, detailed background, town, alley, dark alley, portrait, hood on head, night, angry, close up, closed mouth, , ((masterpiece)), absurdres
+	sampler: Euler a
+	cfgScale: 5.5
+	resources: []
+	Clip skip: None
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: nsfw, (worst quality, low quality:1.3), (depth of field, blurry:1.2), (greyscale, monochrome:1.1), 3D face, nose, cropped, lowres, text, jpeg artifacts, signature, watermark, username, blurry, artist name, trademark, watermark, title, (tan, muscular, loli, petite, child, infant, toddlers, chibi, sd character:1.1), multiple view, Reference sheet,
+	Denoising strength: 0.45
+	id: 84879
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9168c23d-661d-4ea0-3811-0cbb66b65300/width=450/84879.jpeg
+	nsfw: Soft
+	width: 768
+	height: 768
+	hash: UKIXHibbyq~pMyxu9u-p01t7MyIV=_D*E1IU
+	Size: 512x512
+	seed: 4004715626
+	Model: None
+	steps: 32
+	prompt: a girl with pink/crimson hair, dark red eyes, smile(teeth), shirtoff, piercings, tattoo, shiny eyes, glowing eyes, character portrait, bare shoulders, crop top, mask in hair, choker, red color palette background small details, ultra detailed, best quality, ,masterpiece, (volumetric lighting, bright),novelai, oil painting, 4k wallpaper, aesthetic, masterpiece, award-winning photography, macro photography vivid colors, photorealistic, atmospheric, cinematic, moody, rule of thirds, majestic, detailed, perfect anatomy <lora:shirtliftALORAFor_shirtliftv1:0.6>
+	sampler: Euler a
+	cfgScale: 6.5
+	resources: [{'name': 'shirtliftALORAFor_shirtliftv1', 'type': 'lora', 'weight': 0.6}]
+	Clip skip: None
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (worst quality:1.4), (low quality:1.4), (monochrome:1.1), bad_prompt_version2, bad_artist_anime, (loli: 1.5), (shota:1.5), (child:1.4), ((disfigured)), ((bad art)), bad-hands-5
+	Denoising strength: 0.45
+	id: 84877
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/10ea6d02-cf96-41d9-65ed-1b0b7944cb00/width=450/84877.jpeg
+	nsfw: Mature
+	width: 768
+	height: 768
+	hash: UFJQ=uD$?a~W~V-oofM|00%MIU9F?bIUD*M|
+	Size: 512x512
+	seed: 1092121655
+	Model: None
+	steps: 32
+	prompt: (nude), big boobs,(masterpiece), best quality, extremely detailed, (watercolor), bloom, delicate and beautiful, illustration, (from below),(1girl:1.4), (solo:1.2), large breasts, (ribbed sweater:1.3), off-shoulder sweater, (short shorts:1.2), bare shoulders, ((dark skin:1.4)), beautiful eyes, underboob, (disheveled hair ),  photography, over-the-shoulder shot, by Alex Maleev, professional, canon camera, nikon camera, sharp, bokeh, studio quality, fisheye lens, by Robert Capa
+	sampler: Euler a
+	cfgScale: 6.5
+	resources: []
+	Clip skip: None
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (worst quality:1.4), (low quality:1.4), (monochrome:1.1), bad_prompt_version2, bad_artist_anime, (loli: 1.5), (shota:1.5), (child:1.4), ((disfigured)), ((bad art)), bad-hands-5
+	Denoising strength: 0.45
+	id: 84876
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/81da6e08-5a38-467d-6536-48e12d72f100/width=450/84876.jpeg
+	nsfw: None
+	width: 768
+	height: 768
+	hash: UKD+#e^*9a-;A0?G~Ax]s:E2IoxtIAI:JCIU
+	Size: 512x512
+	seed: 3075780604
+	Model: None
+	steps: 32
+	prompt: Wide angle Environmental shot in a cluttered and messy shack , action shot, tattered torn shirt, porcelain cracked skin, league of legends, vibrant, photo realistic, realistic, dramatic, dark, sharp focus, 8k."Robot destroyed to pieces with glowing yelow visor as a realistic scifi cyberpunk knight, medium shot, intricate,unreal engine, cozy indoor lighting, artstation, detailed, "james gurney, katsuhiro otomo, james paick, cinematic lighting, vibrant nature, Craig Mullins, Greg Rutkowski, Pete Morbacher, Tuomas Korpi, tekkon kinreet, volumetric light, trending on artstation, octane rendering.", trending on artstation, sharp focus, studio photo, intricate details, highly detailed, by greg rutkowski
+	sampler: Euler a
+	cfgScale: 6.5
+	resources: []
+	Clip skip: None
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (worst quality:1.4), (low quality:1.4), (monochrome:1.1), bad_prompt_version2, bad_artist_anime, (loli: 1.5), (shota:1.5), (child:1.4), ((disfigured)), ((bad art)), bad-hands-5
+	Denoising strength: 0.45
+	id: 84875
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a1ec76e7-3dcd-49b0-ca9f-34aec9b8f200/width=450/84875.jpeg
+	nsfw: X
+	width: 768
+	height: 768
+	hash: UFKTSe~V9sIo_1~V~UD*JBxt-;~V0g^*IVof
+	Size: 512x512
+	seed: 3755008884
+	Model: None
+	steps: 32
+	prompt: nsfw,nipple slip,(realistic:1.5),photorealistic, octane render,hyperrealistic,pussy,thick thighs,wide hips,huge thighs,sitting,on chair, white legwear thigh highs,(skindentation:1.3),(photorealistic face:1.2),(1girl:1.4),collar,(gigantic breasts:1.6),thick eyelashes,long eyelashes,(twin tails:1.1),blonde hair,hair ribbon,arm straps,choker,(white lingerie:1.3),best quality, indoors,comfy,cosy,window,beautiful beach, nsfw,multicolored hair,streaked hair,hair ribbon,hair band, smile,happy,open mouth,looking at viewer,glasses,sharp focus,(8k), (4k),very long hair, (Masterpiece), (Best Quality), fantasy, extremely detailed, intricate, hyper detailed, (perfect face), illustration,soft lighting,(specular lighting:1.4),blue eyes,absurdly long hair,
+	sampler: Euler a
+	cfgScale: 6.5
+	resources: []
+	Clip skip: None
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (worst quality:1.4), (low quality:1.4), (monochrome:1.1), bad_prompt_version2, bad_artist_anime, (loli: 1.5), (shota:1.5), (child:1.4), ((disfigured)), ((bad art)), bad-hands-5
+	Denoising strength: 0.45
+	id: 84874
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/75b3bcda-fde3-4be3-2d1e-ce27bc842500/width=450/84874.jpeg
+	nsfw: None
+	width: 768
+	height: 768
+	hash: UBGu%c9G4.XS~C00%LD%58EOr=IV.m=_%1yD
+	Size: 512x512
+	seed: 737217632
+	Model: None
+	steps: 32
+	prompt: digital art, (wide angle shot:1.2), nanosuit from ((crysis)) 4, ((matte black and crimson suit)), trending on artstation, digital painting, sci-fi, epic composition, futuristic, by Arthur C. Clark, landscape, worldly, otherworldly, fantasy, Game of Thrones style, landscape, a dragon flying in the background, lucid, by Charles Eames, by Enki Bilal
+	sampler: DPM++ 2M Karras
+	cfgScale: 7.5
+	resources: []
+	Clip skip: None
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (worst quality:1.4), (low quality:1.4), (monochrome:1.1), bad_prompt_version2, bad_artist_anime, (loli: 1.5), (shota:1.5), (child:1.4), ((disfigured)), ((bad art)), bad-hands-5
+	Denoising strength: 0.45
+	id: 84873
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/812f82e7-6614-4380-4e02-0deb6acda300/width=450/84873.jpeg
+	nsfw: None
+	width: 768
+	height: 768
+	hash: UAGl03xsDN~B03E2?Z%K00={El0M^OJURPS}
+	Size: 512x512
+	seed: 286136991
+	Model: None
+	steps: 32
+	prompt: a gorgeous sci - fi bedroom matte painting by john harris, sparth and greg rutkowski. sharp edges, tiffany blue, grey orange, white and golden. sci - fi bedroom in a space base, outside the windows a future city skyline, light effect. ultra clear detailed, 3 d, octane render. 8 k
+	sampler: Euler a
+	cfgScale: 6.5
+	resources: []
+	Clip skip: None
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (worst quality:1.4), (low quality:1.4), (monochrome:1.1), bad_prompt_version2, bad_artist_anime, (loli: 1.5), (shota:1.5), (child:1.4), ((disfigured)), ((bad art)), bad-hands-5
+	Denoising strength: 0.45
+	id: 84872
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/079ea2fd-7ad9-4d0b-79c5-b6087aac3200/width=450/84872.jpeg
+	nsfw: None
+	width: 768
+	height: 768
+	hash: UI9?|5MxIUx]0#ofemog~VRjM{tR9vt6s.WD
+	Size: 512x512
+	seed: 2759712987
+	Model: None
+	steps: 32
+	prompt: Shadow person, marc adamus, scary, cinematic lighting, very detailed, octane render, 4k, 8k, trending on artstation, ominous, myterious, sharp focus, oil painting, intricate details, highly detailed, by greg rutkowski
+	sampler: Euler a
+	cfgScale: 6.5
+	resources: []
+	Clip skip: None
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (worst quality:1.4), (low quality:1.4), (monochrome:1.1), bad_prompt_version2, bad_artist_anime, (loli: 1.5), (shota:1.5), (child:1.4), ((disfigured)), ((bad art)), bad-hands-5
+	Denoising strength: 0.45
+	id: 84871
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/947ca5f4-beb2-4ebd-89c4-e9e09f4ab400/width=450/84871.jpeg
+	nsfw: Mature
+	width: 768
+	height: 768
+	hash: UJFq|1%20L9t~Wn+NZbbMzIoX7fiV_jZ9aD*
+	Size: 512x512
+	seed: 924685270
+	Model: None
+	steps: 32
+	prompt: <lora:duchaitenanimated_LoRA300:1>1girl, pink hair, dark red eyes, smile(teeth), shirtoff, piercings, tattoo, shiny eyes, glowing eyes, character portrait, bare shoulders, crop top, mask in hair, choker, red color palette background small details, ultra detailed, best quality, ,masterpiece, (volumetric lighting, bright),novelai, oil painting, drawn in medibang paint, 4k wallpaper, aesthetic, masterpiece, award-winning photography, macro photography vivid colors, photorealistic, atmospheric, cinematic, moody, rule of thirds, majestic, detailed, perfect anatomy <lora:shirtliftALORAFor_shirtliftv1:1>
+	sampler: Euler a
+	cfgScale: 6.5
+	resources: [{'name': 'duchaitenanimated_LoRA300', 'type': 'lora', 'weight': 1}, {'name': 'shirtliftALORAFor_shirtliftv1', 'type': 'lora', 'weight': 1}]
+	Clip skip: None
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (worst quality:1.4), (low quality:1.4), (monochrome:1.1), bad_prompt_version2, bad_artist_anime, (loli: 1.5), (shota:1.5), (child:1.4), ((disfigured)), ((bad art)), bad-hands-5
+	Denoising strength: 0.45
+	id: 84870
+	image_url: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/f0365d5a-15b1-4409-0d93-7ca30834f700/width=450/84870.jpeg
+	nsfw: X
+	width: 768
+	height: 768
+	hash: UVH-.C?H_357~WM{%LRPxtRjbHWB%gxaj[Rk
+	Size: 512x512
+	seed: 1546309806
+	Model: None
+	steps: 32
+	prompt: (masterpiece:1.4), (best quality:1.4) (1 girl), long hair, ponytail, glasses, coat, open clothes, [winter forest], massive breasts, (blue eyes:0.9), nipple showing, photography, over-the-shoulder shot, iphone x, bokeh, studio quality, by Alex Maleev, by Steve McCurry
+	sampler: Euler a
+	cfgScale: 6.5
+	resources: []
+	Clip skip: None
+	Hires upscale: 1.5
+	Hires upscaler: Remacri Upscaler
+	negativePrompt: (worst quality:1.4), (low quality:1.4), (monochrome:1.1), bad_prompt_version2, bad_artist_anime, (loli: 1.5), (shota:1.5), (child:1.4), ((disfigured)), ((bad art)), bad-hands-5
+	Denoising strength: 0.45
+downloadUrl: https://civitai.com/api/download/models/8665
