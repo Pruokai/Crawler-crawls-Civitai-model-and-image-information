@@ -1,9 +1,10 @@
 import time
 import requests
 import os
+from concurrent.futures import ThreadPoolExecutor
 
 params = {
-    'limit': 10,
+    'limit': 100,
     # 可以根据需要添加其他查询参数
 }
 
@@ -35,9 +36,8 @@ folder_name = 'images'
 if not os.path.exists(folder_name):
     os.makedirs(folder_name)
 
-for image_data in all_images_data:
+def write_image_data(image_data):
     image_id = image_data.get('id')
-
     file_path = os.path.join(folder_name, f'{image_id}.txt')
 
     with open(file_path, 'w', encoding='utf-8') as file:
@@ -104,32 +104,5 @@ for image_data in all_images_data:
         file.write(f"Username: {username}\n\n")
         time.sleep(5)
 
-    # # 处理获取的图像数据
-    # print(f"Image ID: {image_id}")
-    # print(f"Image URL: {image_url}")
-    # print(f"Image Hash: {image_hash}")
-    # print(f"Image Width: {image_width}")
-    # print(f"Image Height: {image_height}")
-    # print(f"NSFW: {is_nsfw}")
-    # print(f"NSFW Level: {nsfw_level}")
-    # print(f"Created At: {created_at}")
-    # print(f"Post ID: {post_id}")
-    # print(f"Cry Count: {cryCount}")
-    # print(f"Laugh Count: {laughCount}")
-    # print(f"Like Count: {likeCount}")
-    # print(f"Dislike Count: {dislikeCount}")
-    # print(f"Heart Count: {heartCount}")
-    # print(f"Comment Count: {commentCount}")
-    # print(f"Size: {Size}")
-    # print(f"Seed: {seed}")
-    # print(f"Model: {Model}")
-    # print(f"Steps: {steps}")
-    # print(f"Prompt: {prompt}")
-    # print(f"Sampler: {sampler}")
-    # print(f"CfgScale: {cfgScale}")
-    # print(f"Clip Skip: {Clipskip}")
-    # print(f"Hires Upscale: {Hiresupscale}")
-    # print(f"Hires Upscaler: {Hiresupscaler}")
-    # print(f"Negative Prompt: {negativePrompt}")
-    # print(f"Denoising Strength: {Denoisingstrength}")
-    # print(f"Username: {username}")
+with ThreadPoolExecutor(max_workers=10) as executor:
+    executor.map(write_image_data, all_images_data)
