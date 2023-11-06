@@ -1,22 +1,20 @@
 import requests
 import time
 import os
+import threading
+import queue
 
 url = 'https://civitai.com/api/v1/models'
-
-# 设置查询参数
 params = {
-    'limit': 2,  # 你可以根据需要更改 limit 数量
+    'limit': 100, # 你可以根据需要更改 limit 数量
+    'sort': 'Newest'
 }
+total_pages = 830  # 想要爬取的页数
 
+lock = threading.Lock()  # 创建一个锁以同步文件写入
 
-all_models_data = []  # 存储所有模型数据的列表
-
-total_pages = 1  # 想要爬取的页数
-
-for page in range(1, total_pages + 1):
+def fetch_data(page):
     params['page'] = page  # 更新参数中的页面数
-
     response = requests.get(url, params=params)
 
     if response.status_code == 200:
@@ -24,13 +22,11 @@ for page in range(1, total_pages + 1):
         models = data.get('items', [])
 
         if models:
-            all_models_data.extend(models)
+            process_models(models)
         else:
-            break  # 如果没有更多模型数据时跳出循环
-    else:
-        print("Failed to fetch data. Status code:", response.status_code)
-        break
+            return
 
+def process_models(models):
     # 分类和处理模型数据
     for model in models:
         model_id = model.get('id')
@@ -97,6 +93,19 @@ for page in range(1, total_pages + 1):
                 height = image_data.get('height')
                 hash = image_data.get('hash')
                 meta = image_data.get('meta', {})
+                Size = None
+                seed = None
+                Model = None
+                steps = None
+                prompt = None
+                sampler = None
+                cfgScale = None
+                resources = None
+                Clipskip = None
+                Hiresupscale = None
+                Hiresupscaler = None
+                negativePrompt = None
+                Denoisingstrength = None
                 if meta is not None:
                     Size = meta.get('Size')
                     seed = meta.get('seed')
@@ -236,50 +245,39 @@ for page in range(1, total_pages + 1):
                                     file.write(f"\t{file_key}: {file_value}\n")
                     else:
                         file.write(f"{key}: {value}\n")
-            time.sleep(5)  # 休息5秒
+            time.sleep(2)  # 休息2秒
 
-        # print("Model ID:", model_id)
-        # print("Model Name:", model_name)
-        # print("Model Description:", model_description)
-        # print("Model Type:", model_type)
-        # print("NSFW:", nsfw)
-        # print("Allow No Credit:", allow_no_credit)
-        # print("Allow Commercial Use:", allow_commercial_use)
-        # print("Allow Derivatives:", allow_derivatives)
-        # print("Creator Username:", creator_username)
-        # print("Download Count:", download_count)
-        # print("Favorite Count:", favorite_count)
-        # print("Comment Count:", comment_count)
-        # print("Rating Count:", rating_count)
-        # print("Rating:", rating)
-        # print("Tags:", tags)
-        #
-        # for model_version_info in all_modelVersiones_info:
-        #     print("Model Version Data:")
-        #     # 这是在打印model_version_info时进行修改
-        #     for key, value in model_version_info.items():
-        #         if key == 'images':
-        #             print(f"{key}:")
-        #             for image_info in value:
-        #                 for k, v in image_info.items():
-        #                     print(f"\t{k}: {v}")
-        #         elif key == 'stats':
-        #             print(f"{key}:")
-        #             for stat_key, stat_value in value.items():
-        #                 print(f"\t{stat_key}: {stat_value}")
-        #         elif key == 'files':
-        #             print(f"{key}:")
-        #             for file_info in value:
-        #                 for file_key, file_value in file_info.items():
-        #                     if file_key == 'metadata':
-        #                         print("\tMetadata:")
-        #                         for meta_key, meta_value in file_value.items():
-        #                             print(f"\t\t{meta_key}: {meta_value}")
-        #                     elif file_key == 'hashes':
-        #                         print("\tHashes:")
-        #                         for hash_key, hash_value in file_value.items():
-        #                             print(f"\t\t{hash_key}: {hash_value}")
-        #                     else:
-        #                         print(f"\t{file_key}: {file_value}")
-        #         else:
-        #             print(f"{key}: {value}")
+def worker():
+    while True:
+        with lock:
+            current_page = page_queue.get()
+        if current_page is None:
+            break
+        fetch_data(current_page)
+        page_queue.task_done()
+
+# 创建队列以在多个线程间分发工作
+page_queue = queue.Queue()
+
+# 将页面编号添加到队列中
+for page in range(1, total_pages + 1):
+    page_queue.put(page)
+
+# 创建并启动多个线程
+num_threads = 10  # 线程数量
+threads = []
+for _ in range(num_threads):
+    thread = threading.Thread(target=worker)
+    thread.start()
+    threads.append(thread)
+
+# 等待所有页面请求处理完成
+page_queue.join()
+
+# 通知线程退出
+for _ in range(num_threads):
+    page_queue.put(None)
+
+# 等待所有线程完成
+for thread in threads:
+    thread.join()
