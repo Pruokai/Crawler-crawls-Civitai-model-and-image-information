@@ -6,15 +6,15 @@ import queue
 
 url = 'https://civitai.com/api/v1/models'
 params = {
-    'limit': 100, # 你可以根据需要更改 limit 数量
-    'sort': 'Newest'
+    'limit': 100,
+    'sort': 'Highest Rated',
 }
-total_pages = 830  # 想要爬取的页数
+total_pages = 950
 
 lock = threading.Lock()  # 创建一个锁以同步文件写入
 
 def fetch_data(page):
-    params['page'] = page  # 更新参数中的页面数
+    params['page'] = page
     response = requests.get(url, params=params)
 
     if response.status_code == 200:
@@ -28,6 +28,7 @@ def fetch_data(page):
 
 def process_models(models):
     # 分类和处理模型数据
+    nsfw = None
     for model in models:
         model_id = model.get('id')
         model_name = model.get('name')
@@ -60,7 +61,25 @@ def process_models(models):
             stats_downloadCount = modelVersions_stats.get('downloadCount')
             stats_ratingCount = modelVersions_stats.get('ratingCount')
             stats_rating = modelVersions_stats.get('rating')
+            modelVersions_downloadUrl = modelVersions.get('downloadUrl')
             modelVersions_filesd = modelVersions.get('files',[])
+            files_name = None
+            files_id = None
+            files_sizeKB = None
+            files_type = None
+            metadata_fp = None
+            metadata_size = None
+            metadata_format = None
+            files_pickleScanResult = None
+            files_pickleScanMessage = None
+            files_virusScanResult = None
+            files_scannedAt = None
+            hashes_AutoV2 = None
+            hashes_SHA256 = None
+            hashes_CRC32 = None
+            hashes_BLAKE3 = None
+            files_downloadUrl = None
+            files_primary = None
             for modelVersions_files in modelVersions_filesd:
                 files_name = modelVersions_files.get('name')
                 files_id = modelVersions_files.get('id')
@@ -93,12 +112,15 @@ def process_models(models):
                 height = image_data.get('height')
                 hash = image_data.get('hash')
                 meta = image_data.get('meta', {})
+                ENSD = None
                 Size = None
                 seed = None
+                Score = None
                 Model = None
                 steps = None
                 prompt = None
                 sampler = None
+                EtaDDIM = None
                 cfgScale = None
                 resources = None
                 Clipskip = None
@@ -107,12 +129,15 @@ def process_models(models):
                 negativePrompt = None
                 Denoisingstrength = None
                 if meta is not None:
+                    ENSD = meta.get('ENSD')
                     Size = meta.get('Size')
                     seed = meta.get('seed')
+                    Score = meta.get('Score')
                     Model = meta.get('Model')
                     steps = meta.get('steps')
                     prompt = meta.get('prompt')
                     sampler = meta.get('sampler')
+                    EtaDDIM = meta.get('Eta DDIM')
                     cfgScale = meta.get('cfgScale')
                     resources = meta.get('resources', [])
                     Clipskip = meta.get('Clip skip')
@@ -128,12 +153,15 @@ def process_models(models):
                     'width': width,
                     'height': height,
                     'hash': hash,
+                    'ENSD': ENSD,
                     'Size': Size,
                     'seed': seed,
+                    'Score': Score,
                     'Model': Model,
                     'steps': steps,
                     'prompt': prompt,
                     'sampler': sampler,
+                    'Eta DDIM': EtaDDIM,
                     'cfgScale': cfgScale,
                     'resources': resources,
                     'Clip skip': Clipskip,
@@ -145,17 +173,17 @@ def process_models(models):
 
                 # 将当前图片信息添加到列表
                 all_images_info.append(image_info)
-            downloadUrl = modelVersions.get('downloadUrl')
             modelVersiones_info = {
-                'id': modelVersions_id,
+                'versionId': modelVersions_id,
                 'modelId': modelVersions_modelId,
-                'name': modelVersions_name,
+                'version': modelVersions_name,
                 'createdAt': modelVersions_createdAt,
                 'updatedAt': modelVersions_updatedAt,
                 'trainedWords': modelVersions_trainedWords,
                 'baseModel': modelVersions_baseModel,
                 'earlyAccessTimeFrame': modelVersions_earlyAccessTimeFrame,
                 'description': modelVersions_description,
+                'downloadUrl': modelVersions_downloadUrl,
                 'stats': {
                     'downloadCount': stats_downloadCount,
                     'ratingCount': stats_ratingCount,
@@ -182,12 +210,11 @@ def process_models(models):
                             'CRC32': hashes_CRC32,
                             'BLAKE3': hashes_BLAKE3
                         },
-                        'downloadUrl': files_downloadUrl,
+                        'downloadurl': files_downloadUrl,
                         'primary': files_primary
                     }
                 ],
                 'images': all_images_info,
-                'downloadUrl':downloadUrl
             }
             all_modelVersiones_info.append(modelVersiones_info)
 
@@ -221,31 +248,31 @@ def process_models(models):
                 file.write("Model Version Data:\n")
                 for key, value in model_version_info.items():
                     if key == 'images':
-                        file.write(f"{key}:\n")
+                        file.write(f"\t{key}:\n")
                         for image_info in value:
                             for k, v in image_info.items():
-                                file.write(f"\t{k}: {v}\n")
+                                file.write(f"\t\t{k}: {v}\n")
                     elif key == 'stats':
-                        file.write(f"{key}:\n")
+                        file.write(f"\t{key}:\n")
                         for stat_key, stat_value in value.items():
-                            file.write(f"\t{stat_key}: {stat_value}\n")
+                            file.write(f"\t\t{stat_key}: {stat_value}\n")
                     elif key == 'files':
-                        file.write(f"{key}:\n")
+                        file.write(f"\t{key}:\n")
                         for file_info in value:
                             for file_key, file_value in file_info.items():
                                 if file_key == 'metadata':
-                                    file.write("\tMetadata:\n")
+                                    file.write("\t\tMetadata:\n")
                                     for meta_key, meta_value in file_value.items():
-                                        file.write(f"\t\t{meta_key}: {meta_value}\n")
+                                        file.write(f"\t\t\t{meta_key}: {meta_value}\n")
                                 elif file_key == 'hashes':
-                                    file.write("\tHashes:\n")
+                                    file.write("\t\tHashes:\n")
                                     for hash_key, hash_value in file_value.items():
-                                        file.write(f"\t\t{hash_key}: {hash_value}\n")
+                                        file.write(f"\t\t\t{hash_key}: {hash_value}\n")
                                 else:
-                                    file.write(f"\t{file_key}: {file_value}\n")
+                                    file.write(f"\t\t{file_key}: {file_value}\n")
                     else:
-                        file.write(f"{key}: {value}\n")
-            time.sleep(2)  # 休息2秒
+                        file.write(f"\t{key}: {value}\n")
+            # time.sleep(1)  # 休息2秒
 
 def worker():
     while True:
@@ -264,7 +291,7 @@ for page in range(1, total_pages + 1):
     page_queue.put(page)
 
 # 创建并启动多个线程
-num_threads = 10  # 线程数量
+num_threads = 1  # 线程数量
 threads = []
 for _ in range(num_threads):
     thread = threading.Thread(target=worker)
@@ -281,3 +308,5 @@ for _ in range(num_threads):
 # 等待所有线程完成
 for thread in threads:
     thread.join()
+
+
